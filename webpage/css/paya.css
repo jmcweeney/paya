@@ -149,7 +149,7 @@
 }
 
 
-/* general overrides */
+/* General Overrides */
 .list-group-item .glyphicon {
   line-height: 1.4;
 }
@@ -160,8 +160,15 @@ strong {
   font-weight: bold;
 }
 
+/* ----- Alerts ----- */
 
-/* navbar */
+.alert-light-paya {
+  color: #818182;
+  background-color: #ffffff;
+  border-color: #f8f8f8;
+}
+
+/* Navbar */
 .app-navbar {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
