@@ -1,0 +1,199 @@
+/*
+ * Application level styles
+ * (things that dont make sense in the Paya Toolkit :)
+ *
+ */
+
+ :root {
+   --blue: #4699FE; /* 007bff */
+   --indigo: #6610f2;
+   --purple: #6f42c1;
+   --pink: #e83e8c;
+   --red: #dc3545;
+   --orange: #fd7e14;
+   --yellow: #ffc107;
+   --green: #28a745;
+   --teal: #20c997;
+   --cyan: #17a2b8;
+   --white: #fff;
+   --gray: #6c757d;
+   --gray-dark: #343a40;
+   --primary: #4699FE; /* 007bff */
+   --secondary: #6c757d;
+   --success: #28a745;
+   --info: #17a2b8;
+   --warning: #ffc107;
+   --danger: #dc3545;
+   --light: #f8f9fa;
+   --dark: #343a40;
+   --breakpoint-xs: 0;
+   --breakpoint-sm: 576px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 992px;
+   --breakpoint-xl: 1200px;
+   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+ }
+
+/* ----- Custom Labels ----- */
+
+.paya label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: .75em;
+  color: #666666;
+  font-weight: 600;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #000000;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.form-control::-webkit-input-placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+.custom-control-label {
+  font-weight: 600;
+}
+
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: calc(3rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  background-size: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);
+}
+
+.custom-select:focus::-ms-value {
+  color: #495057;
+  background-color: #fff;
+}
+
+/* docs overrides */
+.highlight {
+  background-color: #fff;
+  border-color: #d3e0e9;
+}
+
+
+/* general overrides */
+.list-group-item .glyphicon {
+  line-height: 1.4;
+}
+.modal-header .close {
+  margin-top: 4px;
+}
+strong {
+  font-weight: bold;
+}
+
+
+/* navbar */
+.app-navbar {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+.app-navbar .form-control {
+  box-shadow: none;
+}
+.app-navbar .navbar-brand img {
+  width: 85px;
+}
+.app-navbar .navbar-collapse {
+  max-height: inherit;
+}
+.app-navbar .navbar-collapse:after {
+  height: 100vh;
+}
+.app-navbar .form-control {
+  border-color: #1C73A5;
+}
+.app-navbar .app-notifications {
+  margin-left: 1rem;
+  padding-bottom: 4px !important;
+  padding-top: 4px !important;
+}
+.app-notifications .icon:before {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .app-navbar .navbar-collapse:after {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .app-search {
+    margin-top: -1px;
+  }
+}
+
+
+/* misc */
+.app-login-form {
+  max-width: 280px;
+  margin-top: -60px;
+}
+.app-new-msg {
+  margin-right: 10px;
+}
+.app-brand {
+  width: 40%;
+  display: inline-block;
+}
+.app-brand img {
+  width: 100%;
+}
