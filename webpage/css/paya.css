@@ -131,6 +131,17 @@
   background-color: #fff;
 }
 
+.custom-control-label {
+  font-weight: 500;
+  font-size: 95%;
+}
+.custom-control-spacer {
+    padding: 0.75rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+
 /* docs overrides */
 .highlight {
   background-color: #fff;
