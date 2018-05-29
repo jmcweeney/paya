@@ -104,7 +104,6 @@
   font-weight: 600;
 }
 
-
 .custom-select {
   display: inline-block;
   width: 100%;
@@ -216,9 +215,9 @@
 .switch input:disabled + label::before {
   background-color: #e9ecef;
 }
-.switch.switch-sm {
+/* .switch.switch-sm {
   font-size: 0.875rem;
-}
+} */
 .switch.switch-sm input + label {
   min-width: calc(calc(1.9375rem * .8) * 2);
   height: calc(1.9375rem * .8);
@@ -291,6 +290,12 @@ strong {
 }
 
 /* ----- Navbar ----- */
+
+.nav-link {
+    display: block;
+    padding: .5rem .75rem .5rem .75rem;
+    margin: 0 .75rem 0 0;
+}
 
 .app-navbar {
   font-weight: 400;
