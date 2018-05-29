@@ -1,6 +1,6 @@
 /*
- * Application level styles
- * (things that dont make sense in the Paya Toolkit :)
+ * Custom styles
+ * (Bootstrap is intact :)
  *
  */
 
@@ -142,7 +142,12 @@
     border-width: .2rem;
 }
 
-/* docs overrides */
+/* ----- Date Picker ----- */
+
+
+
+/* Docs overrides */
+
 .highlight {
   background-color: #fff;
   border-color: #d3e0e9;
@@ -168,7 +173,8 @@ strong {
   border-color: #f8f8f8;
 }
 
-/* Navbar */
+/* ----- Navbar ----- */
+
 .app-navbar {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -208,7 +214,8 @@ strong {
 }
 
 
-/* misc */
+/* ----- Misc ----- */
+
 .app-login-form {
   max-width: 280px;
   margin-top: -60px;
