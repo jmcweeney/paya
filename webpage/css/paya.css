@@ -4,36 +4,88 @@
  *
  */
 
- :root {
-   --blue: #4699FE; /* 007bff */
-   --indigo: #6610f2;
-   --purple: #6f42c1;
-   --pink: #e83e8c;
-   --red: #dc3545;
-   --orange: #fd7e14;
-   --yellow: #ffc107;
-   --green: #28a745;
-   --teal: #20c997;
-   --cyan: #17a2b8;
-   --white: #fff;
-   --gray: #6c757d;
-   --gray-dark: #343a40;
-   --primary: #4699FE; /* 007bff */
-   --secondary: #6c757d;
-   --success: #28a745;
-   --info: #17a2b8;
-   --warning: #ffc107;
-   --danger: #dc3545;
-   --light: #f8f9fa;
-   --dark: #343a40;
-   --breakpoint-xs: 0;
-   --breakpoint-sm: 576px;
-   --breakpoint-md: 768px;
-   --breakpoint-lg: 992px;
-   --breakpoint-xl: 1200px;
-   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+ /* ----- General Overrides ----- */
+
+ a {
+     color: #48A9FD;
+     text-decoration: none;
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects;
  }
+
+ a:hover {
+   color: #258BE3;
+   text-decoration: underline;
+ }
+
+ .btn-outline-primary {
+     color: #48A9FD;
+     background-color: transparent;
+     background-image: none;
+     border-color: #48A9FD;
+ }
+
+ .btn-outline-primary:not(:disabled):not(.disabled).active,
+ .btn-outline-primary:not(:disabled):not(.disabled):active,
+ .show > .btn-outline-primary.dropdown-toggle {
+     color: #fff;
+     background-color: #48A9FD;
+     border-color: #48A9FD;
+ }
+
+
+ /* ----- Navbar ----- */
+
+ .nav-pills .nav-link.active, .nav-pills .show >.nav-link {
+     color: #fff;
+     background-color: #48A9FD;
+ }
+
+ .nav-link {
+     display: block;
+     padding: .5rem .75rem .5rem .75rem;
+     margin: 0 .75rem 0 0;
+ }
+
+ .app-navbar {
+   font-weight: 400;
+   -webkit-font-smoothing: antialiased;
+ }
+ .app-navbar .form-control {
+   box-shadow: none;
+ }
+ .app-navbar .navbar-brand img {
+   width: 85px;
+ }
+ .app-navbar .navbar-collapse {
+   max-height: inherit;
+ }
+ .app-navbar .navbar-collapse:after {
+   height: 100vh;
+ }
+ .app-navbar .form-control {
+   border-color: #1C73A5;
+ }
+ .app-navbar .app-notifications {
+   margin-left: 1rem;
+   padding-bottom: 4px !important;
+   padding-top: 4px !important;
+ }
+ .app-notifications .icon:before {
+   font-size: 20px;
+ }
+ @media (min-width: 768px) {
+   .app-navbar .navbar-collapse:after {
+     height: auto;
+   }
+ }
+ @media (max-width: 768px) {
+   .app-search {
+     margin-top: -1px;
+   }
+ }
+
 
 /* ----- Custom Labels ----- */
 
@@ -141,6 +193,10 @@
     margin-right: 0;
     margin-left: 0;
     border-width: .2rem;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #48A9FD;
 }
 
 /* ----- Paya Recurring Switch ----- */
@@ -258,10 +314,6 @@
 }
 
 
-/* ----- Date Picker ----- */
-
-
-
 /* Docs overrides */
 
 .highlight {
@@ -287,52 +339,6 @@ strong {
   color: #818182;
   background-color: #ffffff;
   border-color: #f8f8f8;
-}
-
-/* ----- Navbar ----- */
-
-.nav-link {
-    display: block;
-    padding: .5rem .75rem .5rem .75rem;
-    margin: 0 .75rem 0 0;
-}
-
-.app-navbar {
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-}
-.app-navbar .form-control {
-  box-shadow: none;
-}
-.app-navbar .navbar-brand img {
-  width: 85px;
-}
-.app-navbar .navbar-collapse {
-  max-height: inherit;
-}
-.app-navbar .navbar-collapse:after {
-  height: 100vh;
-}
-.app-navbar .form-control {
-  border-color: #1C73A5;
-}
-.app-navbar .app-notifications {
-  margin-left: 1rem;
-  padding-bottom: 4px !important;
-  padding-top: 4px !important;
-}
-.app-notifications .icon:before {
-  font-size: 20px;
-}
-@media (min-width: 768px) {
-  .app-navbar .navbar-collapse:after {
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .app-search {
-    margin-top: -1px;
-  }
 }
 
 
