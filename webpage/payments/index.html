@@ -9,9 +9,10 @@
 
     <title>Paya Payments</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS & custom Paya CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="../css/paya.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -40,67 +41,60 @@
             <div class="card-body">
               <h3 class="card-title">Payment Options</h3>
               <form>
-                <!-- <div class="mt-5">
+                <div class="mt-5">
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadioInline1">Credit or Debit Card</label>
+                    <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
+                    <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
                   </div>
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Bank Account</label>
+                    <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
+                    <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
                   </div>
                   <hr>
-                </div> -->
-                <ul class="nav nav-pills my-5" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Credit or Debit Card</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Bank Account</a>
-                  </li>
-                </ul>
+                </div>
 
                 <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="form-row paya mt-4">
-                      <div class="form-group col-md-6">
+                  <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="form-row mt-4">
+                      <div class="form-group paya col-md-6">
                         <label for="inputFn">First Name</label>
-                        <input type="text" class="form-control" id="inputFn" placeholder="First name...">
+                        <input type="text" class="input" id="inputFn" placeholder="First name...">
                       </div>
-                      <div class="form-group col-md-6">
+                      <div class="form-group paya col-md-6">
                         <label for="inputLn">Last Name</label>
-                        <input type="text" class="form-control" id="inputLn" placeholder="Last name...">
+                        <input type="text" class="input" id="inputLn" placeholder="Last name...">
                       </div>
                     </div>
                     <div class="form-group paya">
                       <label for="inputBusinessName">Business name</label>
-                      <input type="text" class="form-control" id="inputBusinessName" placeholder="Optional">
+                      <input type="text" class="input" id="inputBusinessName" placeholder="Optional">
                     </div>
                     <div class="form-row">
                       <div class="form-group paya col-md-6">
                         <label for="inputCardNumber">Card number</label>
-                        <input type="text" class="form-control" id="inputCardNumber" placeholder="0000-0000-0000-0000">
+                        <input type="text" class="input" id="inputCardNumber" placeholder="0000-0000-0000-0000">
                       </div>
+                      <!-- <div class="form-group paya col-md-6">
+                        <label for="inputCardNumber">Card number</label>
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" id="inputCardNumber" placeholder="0000-0000-0000-0000" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">ICON</span>
+                          </div>
+                        </div>
+                      </div> -->
                       <div class="form-group paya col-md-2">
                         <label for="inputCardNumber">Expiration</label>
-                        <input type="text" class="form-control" id="inputExpiration" placeholder="MM/YY">
+                        <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
                       </div>
                       <div class="form-group paya col-md-4">
                         <label for="inputSecurity">Security Code</label>
-                        <input type="text" class="form-control" id="inputSecurity" placeholder="0000">
+                        <input type="text" class="input" id="inputSecurity" placeholder="0000">
                       </div>
-                      <!-- Small recurring switch -->
-                      <!-- <div class="form-group col-md-12 pt-4 mb-0 border-top">
-                        <span class="switch switch-sm">
-                          <input type="checkbox" class="switch" id="switch-sm">
-                          <label class="custom-label" for="switch-sm">&nbsp;Make this a recurring payment</label>
-                        </span>
-                        <span class="float-right pt-1"><a class="text-muted small" href="#">Learn more</a></span>
-                      </div> -->
                     </div>
                   </div>
 
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="form-row paya mt-4">
                       <div class="form-group col-md-6">
                         <label for="inputFn">First Name</label>
@@ -139,19 +133,11 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Small recurring switch -->
-                      <!-- <div class="form-group col-md-12 pt-4 mb-0 border-top">
-                        <span class="switch switch-sm">
-                          <input type="checkbox" class="switch" id="switch-sm">
-                          <label class="custom-label" for="switch-sm">&nbsp;Make this a recurring payment</label>
-                        </span>
-                        <span class="float-right pt-1"><a class="text-muted small" href="#">Learn more</a></span>
-                      </div> -->
                     </div>
                   </div>
                 </div>
-
               </div>
+
               <div class="card-footer border-top-0">
                 <div class="form-group col-md-12 mt-2 mb-0 pl-0">
                   <span class="switch switch-sm">
@@ -163,7 +149,6 @@
               </div>
             </form>
           </div>
-
         </div>
 
         <div class="col-md-4">
@@ -189,5 +174,6 @@
     <script src="../js/vendor/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/vendor/holder.min.js"></script>
+    <script src="../js/paya.js"></script>
   </body>
 </html>
