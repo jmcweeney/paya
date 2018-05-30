@@ -1,6 +1,6 @@
 /*
- * Custom styles
- * (Bootstrap is intact :)
+ * Custom styles that override default Bootstrap 4
+ * Author: Jeff McWeeney (jeff.mcweeney@paya.com)
  *
  */
 
@@ -17,6 +17,9 @@
  a:hover {
    color: #258BE3;
    text-decoration: underline;
+ }
+ a, button, input, select, textarea {
+   -webkit-tap-highlight-color: transparent;
  }
 
  .btn-outline-primary {
@@ -86,8 +89,7 @@
    }
  }
 
-
-/* ----- Custom Labels ----- */
+/* ----- Custom Forms ----- */
 
 .paya label {
   display: inline-block;
@@ -95,6 +97,9 @@
   font-size: .75em;
   color: #666666;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .paya-label {
@@ -104,6 +109,56 @@
   color: #666666;
   font-weight: 600;
 }
+
+.paya .input {
+  width: 100%;
+  color: #000;
+  background: transparent;
+  padding: 5px 0 6px 0;
+  border-bottom: 1px solid #ced4da;
+  transition: border-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.paya input,
+.paya button,
+.paya select {
+    -webkit-animation: 1ms void-animation-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border-style: none;
+    border-radius: 0;
+  }
+
+.paya .input::-webkit-input-placeholder {
+  color: #9B9B9B;
+}
+
+.paya .input::-moz-placeholder {
+  color: #9B9B9B;
+}
+
+.paya .input:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+.paya .input:focus {
+  border-color: #000;
+}
+.paya .input-invalid {
+  border-color: #ffc7ee;
+}
+
+.paya input:-webkit-autofill,
+.paya select:-webkit-autofill {
+  -webkit-text-fill-color: #fce883;
+  transition: background-color 100000000s;
+  -webkit-animation: 1ms void-animation-out;
+}
+
+/* ----- Custom Labels ----- */
+
 
 .form-control {
   display: block;
@@ -155,6 +210,9 @@
 .custom-control-label {
   font-weight: 600;
 }
+.custom-control-header {
+  font-size: 1.15rem;
+}
 
 .custom-select {
   display: inline-block;
@@ -184,10 +242,10 @@
   background-color: #fff;
 }
 
-.custom-control-label {
+/* .custom-control-label {
   font-weight: 500;
   font-size: 95%;
-}
+} */
 .custom-control-spacer {
     padding: 0.75rem;
     margin-right: 0;

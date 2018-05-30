@@ -1,524 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="keywords" content="">
     <meta name="author" content="">
+    <link rel="icon" href="../img/favicon.ico">
 
-    <title>Paya UI Overview</title>
+    <title>Paya Payments</title>
 
-    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-
-    <link href="css/toolkit-light.css" rel="stylesheet">
-
-    <style>
-      .datepicker datepicker-dropdown dropdown-menu datepicker-orient-left datepicker-orient-top {
-        top: 95px !important;
-        left: 700px;
-        display: block;
-      }
-    </style>
-
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../css/paya.css" rel="stylesheet">
+	<script>
+		function changePaymentMethod(method) {
+			if (method == "card") {
+				$("#pills-card-payment").addClass('active');
+				$("#pills-card-payment").addClass('show');
+				$("#pills-bank-account").removeClass('active');
+				$("#pills-bank-account").removeClass('show');
+			}
+			else {
+				$("#pills-card-payment").removeClass('show');
+				$("#pills-card-payment").removeClass('active');
+				$("#pills-bank-account").addClass('active');
+				$("#pills-bank-account").addClass('show');
+			}
+		}
+	</script>
   </head>
 
-<body>
-  <div class="container">
-    <div class="row my-5 ">
-      <div class="col-md-3 sidebar">
-        <nav class="sidebar-nav">
-          <div class="sidebar-header">
-            <button class="nav-toggler nav-toggler-md sidebar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggleable-md">
-              <span class="sr-only">Toggle nav</span>
-            </button>
-            <a class="sidebar-brand-icon img-responsive" href="../index.html">
-              <img src="img/paya-logo.png">
-              <!-- <span class="icon icon-leaf sidebar-brand-icon"></span> -->
-            </a>
-          </div>
+  <body>
 
-          <div class="collapse nav-toggleable-md" id="nav-toggleable-md">
-            <form class="sidebar-form">
-              <input class="form-control" type="text" placeholder="Search...">
-              <button type="submit" class="btn-link">
-                <span class="icon icon-magnifying-glass"></span>
-              </button>
+    <nav class="navbar justify-content-between mt-2 mb-4">
+      <div class="my-0 mr-md-auto btn-group">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select a Device
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Front Desk One</a>
+          <a class="dropdown-item" href="#">Front Desk Two</a>
+          <a class="dropdown-item" href="#">Back Office</a>
+        </div>
+      </div>
+      <div>
+        <a class="btn btn-outline-secondary" href="#">Settings</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Payment Options -->
+      <div class="row pt-md-5">
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Payment Options</h3>
+              <form>
+                <div class="mt-5">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
+                    <label class="custom-control-label" for="cardPayment">Credit or Debit Card</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
+                    <label class="custom-control-label" for="bankAccountPayment">Bank Account</label>
+                  </div>
+                  <hr>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-card-payment">
+                    <div class="form-row paya mt-4">
+                      <div class="form-group col-md-6">
+                        <label for="inputFn">First Name</label>
+                        <input type="text" class="form-control" id="inputFn" placeholder="First name...">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLn">Last Name</label>
+                        <input type="text" class="form-control" id="inputLn" placeholder="Last name...">
+                      </div>
+                    </div>
+                    <div class="form-group paya">
+                      <label for="inputBusinessName">Business name</label>
+                      <input type="text" class="form-control" id="inputBusinessName" placeholder="Optional">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group paya col-md-6">
+                        <label for="inputCardNumber">Card number</label>
+                        <input type="text" class="form-control" id="inputCardNumber" placeholder="0000-0000-0000-0000">
+                      </div>
+                      <div class="form-group paya col-md-2">
+                        <label for="inputCardNumber">Expiration</label>
+                        <input type="text" class="form-control" id="inputExpiration" placeholder="MM/YY">
+                      </div>
+                      <div class="form-group paya col-md-4">
+                        <label for="inputSecurity">Security Code</label>
+                        <input type="text" class="form-control" id="inputSecurity" placeholder="0000">
+                      </div>
+                      <!-- Small recurring switch -->
+                      <!-- <div class="form-group col-md-12 pt-4 mb-0 border-top">
+                        <span class="switch switch-sm">
+                          <input type="checkbox" class="switch" id="switch-sm">
+                          <label class="custom-label" for="switch-sm">&nbsp;Make this a recurring payment</label>
+                        </span>
+                        <span class="float-right pt-1"><a class="text-muted small" href="#">Learn more</a></span>
+                      </div> -->
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-bank-account">
+                    <div class="form-row paya mt-4">
+                      <div class="form-group col-md-6">
+                        <label for="inputFn">First Name</label>
+                        <input type="text" class="form-control" id="inputFn" placeholder="First name...">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLn">Last Name</label>
+                        <input type="text" class="form-control" id="inputLn" placeholder="Last name...">
+                      </div>
+                    </div>
+                    <div class="form-row paya">
+                      <div class="form-group col-md-6">
+                        <label for="inputFn">Routing number</label>
+                        <input type="text" class="form-control" id="inputFn" placeholder="000-000-000">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLn">&nbsp;</label>
+                        <span>Img coming soon...</span>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label class="paya-label "for="inputCardNumber">Account number</label>
+                        <input type="text" class="form-control" id="inputCardNumber" placeholder="000-000-000-000">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="paya-label" for="inputCardNumber">Account type</label>
+                        <div class="custom-control-spacer">
+                          <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="customRadioInline1">Checking</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline2">Savings</label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Small recurring switch -->
+                      <!-- <div class="form-group col-md-12 pt-4 mb-0 border-top">
+                        <span class="switch switch-sm">
+                          <input type="checkbox" class="switch" id="switch-sm">
+                          <label class="custom-label" for="switch-sm">&nbsp;Make this a recurring payment</label>
+                        </span>
+                        <span class="float-right pt-1"><a class="text-muted small" href="#">Learn more</a></span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer border-top-0">
+                <div class="form-group col-md-12 mt-2 mb-0 pl-0">
+                  <span class="switch switch-sm">
+                    <input type="checkbox" class="switch" id="switch-sm">
+                    <label class="custom-label" for="switch-sm">&nbsp;Make this a recurring payment</label>
+                  </span>
+                  <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span>
+                </div>
+              </div>
             </form>
-            <ul class="nav nav-pills nav-stacked flex-column">
-              <li class="nav-header mb-3">Design Elements</li>
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Overview</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="payments/index.html">Payments</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Transaction History</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link "href="#">Settings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Receipt</a>
-              </li>
-
-              <li class="nav-header">More</li>
-              <!-- <li class="nav-item">
-                <a class="nav-link "href="docs/index.html">
-                  Toolkit docs
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="https://marvelapp.com/45b38hg" target="blank">
-                  Marvel Prototype
-                </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link " href="index-dark.html">Dark UI</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#docsModal" data-toggle="modal">
-                  Example modal
-                </a>
-              </li>
-            </ul>
-            <hr class="visible-xs mt-3">
           </div>
-        </nav>
-      </div>
-      <div class="col-md-9 content">
-        <div class="dashhead">
-  <div class="dashhead-titles">
-    <h6 class="dashhead-subtitle">Design</h6>
-    <h2 class="dashhead-title">User Interface Documents</h2>
-  </div>
 
-  <div class="btn-toolbar dashhead-toolbar">
-    <div class="btn-toolbar-item input-with-icon">
-      <input type="text" value="Today's date..." class="form-control" data-provide="datepicker">
-      <span class="icon icon-calendar"></span>
-    </div>
-  </div>
-</div>
+        </div>
 
-<hr class="mt-3">
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <span class="text-gray-dark font-weight-bold"><strong>Finally, some design.</strong></span><span class="text-gray-dark"> I'm using AWS until I'm fully setup in BitBucket...</span>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-<div class="alert alert-success p-4" role="alert">
-  <h4 class="pb-3">05/25/18 — Happy Friday</h4>
-  <h5><strong>Update:</strong></h5>
-  <p class="w-75">Check out the link <strong><a class="text-white" href="payments/index.html">Payments</a></strong> in the left nav to preview the WIP "Payment Options" card. It has the proper functionality to get us started. But, I'd like to refine the way the tabs feel.</p>
-  <p>And, I'm working on adding the graphic for the 'Routing Number' and 'Account Number'.</p>
-  <hr>
-  <p class="mb-0">Stay cool.</p>
-</div>
-
-<div class="row text-center mt-5">
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[230, 130]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Returning', 'New']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Traffic</strong>
-    <h4>New vs Returning</h4>
-  </div>
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[330, 30]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Returning', 'New']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Revenue</strong>
-    <h4>New vs Recurring</h4>
-  </div>
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[100, 260]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Referrals', 'Direct']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Traffic</strong>
-    <h4>Direct vs Referrals</h4>
-  </div>
-</div>
-
-<div class="hr-divider mt-5 mb-3">
-  <h3 class="hr-divider-content hr-divider-heading">Quick stats</h3>
-</div>
-
-<div class="row statcards">
-  <div class="col-md-6 col-xl-3 mb-3 mb-md-4 mb-xl-0">
-    <div class="statcard statcard-success">
-      <div class="p-3">
-        <span class="statcard-desc">Page views</span>
-        <h2 class="statcard-number">
-          1,293
-          <small class="delta-indicator delta-positive">5%</small>
-        </h2>
-        <hr class="statcard-hr mb-0">
-      </div>
-      <canvas id="sparkline1" width="378" height="94"
-        class="sparkline"
-        data-chart="spark-line"
-        data-dataset="[[28,68,41,43,96,45,100]]"
-        data-labels="['a','b','c','d','e','f','g']"
-        style="width: 189px; height: 47px;"></canvas>
-    </div>
-  </div>
-  <div class="col-md-6 col-xl-3 mb-3 mb-md-4 mb-xl-0">
-    <div class="statcard statcard-danger">
-      <div class="p-3">
-        <span class="statcard-desc">Downloads</span>
-        <h2 class="statcard-number">
-          758
-          <small class="delta-indicator delta-negative">1.3%</small>
-        </h2>
-        <hr class="statcard-hr mb-0">
-      </div>
-      <canvas id="sparkline1" width="378" height="94"
-        class="sparkline"
-        data-chart="spark-line"
-        data-dataset="[[4,34,64,27,96,50,80]]"
-        data-labels="['a','b','c','d','e','f','g']"
-        style="width: 189px; height: 47px;"></canvas>
-    </div>
-  </div>
-  <div class="col-md-6 col-xl-3 mb-3 mb-md-4 mb-xl-0">
-    <div class="statcard statcard-info">
-      <div class="p-3">
-        <span class="statcard-desc">Sign-ups</span>
-        <h2 class="statcard-number">
-          1,293
-          <small class="delta-indicator delta-positive">6.75%</small>
-        </h2>
-        <hr class="statcard-hr mb-0">
-      </div>
-      <canvas id="sparkline1" width="378" height="94"
-        class="sparkline"
-        data-chart="spark-line"
-        data-dataset="[[12,38,32,60,36,54,68]]"
-        data-labels="['a','b','c','d','e','f','g']"
-        style="width: 189px; height: 47px;"></canvas>
-    </div>
-  </div>
-  <div class="col-md-6 col-xl-3 mb-3 mb-md-4 mb-xl-0">
-    <div class="statcard statcard-warning">
-      <div class="p-3">
-        <span class="statcard-desc">Downloads</span>
-        <h2 class="statcard-number">
-          758
-          <small class="delta-indicator delta-negative">1.3%</small>
-        </h2>
-        <hr class="statcard-hr mb-0">
-      </div>
-      <canvas id="sparkline1" width="378" height="94" class="sparkline"
-        data-chart="spark-line"
-        data-dataset="[[43,48,52,58,50,95,100]]"
-        data-labels="['a','b','c','d','e','f','g']"
-        style="width: 189px; height: 47px;"></canvas>
-    </div>
-  </div>
-</div>
-
-<hr class="mt-5">
-
-<div class="row">
-  <div class="col-md-6 mb-5">
-    <div class="list-group mb-3">
-      <h6 class="list-group-header">
-        Cities
-      </h6>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 62.4%;"></span>
-          <span>Reston</span>
-          <span class="text-muted">62.4%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 15.0%;"></span>
-          <span>Atlanta</span>
-          <span class="text-muted">15.0%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 5.0%;"></span>
-          <span>Ft. Walton</span>
-          <span class="text-muted">5.0%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 5.0%;"></span>
-          <span>San Diego</span>
-          <span class="text-muted">5.0%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 4.5%;"></span>
-          <span>Staten Island</span>
-          <span class="text-muted">4.5%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 2.3%;"></span>
-          <span>Toledo</span>
-          <span class="text-muted">2.3%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 1.7%;"></span>
-          <span>Stamford</span>
-          <span class="text-muted">1.7%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 1.5%;"></span>
-          <span>Miami</span>
-          <span class="text-muted">1.5%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 1.4%;"></span>
-          <span>Jersey City</span>
-          <span class="text-muted">1.4%</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 1.2%;"></span>
-          <span>Dunwoody</span>
-          <span class="text-muted">1.2%</span>
-        </a>
-
-    </div>
-    <a href="#" class="btn btn-outline-primary px-3">All Cities</a>
-  </div>
-  <div class="col-md-6 mb-5">
-    <div class="list-group mb-3">
-      <h6 class="list-group-header">
-        Most visited pages
-      </h6>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/ (Logged out)</span>
-          <span class="text-muted">3,929,481</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/ (Logged in)</span>
-          <span class="text-muted">1,143,393</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/payments</span>
-          <span class="text-muted">938,287</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/reports</span>
-          <span class="text-muted">749,393</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/activity</span>
-          <span class="text-muted">695,912</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/users/mbuchannon</span>
-          <span class="text-muted">501,938</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/dashboard</span>
-          <span class="text-muted">392,842</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/activity/monthly</span>
-          <span class="text-muted">298,183</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/another/directory/and/page-title</span>
-          <span class="text-muted">193,129</span>
-        </a>
-
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span>/one-more/page/directory/file-name</span>
-          <span class="text-muted">93,382</span>
-        </a>
-
-    </div>
-    <a href="#" class="btn btn-outline-primary px-3">View all pages</a>
-  </div>
-</div>
-
-<div class="list-group mb-3">
-  <h6 class="list-group-header">
-    Devices and resolutions
-  </h6>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Desktop (1920x1080)</span>
-      <span class="text-muted">3,929,481</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Desktop (1366x768)</span>
-      <span class="text-muted">1,143,393</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Desktop (1440x900)</span>
-      <span class="text-muted">938,287</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Desktop (1280x800)</span>
-      <span class="text-muted">749,393</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Tablet (1024x768)</span>
-      <span class="text-muted">695,912</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Tablet (768x1024)</span>
-      <span class="text-muted">501,938</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Phone (320x480)</span>
-      <span class="text-muted">392,842</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Phone (720x450)</span>
-      <span class="text-muted">298,183</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Desktop (2560x1080)</span>
-      <span class="text-muted">193,129</span>
-    </a>
-
-    <a class="list-group-item list-group-item-action justify-content-between" href="#">
-      <span>Desktop (2560x1600)</span>
-      <span class="text-muted">93,382</span>
-    </a>
-
-</div>
-<a href="#" class="btn btn-outline-primary px-3">View all devices</a>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Example modal</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <p>Aww yeah, a fresh model comin' atcha...</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cool, got it!</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Users</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      </div>
-
-      <div class="modal-body p-0">
-        <div class="modal-body-scroller">
-          <ul class="media-list media-list-users list-group">
-            <li class="list-group-item">
-              <div class="media w-100">
-                <img class="media-object d-flex align-self-start mr-3" src="assets/img/avatar-fat.jpg">
-                <div class="media-body">
-                  <button class="btn btn-secondary btn-sm float-right">
-                    <span class="glyphicon glyphicon-user"></span> Follow
-                  </button>
-                  <strong>Jacob Thornton</strong>
-                  <p>@fat - San Francisco</p>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="media w-100">
-                <img class="media-object d-flex align-self-start mr-3" src="assets/img/avatar-dhg.png">
-                <div class="media-body">
-                  <button class="btn btn-secondary btn-sm float-right">
-                    <span class="glyphicon glyphicon-user"></span> Follow
-                  </button>
-                  <strong>Dave Gamache</strong>
-                  <p>@dhg - Palo Alto</p>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="media w-100">
-                <img class="media-object d-flex align-self-start mr-3" src="assets/img/avatar-mdo.png">
-                <div class="media-body">
-                  <button class="btn btn-secondary btn-sm float-right">
-                    <span class="glyphicon glyphicon-user"></span> Follow
-                  </button>
-                  <strong>Mark Otto</strong>
-                  <p>@mdo - San Francisco</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <!-- <div class="card-header pt-4">
+              <h5 class="card-title">Transaction Summary</h5>
+            </div> -->
+            <div class="card-body">
+              <h5 class="card-title mb-4">Transaction Summary</h5>
+              <p class="card-text text-muted">Awaiting transaction information...</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/chart.js"></script>
-    <script src="js/tablesorter.min.js"></script>
-    <script src="js/toolkit.js"></script>
-    <script src="js/application.js"></script>
-    <script>
-      // execute/clear BS loaders for docs
-      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
