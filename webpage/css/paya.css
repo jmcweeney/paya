@@ -7,6 +7,10 @@
 
  /* ----- General Overrides ----- */
 
+/* body {
+  background-color: rgba(248,252,255,1.0);
+} */
+
  a {
      color: #48A9FD;
      text-decoration: none;
@@ -66,6 +70,25 @@
 }
 
  /* ----- Navbar ----- */
+
+.navbar {
+  border-bottom: 1px solid #E5E9EF;
+}
+
+.navbar-brand {
+   display: inline-block;
+   padding-top: 0.3125rem;
+   padding-bottom: 0.3125rem;
+   margin-right: 1rem;
+   font-size: 1.25rem;
+   line-height: inherit;
+   white-space: nowrap;
+   font-weight: 600;
+ }
+
+ .navbar-brand:hover, .navbar-brand:focus {
+   text-decoration: none;
+ }
 
  .nav-pills .nav-link.active, .nav-pills .show >.nav-link {
      color: #fff;
@@ -221,9 +244,6 @@
   width:100%
 }
 
-
-/* ----- Custom Forms ----- */
-
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -326,15 +346,35 @@
     background-color: #48A9FD;
 }
 
-.btn-circle {
+.btn-circle-sm {
   width: 30px;
   height: 30px;
   text-align: center;
   padding: 6px 0;
   font-size: 0.75rem;
   line-height: 1rem;
-  border-radius: 1rem;
+  border-radius: 50%;
   color: #fff;
+}
+
+.btn-circle-lg {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  padding: .85rem 0;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 50%;
+  color: #666;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
 }
 
 
