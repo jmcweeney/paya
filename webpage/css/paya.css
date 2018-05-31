@@ -37,6 +37,10 @@
      border-color: #48A9FD;
  }
 
+ .text-gray {
+   color: #999 !important;
+ }
+
 /* ----- Typography ---- */
 
 .paya-display-2 {
@@ -47,6 +51,11 @@
 
 .paya-display-3 {
   font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.paya-display-4 {
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -107,7 +116,7 @@
 .card-header {
   padding: 0.75rem 2rem;
   margin-bottom: 0;
-  background-color: rgba(255,252,255,1.0);
+  background-color: rgba(255,255,255,1.0);
   border-bottom: none;
 }
 
@@ -124,11 +133,12 @@
     border-top: 1px solid rgba(0,0,0,.125);
 }
 
+
 /* ----- Custom Forms ----- */
 
 .paya label {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-size: .75em;
   color: #666666;
   font-weight: 600;

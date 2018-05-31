@@ -34,12 +34,66 @@
     </nav>
 
     <div class="container">
-      <!-- Payment Options -->
-      <div class="row pt-md-5">
-        <div class="col-md-8">
+      <div class="row justify-content-center pt-md-5">
+        <div class="col-md-6">
+
+          <!-- Customer Details -->
           <div class="card mb-3">
             <div class="card-header pt-4">
-              <h2 class="paya-display-2 card-title">Payment Options</h2>
+              <h4 class="paya-display-4 card-title">Customer Details</h4>
+            </div>
+            <div class="card-body pb-0">
+              <form>
+                <div class="form-row">
+                  <div class="form-group paya col-md-6">
+                    <label for="inputFn">First Name</label>
+                    <input type="text" class="input" id="inputFn" placeholder="Michael">
+                  </div>
+                  <div class="form-group paya col-md-6">
+                    <label for="inputLn">Last Name</label>
+                    <input type="text" class="input" id="inputLn" placeholder="Scott">
+                  </div>
+                </div>
+                <div class="form-group paya">
+                  <label for="inputAddr">Billing address</label>
+                  <input type="text" class="input" id="inputAddr1" placeholder="12120 Sunset Hills">
+                  <input type="text" class="input mt-3" id="inputAddr2" placeholder="Suite 500">
+                </div>
+                <div class="form-row">
+                  <div class="form-group paya col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="input" id="inputCity" placeholder="Reston">
+                  </div>
+                  <div class="form-group paya col-6 col-md-2">
+                    <label for="inputState">State</label>
+                    <input type="text" class="input" id="inputState" placeholder="VA">
+                  </div>
+                  <div class="form-group paya col-6 col-md-4">
+                    <label for="inputZip">Zip Code</label>
+                    <input type="text" class="input" id="inputZip" placeholder="20190">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group paya col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="input" id="inputEmail" placeholder="your.name@paya.com">
+                  </div>
+                  <div class="form-group paya col-md-6">
+                    <label for="inputCardNumber">Phone number</label>
+                    <input type="text" class="input" id="inputPhone" placeholder="(703) 848-2980">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer mt-0 pt-0 border-top-0">
+                <small class="text-gray">Receipts and notifications will be sent to this email address or phone number.</small>
+              </div>
+            </form>
+          </div>
+
+        <!-- Payment Options -->
+          <div class="card mb-3">
+            <div class="card-header pt-4">
+             <h4 class="paya-display-4 card-title">Payment Options</h4>
               <form>
                 <div class="mt-5 mb-1">
                   <div class="custom-control custom-radio custom-control-inline">
@@ -74,13 +128,13 @@
                         <label for="inputCardNumber">Card</label>
                         <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
                       </div>
-                      <div class="form-group paya col-md-2">
+                      <div class="form-group paya col-6 col-md-2">
                         <label for="inputCardNumber">Expiration</label>
                         <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
                       </div>
-                      <div class="form-group paya col-md-4">
+                      <div class="form-group paya col-6 col-md-4">
                         <label for="inputSecurity">Security Code</label>
-                        <input type="text" class="input" id="inputSecurity" placeholder="123">
+                        <input type="text" class="input" id="inputSecurity" placeholder="1234">
                       </div>
                     </div>
                   </div>
@@ -113,7 +167,7 @@
                       </div>
                       <div class="form-group col-md-6">
                         <label class="paya-label" for="inputCardNumber">Account type</label>
-                        <div class="custom-control-spacer">
+                        <div class="custom-control-spacer mx-0 px-0">
                           <div class="custom-control custom-radio custom-control-inline">
                             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
                             <label class="custom-control-label" for="customRadioInline1">Checking</label>
@@ -133,7 +187,7 @@
                 <div class="form-group col-md-12 mb-0 pl-0">
                   <span class="switch switch-sm">
                     <input type="checkbox" class="switch" id="switch-sm">
-                    <label for="switch-sm">&nbsp;Make this a recurring payment</label>
+                    <label for="switch-sm">&nbsp;Recurring payment</label>
                   </span>
                   <!-- <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span> -->
                 </div>
@@ -141,7 +195,6 @@
             </form>
           </div>
         </div>
-
         <div class="col-md-4">
           <div class="card mb-3">
             <!-- <div class="card-header pt-4">
