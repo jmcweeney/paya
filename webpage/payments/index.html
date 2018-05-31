@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS & custom Paya CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="../css/paya.css" rel="stylesheet">
 
   </head>
@@ -34,13 +35,13 @@
     </nav>
 
     <div class="container">
-      <div class="row justify-content-center pt-md-5">
-        <div class="col-md-6">
+      <div class="row justify-content-center pt-md-3">
+        <div class="col-md-8 col-lg-6">
 
           <!-- Customer Details -->
           <div class="card mb-3">
             <div class="card-header pt-4">
-              <h4 class="paya-display-4 card-title">Customer Details</h4>
+              <h4 class="card-title">Customer Details</h4>
             </div>
             <div class="card-body pb-0">
               <form>
@@ -76,7 +77,7 @@
                 <div class="form-row">
                   <div class="form-group paya col-md-6">
                     <label for="inputEmail">Email</label>
-                    <input type="text" class="input" id="inputEmail" placeholder="your.name@paya.com">
+                    <input type="text" class="input" id="inputEmail" placeholder="help@paya.com">
                   </div>
                   <div class="form-group paya col-md-6">
                     <label for="inputCardNumber">Phone number</label>
@@ -93,7 +94,7 @@
         <!-- Payment Options -->
           <div class="card mb-3">
             <div class="card-header pt-4">
-             <h4 class="paya-display-4 card-title">Payment Options</h4>
+              <h4 class="card-title">Payment Options</h4>
               <form>
                 <div class="mt-5 mb-1">
                   <div class="custom-control custom-radio custom-control-inline">
@@ -126,8 +127,12 @@
                     <div class="form-row">
                       <div class="form-group paya col-md-6">
                         <label for="inputCardNumber">Card</label>
+                        <div class="card-brand">
+                          <i class="fas fa-credit-card card-brand-icon"></i>
                         <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
                       </div>
+                      </div>
+
                       <div class="form-group paya col-6 col-md-2">
                         <label for="inputCardNumber">Expiration</label>
                         <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
@@ -156,8 +161,9 @@
                         <input type="text" class="input" id="inputFn" placeholder="123-123-123">
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="inputLn">&nbsp;</label>
-                        <span>Img coming soon...</span>
+<span class="align-baseline">
+                        <img src="../img/bank-numbers.png" />
+                      </span>
                       </div>
                     </div>
                     <div class="form-row">
@@ -195,14 +201,13 @@
             </form>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <div class="card mb-3">
-            <!-- <div class="card-header pt-4">
-              <h5 class="card-title">Transaction Summary</h5>
-            </div> -->
+            <div class="card-header pt-4">
+              <h5 class="card-title text-muted">Transaction Summary</h5>
+            </div>
             <div class="card-body">
-              <h5 class="card-title mb-4">Transaction Summary</h5>
-              <p class="card-text text-muted">Awaiting transaction information...</p>
+              <p class="card-text text-gray">Awaiting transaction information...</p>
             </div>
           </div>
         </div>

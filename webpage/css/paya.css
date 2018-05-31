@@ -59,6 +59,11 @@
   font-weight: 300;
   line-height: 1.2;
 }
+.paya-display-5 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
 
  /* ----- Navbar ----- */
 
@@ -201,6 +206,21 @@
   transition: background-color 100000000s;
   -webkit-animation: 1ms void-animation-out;
 }
+
+.card-brand {
+  height:30px;
+  position:relative;
+}
+.card-brand-icon {
+  height:15px;
+  position:absolute;
+  right:0;
+  top:10px;
+}
+#inputCardNumber {
+  width:100%
+}
+
 
 /* ----- Custom Labels ----- */
 
