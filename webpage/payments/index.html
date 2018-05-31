@@ -38,6 +38,38 @@
       <div class="row justify-content-center pt-md-3">
         <div class="col-md-8 col-lg-6">
 
+          <!-- Service Details -->
+          <div class="card mb-3">
+            <div class="card-header pt-4">
+              <h4 class="card-title">Service Items</h4>
+            </div>
+            <div class="card-body pb-0">
+              <form>
+                <div class="form-row">
+                  <div class="form-group paya col-md-5">
+                    <label for="inputDesc">Description</label>
+                    <input type="text" class="input" id="inputDesc" placeholder="Office visit">
+                  </div>
+                  <div class="form-group paya col-6 col-md-2">
+                    <label for="inputQty">Quantity</label>
+                    <input type="text" class="input" id="inputQty" placeholder="2">
+                  </div>
+                  <div class="form-group paya col-6 col-md-2">
+                    <label for="inputCost">Cost</label>
+                    <input type="text" class="input" id="inputCost" placeholder="$40.00">
+                  </div>
+                  <div class="form-group paya col-6 col-md-3">
+                    <label for="inputTotal">Total</label>
+                    <input type="text" class="input" id="inputTotal" placeholder="$80.00">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer mt-0 pt-0 border-top-0">
+                <a class="btn btn-primary btn-sm btn-circle" href="#" role="button"><i class="fas fa-plus"></i></a>
+              </div>
+            </form>
+          </div>
+
           <!-- Customer Details -->
           <div class="card mb-3">
             <div class="card-header pt-4">
@@ -46,13 +78,9 @@
             <div class="card-body pb-0">
               <form>
                 <div class="form-row">
-                  <div class="form-group paya col-md-6">
-                    <label for="inputFn">First Name</label>
-                    <input type="text" class="input" id="inputFn" placeholder="Michael">
-                  </div>
-                  <div class="form-group paya col-md-6">
-                    <label for="inputLn">Last Name</label>
-                    <input type="text" class="input" id="inputLn" placeholder="Scott">
+                  <div class="form-group paya col-12">
+                    <label for="inputName">Full name</label>
+                    <input type="text" class="input" id="inputFn" placeholder="Michael Scott">
                   </div>
                 </div>
                 <div class="form-group paya">
@@ -107,17 +135,14 @@
                   </div>
                 </div>
             </div>
-            <div class="card-body">
+            <div class="card-body pb-0">
+                <!-- Credit of Debit Card option -->
                 <div class="tab-content mt-3" id="pills-tabContent">
                   <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="form-row">
-                      <div class="form-group paya col-md-6">
-                        <label for="inputFn">First Name</label>
-                        <input type="text" class="input" id="inputFn" placeholder="Michael">
-                      </div>
-                      <div class="form-group paya col-md-6">
-                        <label for="inputLn">Last Name</label>
-                        <input type="text" class="input" id="inputLn" placeholder="Scott">
+                      <div class="form-group paya col-12">
+                        <label for="inputNameCard">Name on card</label>
+                        <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
                       </div>
                     </div>
                     <div class="form-group paya">
@@ -143,16 +168,12 @@
                       </div>
                     </div>
                   </div>
-
+                  <!-- Bank Account option -->
                   <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="form-row paya">
-                      <div class="form-group col-md-6">
-                        <label for="inputFn">First Name</label>
-                        <input type="text" class="input"  id="inputFn" placeholder="Michael">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputLn">Last Name</label>
-                        <input type="text" class="input"  id="inputLn" placeholder="Scott">
+                    <div class="form-row">
+                      <div class="form-group paya col-12">
+                        <label for="inputNameCard">Name on account</label>
+                        <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
                       </div>
                     </div>
                     <div class="form-row paya">
@@ -161,9 +182,9 @@
                         <input type="text" class="input" id="inputFn" placeholder="123-123-123">
                       </div>
                       <div class="form-group col-md-6">
-<span class="align-baseline">
-                        <img src="../img/bank-numbers.png" />
-                      </span>
+                        <span class="align-baseline">
+                          <img src="../img/bank-numbers.png" />
+                        </span>
                       </div>
                     </div>
                     <div class="form-row">

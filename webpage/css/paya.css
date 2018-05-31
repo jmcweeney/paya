@@ -222,7 +222,7 @@
 }
 
 
-/* ----- Custom Labels ----- */
+/* ----- Custom Forms ----- */
 
 .form-group {
   margin-bottom: 1.5rem;
@@ -325,6 +325,18 @@
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
     background-color: #48A9FD;
 }
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
 
 /* ----- Paya Recurring Switch ----- */
 
