@@ -142,6 +142,32 @@
    }
  }
 
+.sidebar-brand {
+   float: left;
+   height: 60px;
+   line-height: 1rem;
+   color: #555;
+}
+.sidebar-brand > img {
+   height: 1px;
+}
+
+@media (min-width: 576px) {
+     .sidebar-brand > img {
+       height: 60px;
+       }
+}
+
+.sidebar-brand:hover {
+   color: #222;
+   text-decoration: none;
+ }
+
+.sidebar-brand-icon {
+  height: 600px;
+}
+
+
 /* ----- Custom Cards ----- */
 
 .card-header {
