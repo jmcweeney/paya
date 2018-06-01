@@ -63,7 +63,7 @@
       </div>
       <div class="card-body pb-0">
         <!-- One and only Form tag -->
-        <form>
+        <form action="../index.html" method="post">
           <div class="form-row">
             <div class="form-group paya col-12 col-lg-5">
               <label for="inputDesc">Description</label>
@@ -237,12 +237,13 @@
       </div> <!-- /col -->
 
       <div class="col-md-6 col-lg-4">
-        <div class="card transactions mb-3 sticky-top">
-          <div class="card-header pt-4">
+        <div class="card transactions sticky-top">
+          <div class="card-header pt-4 pb-0">
             <h5 class="card-title">Transaction Summary</h5>
             <p class="card-text text-gray">Customer Service No: (703) 555-1212</p>
+            <hr>
           </div>
-          <div class="card-body">
+          <div class="card-body pt-0 my-0">
             <p class="card-text text-gray font-weight-medium mb-0">Merchant</p>
             <ul class="list-group text-gray">
               <li class="list-group-item align-items-center">Staten Island Office</li>
@@ -307,10 +308,9 @@
             <ul class="list-group mb-3">
               <li class="list-group-item d-flex justify-content-between align-items-center text-muted">
                 Cancel
-                <button type="button" class="btn btn-success">Process Payment</button>
+                <button type="submit" class="btn btn-success">Process Payment</button>
               </li>
             </ul>
-
           </div>
         </form>
         </div>
