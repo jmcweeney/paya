@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="../css/paya.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,400italic" rel="stylesheet">
 
 </head>
 
@@ -29,7 +30,7 @@
     </li>
   </ul>
   <ul class="navbar-nav mt-2  mt-lg-0">
-    <a class="nav-link small" href="mailto:jeff.mcweeney@paya.com?subject=Hi from Paya UI...">
+    <a class="nav-link" href="mailto:jeff.mcweeney@paya.com?subject=Hi from Paya UI...">
       Email Support
     </a>
   </ul>
@@ -52,39 +53,39 @@
 </nav>
 
 <div class="container">
-  <div class="row justify-content-center pt-lg-5">
-    <div class="col-md-8 col-lg-6">
+  <div class="row justify-content-center py-4 py-lg-5">
+  <div class="col-md-6 col-lg-6">
 
-      <!-- Service Details -->
-      <div class="card mb-3">
-        <div class="card-header pt-4">
-          <h4 class="card-title">Service Items</h4>
-        </div>
-        <div class="card-body pb-0">
-          <!-- One and only Form tag -->
-          <form>
-            <div class="form-row">
-              <div class="form-group paya col-md-5">
-                <label for="inputDesc">Description</label>
-                <input type="text" class="input" id="inputDesc" placeholder="Office visit">
-              </div>
-              <div class="form-group paya col-6 col-md-2">
-                <label for="inputQty">Quantity</label>
-                <input type="text" class="input" id="inputQty" placeholder="2">
-              </div>
-              <div class="form-group paya col-6 col-md-2">
-                <label for="inputCost">Cost</label>
-                <input type="text" class="input" id="inputCost" placeholder="$40.00">
-              </div>
-              <div class="form-group paya col-6 col-md-3">
-                <label for="inputTotal">Total</label>
-                <input type="text" class="input" id="inputTotal" placeholder="$80.00">
-              </div>
+    <!-- Service Details -->
+    <div class="card mb-3">
+      <div class="card-header pt-4">
+        <h4 class="card-title">Service Items</h4>
+      </div>
+      <div class="card-body pb-0">
+        <!-- One and only Form tag -->
+        <form>
+          <div class="form-row">
+            <div class="form-group paya col-12 col-lg-5">
+              <label for="inputDesc">Description</label>
+              <input type="text" class="input" id="inputDesc" placeholder="Office visit">
+            </div>
+            <div class="form-group paya col-6 col-lg-2">
+              <label for="inputQty">Quantity</label>
+              <input type="text" class="input" id="inputQty" placeholder="2">
+            </div>
+            <div class="form-group paya col-6 col-lg-2">
+              <label for="inputCost">Cost</label>
+              <input type="text" class="input" id="inputCost" placeholder="$40.00">
+            </div>
+            <div class="form-group paya col-6 col-lg-3">
+              <label for="inputTotal">Total</label>
+              <input type="text" class="input" id="inputTotal" placeholder="$80.00">
             </div>
           </div>
-          <div class="card-footer mt-0 pt-0 border-top-0">
-            <a class="btn btn-primary btn-circle-sm" href="#" role="button"><i class="fas fa-plus"></i></a>
-          </div>
+        </div>
+        <div class="card-footer mt-0 pt-0 border-top-0">
+          <a class="btn btn-primary btn-circle-sm" href="#" role="button"><i class="fas fa-plus"></i></a>
+        </div>
       </div>
 
       <!-- Customer Details -->
@@ -98,11 +99,11 @@
                 <label for="inputName">Full name</label>
                 <input type="text" class="input" id="inputFn" placeholder="Michael Scott">
               </div>
-            </div>
-            <div class="form-group paya">
-              <label for="inputAddr">Billing address</label>
-              <input type="text" class="input" id="inputAddr1" placeholder="12120 Sunset Hills Rd">
-              <input type="text" class="input mt-3" id="inputAddr2" placeholder="Suite 500">
+              <div class="form-group paya col-12">
+                <label for="inputAddr">Billing address</label>
+                <input type="text" class="input" id="inputAddr1" placeholder="12120 Sunset Hills Rd">
+                <input type="text" class="input mt-3" id="inputAddr2" placeholder="Suite 500">
+              </div>
             </div>
             <div class="form-row">
               <div class="form-group paya col-md-6">
@@ -119,11 +120,11 @@
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group paya col-md-6">
+              <div class="form-group paya col-12 col-lg-6">
                 <label for="inputEmail">Email</label>
                 <input type="text" class="input" id="inputEmail" placeholder="help@paya.com">
               </div>
-              <div class="form-group paya col-md-6">
+              <div class="form-group paya col-12 col-lg-6">
                 <label for="inputCardNumber">Phone number</label>
                 <input type="text" class="input" id="inputPhone" placeholder="(703) 848-2980">
               </div>
@@ -132,121 +133,189 @@
           <div class="card-footer mt-0 pt-0 border-top-0">
             <small class="text-gray">Receipts and notifications will be sent to this email address or phone number.</small>
           </div>
-      </div>
-
-      <!-- Payment Options -->
-      <div class="card mb-3">
-        <div class="card-header pt-4">
-          <h4 class="card-title">Payment Options</h4>
-            <div class="mt-5 mb-1">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
-                <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
-                <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
-              </div>
-            </div>
         </div>
-      </div>
-      <div class="card-body pb-0">
-        <!-- Credit of Debit Card option -->
-        <div class="tab-content mt-3" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="form-row">
-              <div class="form-group paya col-12">
-                <label for="inputNameCard">Name on card</label>
-                <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
-              </div>
-            </div>
-            <div class="form-group paya">
-              <label for="inputBusinessName">Business name</label>
-              <input type="text" class="input" id="inputBusinessName" placeholder="Optional">
-            </div>
-            <div class="form-row">
-              <div class="form-group paya col-md-6">
-                <label for="inputCardNumber">Card</label>
-                <div class="card-brand">
-                  <i class="fas fa-credit-card card-brand-icon"></i>
-                <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
-              </div>
-              </div>
 
-              <div class="form-group paya col-6 col-md-2">
-                <label for="inputCardNumber">Expiration</label>
-                <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
+        <!-- Payment Options -->
+        <div class="card mb-3">
+          <div class="card-header pt-4">
+            <h4 class="card-title">Payment Options</h4>
+              <div class="mt-5 mb-1">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
+                  <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
+                  <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
+                </div>
               </div>
-              <div class="form-group paya col-6 col-md-4">
-                <label for="inputSecurity">Security Code</label>
-                <input type="text" class="input" id="inputSecurity" placeholder="1234">
-              </div>
-            </div>
           </div>
-          <!-- Bank Account option -->
-          <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="form-row">
-              <div class="form-group paya col-12">
-                <label for="inputNameCard">Name on account</label>
-                <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
-              </div>
-            </div>
-            <div class="form-row paya">
-              <div class="form-group col-md-6">
-                <label for="inputFn">Routing number</label>
-                <input type="text" class="input" id="inputFn" placeholder="123-123-123">
-              </div>
-              <div class="form-group col-md-6">
-                <span class="align-baseline">
-                  <img src="../img/bank-numbers.png" />
-                </span>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group paya col-md-6">
-                <label class="paya-label "for="inputCardNumber">Account number</label>
-                <input type="text" class="input" id="inputCardNumber" placeholder="123-123-123-123">
-              </div>
-              <div class="form-group col-md-6">
-                <label class="paya-label" for="inputCardNumber">Account type</label>
-                <div class="custom-control-spacer mx-0 px-0">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadioInline1">Checking</label>
+          <div class="card-body pb-0">
+            <!-- Credit of Debit Card option -->
+            <div class="tab-content mt-3" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="form-row">
+                  <div class="form-group paya col-12">
+                    <label for="inputNameCard">Name on card</label>
+                    <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
                   </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Savings</label>
+                  <div class="form-group paya col-12">
+                    <label for="inputBusinessName">Business name</label>
+                    <input type="text" class="input" id="inputBusinessName" placeholder="Optional">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group paya col-12 col-lg-6">
+                    <label for="inputCardNumber">Card</label>
+                    <div class="card-brand">
+                      <i class="fas fa-credit-card card-brand-icon"></i>
+                    <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
+                    </div>
+                  </div>
+                  <div class="form-group paya col-6 col-lg-2">
+                    <label for="inputCardNumber">Expiration</label>
+                    <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
+                  </div>
+                  <div class="form-group paya col-6 col-lg-4">
+                    <label for="inputSecurity">Security Code</label>
+                    <input type="text" class="input" id="inputSecurity" placeholder="1234">
+                  </div>
+                </div>
+              </div>
+              <!-- Bank Account option -->
+              <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="form-row">
+                  <div class="form-group paya col-12">
+                    <label for="inputNameCard">Name on account</label>
+                    <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
+                  </div>
+                </div>
+                <div class="form-row paya">
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="inputFn">Routing number</label>
+                    <input type="text" class="input" id="inputFn" placeholder="123-123-123">
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                    <span class="align-baseline">
+                      <img src="../img/bank-numbers.png" />
+                    </span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group paya col-12 col-lg-6">
+                    <label class="paya-label "for="inputCardNumber">Account number</label>
+                    <input type="text" class="input" id="inputCardNumber" placeholder="123-123-123-123">
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                    <label class="paya-label" for="inputCardNumber">Account type</label>
+                    <div class="custom-control-spacer mx-0 px-0">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="customRadioInline1">Checking</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Savings</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="card-footer border-top-0">
+            <div class="form-group col-md-12 mb-0 pl-0">
+              <span class="switch switch-sm">
+                <input type="checkbox" class="switch" id="switch-sm">
+                <label for="switch-sm">&nbsp;Recurring payment</label>
+              </span>
+              <!-- <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span> -->
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card-footer border-top-0">
-        <div class="form-group col-md-12 mb-0 pl-0">
-          <span class="switch switch-sm">
-            <input type="checkbox" class="switch" id="switch-sm">
-            <label for="switch-sm">&nbsp;Recurring payment</label>
-          </span>
-          <!-- <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span> -->
-        </div>
-      </div>
-  </div> <!-- /col -->
+      </div> <!-- /col -->
 
-  <div class="col-md-4 col-lg-4">
-    <div class="card mb-3">
-      <div class="card-header pt-4">
-        <h5 class="card-title text-muted">Transaction Summary</h5>
-      </div>
-      <div class="card-body">
-        <p class="card-text text-gray">Awaiting transaction information...</p>
-      </div>
-    </form>
+      <div class="col-md-6 col-lg-4">
+        <div class="card transactions mb-3 sticky-top">
+          <div class="card-header pt-4">
+            <h5 class="card-title">Transaction Summary</h5>
+            <p class="card-text text-gray">Customer Service No: (703) 555-1212</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-gray font-weight-medium mb-0">Merchant</p>
+            <ul class="list-group text-gray">
+              <li class="list-group-item align-items-center">Staten Island Office</li>
+              <li class="list-group-item align-items-center">James Gold, MD</li>
+              <li class="list-group-item align-items-center ">1012 Wuhrer Ave, Staten Island, NY 10312</li>
+            </ul>
+            <hr>
+            <p class="card-text font-weight-medium mb-0">Buyer</p>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Melissa Perosi
+                <span>Mar 29, 2018</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                266 Pacific Ave
+                <span>11:39 AM</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                melissa.perosi@gmail.com
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                (718) 555-1212
+              </li>
+            </ul>
+            <hr class="black-rule-2">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+                Method of payment
+                <span>VISA 5489</span>
+              </li>
+            </ul>
+            <hr>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+                Office visit
+                <span>$40.00</span>
+              </li>
+            </ul>
+            <hr>
+            <ul class="list-group text-gray">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Subtotal
+                <span>$80.00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Shipping
+                <span>$0.00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sales Tax
+                <span>$0.00</span>
+              </li>
+            </ul>
+            <hr class="black-rule-2">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
+                Total
+                <span>$80.00</span>
+              </li>
+            </ul>
+            <hr>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center text-muted">
+                Cancel
+                <button type="button" class="btn btn-success">Process Payment</button>
+              </li>
+            </ul>
+
+          </div>
+        </form>
+        </div>
+      </div><!-- /col -->
     </div>
-  </div><!-- /col -->
-  </div>
 </div>
 
 <!-- Bootstrap core JavaScript

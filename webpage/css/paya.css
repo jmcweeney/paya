@@ -41,9 +41,6 @@
      border-color: #48A9FD;
  }
 
- .text-gray {
-   color: #999 !important;
- }
 
 /* ----- Typography ---- */
 
@@ -69,7 +66,40 @@
   line-height: 1.2;
 }
 
- /* ----- Navbar ----- */
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+.text-gray {
+  color: #999 !important;
+}
+
+/* ----- Layout Elements ----- */
+
+hr {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hr.black-rule-2 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 1.0);
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+    z-index: 1020;
+  }
+}
+
+/* ----- Navbar ----- */
 
 .navbar {
   border-bottom: 1px solid #E5E9EF;
@@ -190,6 +220,45 @@
     border-top: 1px solid rgba(0,0,0,.125);
 }
 
+
+/* ----- Transactions ----- */
+
+.transactions p {
+  font-size: 85%;
+}
+
+.transactions .list-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.transactions .list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.125rem 0;
+  font-size: 85%;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 0;
+}
+
+.transactions .list-group-item:first-child {
+  border-radius: 0;
+}
+
+.transactions .list-group-item:last-child {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.transactions .list-group-item:hover, .list-group-item:focus {
+  z-index: 1;
+  text-decoration: none;
+}
 
 /* ----- Custom Forms ----- */
 
