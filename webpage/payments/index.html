@@ -1,266 +1,262 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../img/favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../img/favicon.ico">
 
-    <title>Paya Payments</title>
+  <title>Paya Payments</title>
 
-    <!-- Bootstrap core CSS & custom Paya CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="../css/paya.css" rel="stylesheet">
+  <!-- Bootstrap core CSS & custom Paya CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="../css/paya.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="sidebar-brand img-responsive mt-3 ml-lg-3 mt-lg-3" href="../index.html">
-      <span class="sidebar-brand-icon"><img src="../img/paya-logo.png"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="sidebar-brand img-responsive mt-3 ml-lg-3 mt-lg-3" href="../index.html">
+  <span class="sidebar-brand-icon"><img src="../img/paya-logo.png" /></span>
+</a>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item active">
+      <h3 class="paya-display-3 ml-4 text-muted">Payments UI</h3>
+    </li>
+  </ul>
+  <ul class="navbar-nav mt-2  mt-lg-0">
+    <a class="nav-link small" href="mailto:jeff.mcweeney@paya.com?subject=Hi from Paya UI...">
+      Email Support
     </a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <h3 class="paya-display-3 ml-4 text-muted">Payments UI</h3>
-        </li>
-      </ul>
-      <!-- <ul class="navbar-nav mt-2  mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link pr-0" href="#">Settings</a>
-        </li>
-      </ul> -->
-    </nav>
-    <nav class="navbar justify-content-between border-bottom-0 mt-3 mb-3">
-      <div class="my-0 mr-md-auto btn-group">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Select a Device
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Front Desk One</a>
-          <a class="dropdown-item" href="#">Front Desk Two</a>
-          <a class="dropdown-item" href="#">Back Office</a>
-        </div>
-      </div>
-      <div>
-        <a class="btn btn-outline-secondary btn-circle-lg" href="#" role="button"><i class="fas fa-cog"></i></a>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="row justify-content-center pt-lg-5">
-        <div class="col-md-8 col-lg-6">
-
-          <!-- Service Details -->
-          <div class="card mb-3">
-            <div class="card-header pt-4">
-              <h4 class="card-title">Service Items</h4>
-            </div>
-            <div class="card-body pb-0">
-              <form>
-                <div class="form-row">
-                  <div class="form-group paya col-md-5">
-                    <label for="inputDesc">Description</label>
-                    <input type="text" class="input" id="inputDesc" placeholder="Office visit">
-                  </div>
-                  <div class="form-group paya col-6 col-md-2">
-                    <label for="inputQty">Quantity</label>
-                    <input type="text" class="input" id="inputQty" placeholder="2">
-                  </div>
-                  <div class="form-group paya col-6 col-md-2">
-                    <label for="inputCost">Cost</label>
-                    <input type="text" class="input" id="inputCost" placeholder="$40.00">
-                  </div>
-                  <div class="form-group paya col-6 col-md-3">
-                    <label for="inputTotal">Total</label>
-                    <input type="text" class="input" id="inputTotal" placeholder="$80.00">
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer mt-0 pt-0 border-top-0">
-                <a class="btn btn-primary btn-circle-sm" href="#" role="button"><i class="fas fa-plus"></i></a>
-              </div>
-            </form>
-          </div>
-
-          <!-- Customer Details -->
-          <div class="card mb-3">
-            <div class="card-header pt-4">
-              <h4 class="card-title">Customer Details</h4>
-            </div>
-            <div class="card-body pb-0">
-              <form>
-                <div class="form-row">
-                  <div class="form-group paya col-12">
-                    <label for="inputName">Full name</label>
-                    <input type="text" class="input" id="inputFn" placeholder="Michael Scott">
-                  </div>
-                </div>
-                <div class="form-group paya">
-                  <label for="inputAddr">Billing address</label>
-                  <input type="text" class="input" id="inputAddr1" placeholder="12120 Sunset Hills Rd">
-                  <input type="text" class="input mt-3" id="inputAddr2" placeholder="Suite 500">
-                </div>
-                <div class="form-row">
-                  <div class="form-group paya col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="input" id="inputCity" placeholder="Reston">
-                  </div>
-                  <div class="form-group paya col-6 col-md-2">
-                    <label for="inputState">State</label>
-                    <input type="text" class="input" id="inputState" placeholder="VA">
-                  </div>
-                  <div class="form-group paya col-6 col-md-4">
-                    <label for="inputZip">Zip Code</label>
-                    <input type="text" class="input" id="inputZip" placeholder="20190">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group paya col-md-6">
-                    <label for="inputEmail">Email</label>
-                    <input type="text" class="input" id="inputEmail" placeholder="help@paya.com">
-                  </div>
-                  <div class="form-group paya col-md-6">
-                    <label for="inputCardNumber">Phone number</label>
-                    <input type="text" class="input" id="inputPhone" placeholder="(703) 848-2980">
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer mt-0 pt-0 border-top-0">
-                <small class="text-gray">Receipts and notifications will be sent to this email address or phone number.</small>
-              </div>
-            </form>
-          </div>
-
-        <!-- Payment Options -->
-          <div class="card mb-3">
-            <div class="card-header pt-4">
-              <h4 class="card-title">Payment Options</h4>
-              <form>
-                <div class="mt-5 mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
-                    <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
-                    <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
-                  </div>
-                </div>
-            </div>
-            <div class="card-body pb-0">
-                <!-- Credit of Debit Card option -->
-                <div class="tab-content mt-3" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="form-row">
-                      <div class="form-group paya col-12">
-                        <label for="inputNameCard">Name on card</label>
-                        <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
-                      </div>
-                    </div>
-                    <div class="form-group paya">
-                      <label for="inputBusinessName">Business name</label>
-                      <input type="text" class="input" id="inputBusinessName" placeholder="Optional">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group paya col-md-6">
-                        <label for="inputCardNumber">Card</label>
-                        <div class="card-brand">
-                          <i class="fas fa-credit-card card-brand-icon"></i>
-                        <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
-                      </div>
-                      </div>
-
-                      <div class="form-group paya col-6 col-md-2">
-                        <label for="inputCardNumber">Expiration</label>
-                        <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
-                      </div>
-                      <div class="form-group paya col-6 col-md-4">
-                        <label for="inputSecurity">Security Code</label>
-                        <input type="text" class="input" id="inputSecurity" placeholder="1234">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Bank Account option -->
-                  <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="form-row">
-                      <div class="form-group paya col-12">
-                        <label for="inputNameCard">Name on account</label>
-                        <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
-                      </div>
-                    </div>
-                    <div class="form-row paya">
-                      <div class="form-group col-md-6">
-                        <label for="inputFn">Routing number</label>
-                        <input type="text" class="input" id="inputFn" placeholder="123-123-123">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <span class="align-baseline">
-                          <img src="../img/bank-numbers.png" />
-                        </span>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group paya col-md-6">
-                        <label class="paya-label "for="inputCardNumber">Account number</label>
-                        <input type="text" class="input" id="inputCardNumber" placeholder="123-123-123-123">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label class="paya-label" for="inputCardNumber">Account type</label>
-                        <div class="custom-control-spacer mx-0 px-0">
-                          <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
-                            <label class="custom-control-label" for="customRadioInline1">Checking</label>
-                          </div>
-                          <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">Savings</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer border-top-0">
-                <div class="form-group col-md-12 mb-0 pl-0">
-                  <span class="switch switch-sm">
-                    <input type="checkbox" class="switch" id="switch-sm">
-                    <label for="switch-sm">&nbsp;Recurring payment</label>
-                  </span>
-                  <!-- <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span> -->
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4">
-          <div class="card mb-3">
-            <div class="card-header pt-4">
-              <h5 class="card-title text-muted">Transaction Summary</h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text text-gray">Awaiting transaction information...</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  </ul>
+</div>
+</nav>
+<nav class="navbar justify-content-between border-bottom-0 my-3 mt-3 mb-3">
+  <div class="my-0 mr-md-auto btn-group">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Select a Device
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Front Desk One</a>
+      <a class="dropdown-item" href="#">Front Desk Two</a>
+      <a class="dropdown-item" href="#">Back Office</a>
     </div>
+  </div>
+  <div>
+    <a class="btn btn-outline-secondary btn-circle-lg" href="#" role="button"><i class="fas fa-cog"></i></a>
+  </div>
+</nav>
 
+<div class="container">
+  <div class="row justify-content-center pt-lg-5">
+    <div class="col-md-8 col-lg-6">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../js/vendor/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/vendor/holder.min.js"></script>
-    <script src="../js/paya.js"></script>
-  </body>
+      <!-- Service Details -->
+      <div class="card mb-3">
+        <div class="card-header pt-4">
+          <h4 class="card-title">Service Items</h4>
+        </div>
+        <div class="card-body pb-0">
+          <!-- One and only Form tag -->
+          <form>
+            <div class="form-row">
+              <div class="form-group paya col-md-5">
+                <label for="inputDesc">Description</label>
+                <input type="text" class="input" id="inputDesc" placeholder="Office visit">
+              </div>
+              <div class="form-group paya col-6 col-md-2">
+                <label for="inputQty">Quantity</label>
+                <input type="text" class="input" id="inputQty" placeholder="2">
+              </div>
+              <div class="form-group paya col-6 col-md-2">
+                <label for="inputCost">Cost</label>
+                <input type="text" class="input" id="inputCost" placeholder="$40.00">
+              </div>
+              <div class="form-group paya col-6 col-md-3">
+                <label for="inputTotal">Total</label>
+                <input type="text" class="input" id="inputTotal" placeholder="$80.00">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer mt-0 pt-0 border-top-0">
+            <a class="btn btn-primary btn-circle-sm" href="#" role="button"><i class="fas fa-plus"></i></a>
+          </div>
+      </div>
+
+      <!-- Customer Details -->
+      <div class="card mb-3">
+        <div class="card-header pt-4">
+          <h4 class="card-title">Customer Details</h4>
+        </div>
+        <div class="card-body pb-0">
+            <div class="form-row">
+              <div class="form-group paya col-12">
+                <label for="inputName">Full name</label>
+                <input type="text" class="input" id="inputFn" placeholder="Michael Scott">
+              </div>
+            </div>
+            <div class="form-group paya">
+              <label for="inputAddr">Billing address</label>
+              <input type="text" class="input" id="inputAddr1" placeholder="12120 Sunset Hills Rd">
+              <input type="text" class="input mt-3" id="inputAddr2" placeholder="Suite 500">
+            </div>
+            <div class="form-row">
+              <div class="form-group paya col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="input" id="inputCity" placeholder="Reston">
+              </div>
+              <div class="form-group paya col-6 col-md-2">
+                <label for="inputState">State</label>
+                <input type="text" class="input" id="inputState" placeholder="VA">
+              </div>
+              <div class="form-group paya col-6 col-md-4">
+                <label for="inputZip">Zip Code</label>
+                <input type="text" class="input" id="inputZip" placeholder="20190">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group paya col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="text" class="input" id="inputEmail" placeholder="help@paya.com">
+              </div>
+              <div class="form-group paya col-md-6">
+                <label for="inputCardNumber">Phone number</label>
+                <input type="text" class="input" id="inputPhone" placeholder="(703) 848-2980">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer mt-0 pt-0 border-top-0">
+            <small class="text-gray">Receipts and notifications will be sent to this email address or phone number.</small>
+          </div>
+      </div>
+
+      <!-- Payment Options -->
+      <div class="card mb-3">
+        <div class="card-header pt-4">
+          <h4 class="card-title">Payment Options</h4>
+            <div class="mt-5 mb-1">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
+                <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
+                <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="card-body pb-0">
+        <!-- Credit of Debit Card option -->
+        <div class="tab-content mt-3" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="form-row">
+              <div class="form-group paya col-12">
+                <label for="inputNameCard">Name on card</label>
+                <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
+              </div>
+            </div>
+            <div class="form-group paya">
+              <label for="inputBusinessName">Business name</label>
+              <input type="text" class="input" id="inputBusinessName" placeholder="Optional">
+            </div>
+            <div class="form-row">
+              <div class="form-group paya col-md-6">
+                <label for="inputCardNumber">Card</label>
+                <div class="card-brand">
+                  <i class="fas fa-credit-card card-brand-icon"></i>
+                <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
+              </div>
+              </div>
+
+              <div class="form-group paya col-6 col-md-2">
+                <label for="inputCardNumber">Expiration</label>
+                <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
+              </div>
+              <div class="form-group paya col-6 col-md-4">
+                <label for="inputSecurity">Security Code</label>
+                <input type="text" class="input" id="inputSecurity" placeholder="1234">
+              </div>
+            </div>
+          </div>
+          <!-- Bank Account option -->
+          <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="form-row">
+              <div class="form-group paya col-12">
+                <label for="inputNameCard">Name on account</label>
+                <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott">
+              </div>
+            </div>
+            <div class="form-row paya">
+              <div class="form-group col-md-6">
+                <label for="inputFn">Routing number</label>
+                <input type="text" class="input" id="inputFn" placeholder="123-123-123">
+              </div>
+              <div class="form-group col-md-6">
+                <span class="align-baseline">
+                  <img src="../img/bank-numbers.png" />
+                </span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group paya col-md-6">
+                <label class="paya-label "for="inputCardNumber">Account number</label>
+                <input type="text" class="input" id="inputCardNumber" placeholder="123-123-123-123">
+              </div>
+              <div class="form-group col-md-6">
+                <label class="paya-label" for="inputCardNumber">Account type</label>
+                <div class="custom-control-spacer mx-0 px-0">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadioInline1">Checking</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Savings</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer border-top-0">
+        <div class="form-group col-md-12 mb-0 pl-0">
+          <span class="switch switch-sm">
+            <input type="checkbox" class="switch" id="switch-sm">
+            <label for="switch-sm">&nbsp;Recurring payment</label>
+          </span>
+          <!-- <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span> -->
+        </div>
+      </div>
+  </div> <!-- /col -->
+
+  <div class="col-md-4 col-lg-4">
+    <div class="card mb-3">
+      <div class="card-header pt-4">
+        <h5 class="card-title text-muted">Transaction Summary</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text text-gray">Awaiting transaction information...</p>
+      </div>
+    </form>
+    </div>
+  </div><!-- /col -->
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../js/vendor/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/vendor/holder.min.js"></script>
+<script src="../js/paya.js"></script>
+</body>
 </html>
