@@ -76,6 +76,9 @@
 
 /* ----- Typography ---- */
 
+.text-primary {
+  color: #4699FE;
+}
 .paya-display-2 {
   font-size: 2rem;
   font-weight: 300;
@@ -113,6 +116,13 @@ hr {
   margin-bottom: 0.75rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hr.black-rule-1 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 1.0);
 }
 
 hr.black-rule-2 {
@@ -231,6 +241,34 @@ hr.black-rule-2 {
 
 
 /* ----- Custom Cards ----- */
+
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+.border-top-2 {
+  border-top: 2px solid #000 !important;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.border-left {
+  border-left: 1px solid #dee2e6 !important;
+}
+
+.payment-card {
+  border: 0;
+  border-radius: 0;
+}
 
 .card-header {
   padding: 0.75rem 2rem;
@@ -560,7 +598,7 @@ hr.black-rule-2 {
   font-size: 1.125rem;
   line-height: 1rem;
   border-radius: 50%;
-  color: #999;
+  /* color: inherit; */
   /* border: 1px solid #999; */
 }
 
@@ -704,6 +742,11 @@ hr.black-rule-2 {
 
 .modal-full .modal-content {
     min-height: 100vh;
+}
+
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 /* Docs overrides */
