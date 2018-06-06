@@ -657,7 +657,7 @@ hr.black-rule-2 {
   font-size: 0.75rem;
   line-height: 1rem;
   border-radius: 50%;
-  color: #fff;
+  color: inherit;
 }
 
 .btn-circle-lg {
