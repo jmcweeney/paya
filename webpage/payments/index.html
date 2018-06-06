@@ -114,11 +114,11 @@
               </div>
               <div class="form-group paya col-6 col-md-2">
                 <label for="inputState">State</label>
-                <input type="text" class="input" id="inputState" placeholder="VA" required>
+                <input type="text" class="input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
               </div>
               <div class="form-group paya col-6 col-md-4">
                 <label for="inputZip">Zip Code</label>
-                <input type="number" class="input" id="inputZip" placeholder="20190" required>
+                <input type="number" class="input" id="inputZip" maxlength="5" placeholder="20190" required>
               </div>
             </div>
             <div class="form-row">
@@ -172,12 +172,12 @@
                     <label for="inputCardNumber">Card</label>
                     <div class="card-brand">
                       <i class="fab fa-cc-visa card-brand-icon"></i>
-                      <input type="number" class="input" id="inputCardNumber" placeholder="Card number" required>
+                      <input type="number" class="input" id="inputCardNumber" maxlength="16" placeholder="Card number" required>
                     </div>
                   </div>
                   <div class="form-group paya col-6 col-lg-2">
                     <label for="inputCardNumber">Expiration</label>
-                    <input type="number" class="input" id="inputExpiration" placeholder="MM/YY" required>
+                    <input type="number" class="input text-uppercase" id="inputExpiration" maxlength="4" placeholder="MM/YY" required>
                   </div>
                   <!-- <div class="form-group paya col-6 col-lg-4">
                     <label for="inputSecurity">Security Code (CVV)</label>
@@ -187,7 +187,7 @@
                     <label for="inputSecurity">Security Code (CVV)</label>
                     <div class="card-brand">
                       <i class="fas fa-question-circle card-brand-icon" data-toggle="tooltip" data-html="true" title="<img src='../img/cc-tooltip-sml.png' />"></i>
-                      <input type="number" class="input" id="inputSecurity" placeholder="1234" required>
+                      <input type="number" class="input" id="inputSecurity" maxlength="4" placeholder="1234" required>
                     </div>
                   </div>
                 </div>
@@ -203,7 +203,7 @@
                 <div class="form-row paya">
                   <div class="form-group col-12 col-lg-6">
                     <label for="inputFn">Routing number</label>
-                    <input type="number" class="input" id="inputFn" placeholder="123-123-123" required>
+                    <input type="number" class="input" id="inputFn" maxlength="13" placeholder="123-123-123" required>
                   </div>
                   <div class="form-group col-12 col-lg-6">
                     <span class="align-baseline">
@@ -214,7 +214,7 @@
                 <div class="form-row">
                   <div class="form-group paya col-12 col-lg-6">
                     <label class="paya-label "for="inputCardNumber">Account number</label>
-                    <input type="number" class="input" id="inputCardNumber" placeholder="123-123-123-123" required>
+                    <input type="number" class="input" id="inputCardNumber" maxlength="16" placeholder="123-123-123-123" required>
                   </div>
                   <div class="form-group col-12 col-lg-6">
                     <label class="paya-label" for="inputCardNumber">Account type</label>

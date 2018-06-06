@@ -434,7 +434,7 @@ hr.black-rule-2 {
 }
 
 .paya .input:focus {
-  border-color: #000;
+  border-color: #007bff;
 }
 .paya .input-invalid {
   border-color: #ffc7ee;
