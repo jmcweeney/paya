@@ -10,10 +10,10 @@
   <title>Paya Payments</title>
 
   <!-- Bootstrap core CSS & custom Paya CSS -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,400italic" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="../css/paya.css" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,400italic" rel="stylesheet">
 
 </head>
 
@@ -36,7 +36,8 @@
   </ul>
 </div>
 </nav>
-<nav class="navbar justify-content-between border-bottom-0 my-3 ml-3 mr-2">
+<!-- WIP Multi-Mid UI and link to Settings modal -->
+<!-- <nav class="navbar justify-content-between border-bottom-0 my-3 ml-3 mr-2">
   <div class="my-0 mr-md-auto btn-group">
     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Select a Device
@@ -50,17 +51,17 @@
   <div>
     <a class="btn btn-outline-secondary btn-circle-lg" href="../settings/index.html" role="button"><i class="fas fa-cog"></i></a>
   </div>
-</nav>
+</nav> -->
 
-<!-- One and only Form tag -->
 <form action="../receipt/index.html" method="post">
 
 <div class="container">
-  <div class="row justify-content-center py-4 py-lg-5">
+  <div class="row justify-content-center my-4 my-lg-5">
+
   <div class="col-md-6 col-lg-6 border-bottom">
 
     <!-- Service Details -->
-    <div class="card payment-card border-top-2 mb-3">
+    <div class="card payment-card border-top">
       <div class="card-header pt-4">
         <h4 class="card-title">Service Items</h4>
       </div>
@@ -68,7 +69,7 @@
           <div class="form-row">
             <div class="form-group paya col-12 col-lg-5">
               <label for="inputDesc">Description</label>
-              <input type="text" class="input" id="inputDesc" placeholder="Office visit">
+              <input type="text" class="input" id="inputDesc" placeholder="Office visit" required autofocus>
             </div>
             <div class="form-group paya col-6 col-lg-2">
               <label for="inputQty">Quantity</label>
@@ -90,7 +91,7 @@
       </div>
 
       <!-- Customer Details -->
-      <div class="card payment-card border-top-2 mb-3">
+      <div class="card payment-card border-top-2">
         <div class="card-header pt-4">
           <h4 class="card-title">Customer Details</h4>
         </div>
@@ -131,13 +132,13 @@
               </div>
             </div>
           </div>
-          <div class="card-footer mt-0 pt-0 border-top-0">
-            <small class="text-gray">Receipts and notifications will be sent to this email address or phone number.</small>
+          <div class="card-footer pl-4 mt-0 pt-0 border-top-0">
+            <small class="text-gray font-italic">Any receipts or notifications will be sent to the above email address.</small>
           </div>
         </div>
 
         <!-- Payment Options -->
-        <div class="card payment-card border-top-2 mb-3">
+        <div class="card payment-card border-top-2">
           <div class="card-header pt-4">
             <h4 class="card-title">Payment Options</h4>
               <div class="mt-5 mb-1">
@@ -153,7 +154,7 @@
           </div>
           <div class="card-body pb-0">
             <!-- Credit of Debit Card option -->
-            <div class="tab-content mt-3" id="pills-tabContent">
+            <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="form-row">
                   <div class="form-group paya col-12">
@@ -170,17 +171,24 @@
                   <div class="form-group paya col-12 col-lg-6">
                     <label for="inputCardNumber">Card</label>
                     <div class="card-brand">
-                      <i class="fas fa-credit-card card-brand-icon"></i>
-                    <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
+                      <i class="fab fa-cc-visa card-brand-icon"></i>
+                      <input type="text" class="input" id="inputCardNumber" placeholder="Card number">
                     </div>
                   </div>
                   <div class="form-group paya col-6 col-lg-2">
                     <label for="inputCardNumber">Expiration</label>
                     <input type="text" class="input" id="inputExpiration" placeholder="MM/YY">
                   </div>
-                  <div class="form-group paya col-6 col-lg-4">
-                    <label for="inputSecurity">Security Code</label>
+                  <!-- <div class="form-group paya col-6 col-lg-4">
+                    <label for="inputSecurity">Security Code (CVV)</label>
                     <input type="text" class="input" id="inputSecurity" placeholder="1234">
+                  </div> -->
+                  <div class="form-group paya col-6 col-lg-4">
+                    <label for="inputSecurity">Security Code (CVV)</label>
+                    <div class="card-brand">
+                      <i class="fas fa-question-circle card-brand-icon" data-toggle="tooltip" data-html="true" title="<img src='http://utbcn.com/img/logosCursas/logo_UTBCN_180x180.png' />"></i>
+                      <input type="text" class="input" id="inputSecurity" placeholder="1234">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -225,7 +233,7 @@
               </div>
             </div>
           </div>
-          <div class="card-footer border-top-0">
+          <div class="card-footer ml-0 pl-4 border-top-0">
             <div class="form-group col-md-12 mb-0 pl-0">
               <span class="switch switch-sm">
                 <input type="checkbox" class="switch" id="switch-sm">
@@ -328,11 +336,12 @@
 </div>
 </form>
 
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="../js/vendor/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/vendor/holder.min.js"></script>

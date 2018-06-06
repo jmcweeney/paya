@@ -11,8 +11,10 @@
 
     <title>Paya UI Library</title>
 
+    <!-- Bootstrap core CSS & custom Paya CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,400italic" rel="stylesheet">
-
     <link href="css/toolkit-light.css" rel="stylesheet">
     <link href="css/paya.css" rel="stylesheet">
 
@@ -57,8 +59,8 @@
 
               <li class="nav-header">More</li>
               <li class="nav-item">
-                <a class="nav-link" href="#docsModal" data-toggle="modal">
-                  Example modal
+                <a class="nav-link" href="#payModal" data-toggle="modal">
+                  Payment Options modal
                 </a>
               </li>
               <li class="nav-item">
@@ -416,23 +418,54 @@
     </div>
   </div>
 
-  <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog">
-    <div class="modal-content">
 
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Example modal</h4>
-      </div>
-      <div class="modal-body">
-        <p>Aww, yeah, this is the modal you're looking for.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cool, got it!</button>
+
+  <!-- Payment Modal -->
+  <div id="payModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="payModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Payment Options</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-1">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
+                <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
+                <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Pay Now</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Example modal</h4>
+        </div>
+        <div class="modal-body">
+          <p>Aww, yeah, this is the modal you're looking for.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cool, got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <script src="js/jquery.min.js"></script>

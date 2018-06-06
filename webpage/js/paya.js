@@ -1,7 +1,7 @@
 /*!
  * Some custom features we can eventually bake into a different .js file
  *
- * 
+ *
  */
 
 function changePaymentMethod(method) {
@@ -18,3 +18,7 @@ else {
     $("#pills-bank-account").addClass('show');
   }
 }
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
