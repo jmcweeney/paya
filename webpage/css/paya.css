@@ -761,9 +761,9 @@ hr.black-rule-2 {
 .switch input:disabled + label::before {
   background-color: #e9ecef;
 }
-/* .switch.switch-sm {
-  font-size: 0.875rem;
-} */
+.switch.switch-sm {
+  font-size: 0.9rem;
+}
 .switch.switch-sm input + label {
   min-width: calc(calc(1.9375rem * .8) * 2);
   height: calc(1.9375rem * .8);
