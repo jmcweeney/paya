@@ -19,41 +19,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="sidebar-brand img-responsive mt-3 ml-lg-3 mt-lg-3" href="../index.html">
-  <span class="sidebar-brand-icon"><img src="../img/paya-logo.png" /></span>
-</a>
-<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-    <li class="nav-item active">
-      <h3 class="paya-display-3 ml-4 text-muted">Payments UI</h3>
-    </li>
-  </ul>
-  <ul class="navbar-nav mt-2  mt-lg-0">
-    <a class="nav-link" href="mailto:jeff.mcweeney@paya.com?subject=Hi from Paya UI...">
-      Email Support
-    </a>
-  </ul>
-</div>
-</nav>
-<!-- WIP Multi-Mid UI and link to Settings modal -->
-<!-- <nav class="navbar justify-content-between border-bottom-0 my-3 ml-3 mr-2">
-  <div class="my-0 mr-md-auto btn-group">
-    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Select a Device
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Front Desk One</a>
-      <a class="dropdown-item" href="#">Front Desk Two</a>
-      <a class="dropdown-item" href="#">Back Office</a>
-    </div>
-  </div>
-  <div>
-    <a class="btn btn-outline-secondary btn-circle-lg" href="../settings/index.html" role="button"><i class="fas fa-cog"></i></a>
-  </div>
-</nav> -->
-
-<form action="../receipt/index.html" method="post">
+<form action="../receipt/index.html" method="post" class="needs-validation" novalidate>
 
 <div class="container">
   <div class="row justify-content-center my-4 my-lg-5">
@@ -67,21 +33,33 @@
       </div>
       <div class="card-body pb-0">
           <div class="form-row">
-            <div class="form-group paya col-12 col-lg-5">
+            <div class="paya form-group col-12 col-lg-5">
               <label for="inputDesc">Description</label>
-              <input type="text" class="input" id="inputDesc" placeholder="Office visit" required autofocus>
+              <input type="text" class="form-control input" id="inputDesc" placeholder="Office visit" required autofocus>
+              <div class="invalid-feedback" style="width: 100%;">
+                Required
+              </div>
             </div>
             <div class="form-group paya col-6 col-lg-2">
               <label for="inputQty">Quantity</label>
-              <input type="number" class="input" id="inputQty" placeholder="2" required>
+              <input type="number" class="form-control input" id="inputQty" placeholder="2" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Required
+              </div>
             </div>
             <div class="form-group paya col-6 col-lg-2">
               <label for="inputCost">Cost</label>
-              <input type="number" class="input" id="inputCost" placeholder="$40.00" required>
+              <input type="number" class="form-control input" id="inputCost" placeholder="$40.00" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Required
+              </div>
             </div>
             <div class="form-group paya col-6 col-lg-3">
               <label for="inputTotal">Total</label>
-              <input type="number" class="input" id="inputTotal" placeholder="$80.00" required>
+              <input type="number" class="form-control input" id="inputTotal" placeholder="$80.00" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Required
+              </div>
             </div>
           </div>
         </div>
@@ -97,43 +75,64 @@
         </div>
         <div class="card-body pb-0">
             <div class="form-row">
-              <div class="form-group paya col-12">
+              <div class="paya form-group col-12">
                 <label for="inputName">Full name</label>
-                <input type="text" class="input" id="inputFn" placeholder="Michael Scott" required>
+                <input type="text" class="form-control input" id="inputFn" placeholder="Michael Scott" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-              <div class="form-group paya col-12">
+              <div class="paya form-group col-12">
                 <label for="inputAddr">Billing address</label>
-                <input type="text" class="input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
-                <input type="text" class="input mt-3" id="inputAddr2" placeholder="Suite 500">
+                <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+                <input type="text" class="form-control input mt-3" id="inputAddr2" placeholder="Suite 500 (Optional)">
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group paya col-md-6">
+              <div class="paya form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" class="input" id="inputCity" placeholder="Reston" required>
+                <input type="text" class="form-control input" id="inputCity" placeholder="Reston" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-              <div class="form-group paya col-6 col-md-2">
+              <div class="paya form-group col-6 col-md-2">
                 <label for="inputState">State</label>
-                <input type="text" class="input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
+                <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-              <div class="form-group paya col-6 col-md-4">
+              <div class="paya form-group col-6 col-md-4">
                 <label for="inputZip">Zip Code</label>
-                <input type="number" class="input" id="inputZip" maxlength="5" placeholder="20190" required>
+                <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group paya col-12 col-lg-6">
+              <div class="paya form-group col-12 col-lg-6 mb-2">
                 <label for="inputEmail">Email</label>
-                <input type="email" class="input" id="inputEmail" placeholder="help@paya.com" required>
+                <input type="email" class="form-control input" id="inputEmail" placeholder="help@paya.com" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-              <div class="form-group paya col-12 col-lg-6">
+              <div class="paya form-group col-12 col-lg-6 mb-2">
                 <label for="inputCardNumber">Phone number</label>
-                <input type="number" class="input" id="inputPhone" placeholder="(703) 848-2980" required>
+                <input type="number" class="form-control input" id="inputPhone" placeholder="(703) 848-2980" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-footer pl-4 mt-0 pt-0 border-top-0">
-            <small class="text-gray font-italic">Any receipts or notifications will be sent to the above email address.</small>
+          <div class="card-footer pl-4 mt-2 pt-0 border-top-0">
+            <small class="text-gray font-italic">Any correspondence will be sent to the above email address.</small>
           </div>
         </div>
 
@@ -159,35 +158,42 @@
                 <div class="form-row">
                   <div class="form-group paya col-12">
                     <label for="inputNameCard">Name on card</label>
-                    <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott" required>
+                    <input type="text" class="form-control input" id="inputNameCard" placeholder="Michael Scott" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                   </div>
                   <div class="form-group paya col-12">
                     <label for="inputBusinessName">Business name</label>
-                    <input type="text" class="input" id="inputBusinessName" placeholder="Optional">
+                    <input type="text" class="form-control input" id="inputBusinessName" placeholder="Optional">
                   </div>
                 </div>
-
                 <div class="form-row">
-                  <div class="form-group paya col-12 col-lg-6">
+                  <div class="paya form-group col-12 col-lg-6">
                     <label for="inputCardNumber">Card</label>
-                    <div class="card-brand">
-                      <i class="fab fa-cc-visa card-brand-icon"></i>
-                      <input type="number" class="input" id="inputCardNumber" maxlength="16" placeholder="Card number" required>
+                    <div class="paya-card-brand">
+                      <i class="fab fa-cc-visa paya-card-brand-icon"></i>
+                      <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="Card number" required>
+                      <div class="invalid-feedback" style="width: 100%;">
+                        Required
+                      </div>
                     </div>
                   </div>
                   <div class="form-group paya col-6 col-lg-2">
                     <label for="inputCardNumber">Expiration</label>
-                    <input type="number" class="input text-uppercase" id="inputExpiration" maxlength="4" placeholder="MM/YY" required>
+                    <input type="number" class="form-control input text-uppercase" id="inputExpiration" maxlength="4" placeholder="MM/YY" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                   </div>
-                  <!-- <div class="form-group paya col-6 col-lg-4">
+                  <div class="paya form-group col-6 col-lg-4">
                     <label for="inputSecurity">Security Code (CVV)</label>
-                    <input type="text" class="input" id="inputSecurity" placeholder="1234">
-                  </div> -->
-                  <div class="form-group paya col-6 col-lg-4">
-                    <label for="inputSecurity">Security Code (CVV)</label>
-                    <div class="card-brand">
-                      <i class="fas fa-question-circle card-brand-icon" data-toggle="tooltip" data-html="true" title="<img src='../img/cc-tooltip-sml.png' />"></i>
-                      <input type="number" class="input" id="inputSecurity" maxlength="4" placeholder="1234" required>
+                    <div class="paya-card-brand">
+                      <i class="fas fa-question-circle paya-card-brand-icon" data-toggle="tooltip" data-html="true" title="<img src='../img/cc-tooltip-sml.png' />"></i>
+                      <input type="number" class="form-control input" id="inputSecurity" maxlength="4" placeholder="1234" required>
+                      <div class="invalid-feedback" style="width: 100%;">
+                        Required
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -195,15 +201,21 @@
               <!-- Bank Account option -->
               <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="form-row">
-                  <div class="form-group paya col-12">
+                  <div class="paya form-group col-12">
                     <label for="inputNameCard">Name on account</label>
-                    <input type="text" class="input" id="inputNameCard" placeholder="Michael Scott" required>
+                    <input type="text" class="form-control input" id="inputNameCard" placeholder="Michael Scott" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                   </div>
                 </div>
-                <div class="form-row paya">
+                <div class="paya form-row">
                   <div class="form-group col-12 col-lg-6">
                     <label for="inputFn">Routing number</label>
-                    <input type="number" class="input" id="inputFn" maxlength="13" placeholder="123-123-123" required>
+                    <input type="number" class="form-control input" id="inputFn" maxlength="13" placeholder="123-123-123" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                   </div>
                   <div class="form-group col-12 col-lg-6">
                     <span class="align-baseline">
@@ -212,9 +224,12 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group paya col-12 col-lg-6">
+                  <div class="paya form-group col-12 col-lg-6">
                     <label class="paya-label "for="inputCardNumber">Account number</label>
-                    <input type="number" class="input" id="inputCardNumber" maxlength="16" placeholder="123-123-123-123" required>
+                    <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="123-123-123-123" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                   </div>
                   <div class="form-group col-12 col-lg-6">
                     <label class="paya-label" for="inputCardNumber">Account type</label>
@@ -233,20 +248,33 @@
               </div>
             </div>
           </div>
-          <div class="card-footer ml-0 pl-4 border-top-0">
+          <!-- Save Card UI -->
+          <div class="card-footer pt-0 px-4 border-top-0">
+            <!-- <div class="form-group px-3 pt-3 pb-2 paya-card-save">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="saveCard">
+                  <label class="custom-control-label paya-label-sm" for="saveCard">Save my card on file</label>
+              </div>
+            </div> -->
+            <div class="form-group col-md-12 my-2 mb-0 pl-0">
+              <span class="switch switch-sm">
+                <input type="checkbox" class="switch" id="switchSave">
+                <label for="switchSave">Save my card on file</label>
+              </span>
+            </div>
+            <!-- Recurring UI -->
             <div class="form-group col-md-12 mb-0 pl-0">
               <span class="switch switch-sm">
-                <input type="checkbox" class="switch" id="switch-sm">
-                <label for="switch-sm">&nbsp;Make this a recurring payment</label>
+                <input type="checkbox" class="switch" id="switchRecurring">
+                <label for="switchRecurring">Make this a recurring payment</label>
               </span>
-              <!-- <span class="float-right"><a class="text-muted small" href="#">Learn more</a></span> -->
             </div>
           </div>
         </div>
       </div> <!-- /col -->
 
       <div class="col-md-6 col-lg-4">
-        <div class="card transactions box-shadow sticky-top">
+        <div class="transactions card box-shadow sticky-top">
           <div class="card-header pt-4 pb-0">
             <h5 class="card-title">Transaction Summary</h5>
             <p class="card-text text-gray">Customer Service No: (703) 555-1212</p>
@@ -337,14 +365,15 @@
 </form>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="../js/vendor/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/vendor/holder.min.js"></script>
 <script src="../js/paya.js"></script>
+<script>
+
+</script>
 </body>
 </html>
