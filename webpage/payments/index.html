@@ -73,7 +73,7 @@
         <div class="card-header pt-4">
           <h4 class="card-title">Customer Details</h4>
         </div>
-        <div class="card-body pb-0">
+          <div class="card-body pb-0">
             <div class="form-row">
               <div class="paya form-group col-12">
                 <label for="inputName">Full name</label>
@@ -233,7 +233,7 @@
                   </div>
                   <div class="form-group col-12 col-lg-6">
                     <label class="paya-label" for="inputCardNumber">Account type</label>
-                    <div class="custom-control-spacer mx-0 px-0">
+                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
                       <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked required>
                         <label class="custom-control-label" for="customRadioInline1">Checking</label>
@@ -249,21 +249,22 @@
             </div>
           </div>
           <!-- Save Card UI -->
-          <div class="card-footer border-top-0 pt-0 px-4">
+          <div class="card-footer border-top-0 mb-0 pt-0 pb-2 px-4">
             <!-- <div class="form-group px-3 pt-3 pb-2 paya-card-save">
               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="saveCard">
                   <label class="custom-control-label paya-label-sm" for="saveCard">Save my card on file</label>
               </div>
             </div> -->
-            <div class="form-group col-md-12 my-2 mb-0 pl-0">
+            <div class="form-group col-md-12 pl-0 mb-2">
               <span class="switch switch-sm">
                 <input type="checkbox" class="switch" id="switchSave">
                 <label for="switchSave">Save my card on file</label>
               </span>
             </div>
+            <hr>
             <!-- Recurring UI -->
-            <div class="form-group col-md-12 mb-0 pl-0">
+            <div class="form-group col-md-12 mt-0 pl-0 mt-3">
               <span class="switch switch-sm">
                 <input type="checkbox" class="switch" id="switchRecurring">
                 <label for="switchRecurring">Make this a recurring payment</label>
@@ -271,6 +272,55 @@
             </div>
           </div>
         </div>
+
+        <!-- Shipping Details -->
+        <div class="card payment-card border-top-2 mb-4">
+          <div class="card-header pt-4">
+            <h4 class="card-title">Shipping Details</h4>
+          </div>
+          <div class="card-body pb-0">
+            <div class="form-group col-md-12 pl-0 mb-2">
+              <span class="switch switch-sm">
+                <input type="checkbox" class="switch" id="switchShip">
+                <label for="switchShip">Different than Billing Address</label>
+              </span>
+            </div>
+            <hr>
+              <div class="form-row">
+                <div class="paya form-group col-12">
+                  <label for="inputAddr">Shipping address</label>
+                  <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                  <input type="text" class="form-control input mt-3" id="inputAddr2" placeholder="Suite 500 (Optional)">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="paya form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control input" id="inputCity" placeholder="Reston" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+                <div class="paya form-group col-6 col-md-2">
+                  <label for="inputState">State</label>
+                  <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+                <div class="paya form-group col-6 col-md-4">
+                  <label for="inputZip">Zip Code</label>
+                  <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div> <!-- /col -->
 
       <div class="col-md-6 col-lg-4">
