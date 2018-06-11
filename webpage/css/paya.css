@@ -369,7 +369,7 @@ hr.black-rule-2 {
 
 .paya input:-webkit-autofill,
 .paya select:-webkit-autofill {
-  -webkit-text-fill-color: #fce883;
+  -webkit-text-fill-color: #000;
   transition: background-color 100000000s;
   -webkit-animation: 1ms void-animation-out;
 }
