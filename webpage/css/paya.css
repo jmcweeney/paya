@@ -883,19 +883,29 @@ strong {
 }
 
 
-/* ----- Misc ----- */
+/* ----- Paya Branding ----- */
 
-.app-login-form {
-  max-width: 280px;
-  margin-top: -60px;
+.sidebar-brand {
+   float: left;
+   height: 60px;
+   line-height: 1rem;
+   color: #555;
 }
-.app-new-msg {
-  margin-right: 10px;
+.sidebar-brand > img {
+   height: 1px;
 }
-.app-brand {
-  width: 40%;
-  display: inline-block;
+
+@media (min-width: 576px) {
+     .sidebar-brand > img {
+       height: 60px;
+       }
 }
-.app-brand img {
-  width: 100%;
+
+.sidebar-brand:hover {
+   color: #222;
+   text-decoration: none;
+ }
+
+.sidebar-brand-icon {
+  height: 60px;
 }
