@@ -178,6 +178,13 @@ hr.black-rule-2 {
   border-bottom: 1px solid #dee2e6 !important;
 }
 
+.border-bottom-1 {
+  border-bottom: 1px solid #000 !important;
+}
+.border-bottom-2 {
+  border-bottom: 2px solid #000 !important;
+}
+
 .border-left {
   border-left: 1px solid #dee2e6 !important;
 }
