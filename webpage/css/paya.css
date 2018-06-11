@@ -739,13 +739,13 @@ hr.black-rule-2 {
   background-color: #e9ecef;
 }
 .switch.switch-sm {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .switch.switch-sm input + label {
   min-width: calc(calc(1.9375rem * .8) * 2);
   height: calc(1.9375rem * .8);
   line-height: calc(1.9375rem * .8);
-  text-indent: calc(calc(calc(1.9375rem * .8) * 2) + .5rem);
+  text-indent: calc(calc(calc(1.9375rem * .8) * 2) + 1rem);
 }
 .switch.switch-sm input + label::before {
   width: calc(calc(1.9375rem * .8) * 2);
