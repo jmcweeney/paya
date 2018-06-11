@@ -172,7 +172,7 @@
                   <div class="paya form-group col-12 col-lg-6">
                     <label for="inputCardNumber">Card</label>
                     <div class="paya-card-brand">
-                      <i class="fab fa-cc-visa paya-card-brand-icon"></i>
+                      <i class="far fa-credit-card paya-card-brand-icon"></i>
                       <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="Card number" required>
                       <div class="invalid-feedback" style="width: 100%;">
                         Required
@@ -222,6 +222,13 @@
                       <img src="../img/bank-numbers.png" />
                     </span>
                   </div>
+                  <div class="form-group col-12">
+                    <label for="inputFn">Bank name</label>
+                    <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Wells Fargo" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
                 </div>
                 <div class="form-row">
                   <div class="paya form-group col-12 col-lg-6">
@@ -249,14 +256,15 @@
             </div>
           </div>
           <!-- Save Card UI -->
-          <div class="card-footer border-top-0 mb-0 pt-0 pb-2 px-4">
+          <div class="card-footer border-top-0 mb-0 pb-2 px-4">
             <!-- <div class="form-group px-3 pt-3 pb-2 paya-card-save">
               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="saveCard">
                   <label class="custom-control-label paya-label-sm" for="saveCard">Save my card on file</label>
               </div>
             </div> -->
-            <div class="form-group col-md-12 pl-0 mb-2">
+            <div class="form-group col-md-12 pl-0 mb-1">
+              <span class="float-right switch-text">VISA 5489 saved</span>
               <span class="switch switch-sm">
                 <input type="checkbox" class="switch" id="switchSave">
                 <label for="switchSave">Save my card on file</label>
@@ -340,7 +348,7 @@
             <hr class="black-rule-2">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
-                Office visit
+                Office visit (2)
                 <span>$80.00</span>
               </li>
             </ul>

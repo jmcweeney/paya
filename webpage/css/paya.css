@@ -738,8 +738,13 @@ hr.black-rule-2 {
 .switch input:disabled + label::before {
   background-color: #e9ecef;
 }
-.switch.switch-sm {
+.switch.switch-sm,
+.switch-text {
   font-size: .95rem;
+}
+.switch-text {
+  color: #FF9E03;
+  font-weight: 500;
 }
 .switch.switch-sm input + label {
   min-width: calc(calc(1.9375rem * .8) * 2);
