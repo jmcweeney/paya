@@ -744,7 +744,7 @@ hr.black-rule-2 {
 }
 .switch-text {
   color: #FF9E03;
-  font-weight: 500;
+  font-weight: 400;
 }
 .switch.switch-sm input + label {
   min-width: calc(calc(1.9375rem * .8) * 2);
