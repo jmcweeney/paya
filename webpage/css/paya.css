@@ -739,7 +739,7 @@ hr.black-rule-2 {
   background-color: #e9ecef;
 }
 .switch.switch-sm {
-  font-size: 1rem;
+  font-size: .95rem;
 }
 .switch.switch-sm input + label {
   min-width: calc(calc(1.9375rem * .8) * 2);
