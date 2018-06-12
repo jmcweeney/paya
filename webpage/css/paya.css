@@ -458,6 +458,9 @@ hr.black-rule-2 {
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
     background-color: #48A9FD;
 }
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+   background-image: none;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
