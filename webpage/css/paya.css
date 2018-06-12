@@ -397,23 +397,31 @@ hr.black-rule-2 {
   top:10px;
 }
 .paya-card-brand {
-  height:30px;
+  height:20px;
   position:relative;
 }
-.paya-card-brand-icon {
-  height:15px;
+.paya-card-icon,
+.paya-cvv-icon {
+  height:20px;
   position:absolute;
   right:0;
-  top:10px;
-  font-size: 1.25rem;
+  top:8px;
 }
+.paya-card-icon img,
+.paya-cvv-icon img {
+  height:20px;
+  position:absolute;
+  right:0;
+  top: 0;
+}
+
 #inputCardNumber {
   width:100%
 }
 
 .custom-label,
 .custom-control-label {
-  font-weight: 600;
+  font-weight: 500;
 }
 .custom-control-header {
   font-size: 1rem;
