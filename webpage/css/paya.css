@@ -156,6 +156,10 @@ hr.black-rule-2 {
 
 /* ----- Custom Cards ----- */
 
+/* .paya-cards div :first-child {
+  background-color: #ff0099;
+} */
+
 .border {
   border: 1px solid #dee2e6 !important;
 }
