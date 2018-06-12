@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Shape_1_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="375px" height="234px" viewBox="0 0 375 234" enable-background="new 0 0 375 234" xml:space="preserve">
-<g id="Shape_1">
-	<g>
-		<path fill="#434A54" d="M347.479-0.006H27.53c-15.201,0-27.524,12.273-27.524,27.413v22.082h374.997V27.407
-			C375.003,12.268,362.68-0.006,347.479-0.006z M0.006,206.588c0,15.139,12.323,27.413,27.524,27.413h319.949
-			c15.201,0,27.524-12.274,27.524-27.413V95.785H0.006V206.588z M278.669,132.945h54.743v17.361h-54.743V132.945z M42.209,132.945
-			h121.26v17.361H42.209V132.945z M42.209,169.038h65.753v17.361H42.209V169.038z"/>
-	</g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="235px" viewBox="0 0 375 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>cc-default</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cc-default" fill="#DEE2E6" fill-rule="nonzero">
+            <path d="M347.479,0.994 L27.53,0.994 C12.329,0.994 0.006,13.267 0.006,28.407 L0.006,50.489 L375.003,50.489 L375.003,28.407 C375.003,13.268 362.68,0.994 347.479,0.994 Z M0.006,207.588 C0.006,222.727 12.329,235.001 27.53,235.001 L347.479,235.001 C362.68,235.001 375.003,222.727 375.003,207.588 L375.003,96.785 L0.006,96.785 L0.006,207.588 Z M278.669,133.945 L333.412,133.945 L333.412,151.306 L278.669,151.306 L278.669,133.945 Z M42.209,133.945 L163.469,133.945 L163.469,151.306 L42.209,151.306 L42.209,133.945 Z M42.209,170.038 L107.962,170.038 L107.962,187.399 L42.209,187.399 L42.209,170.038 Z" id="Shape"></path>
+        </g>
+    </g>
 </svg>
