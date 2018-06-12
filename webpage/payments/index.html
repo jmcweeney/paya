@@ -186,7 +186,7 @@
                       Required
                     </div>
                   </div>
-                  <div class="paya form-group col-6 col-lg-4 pb-3">
+                  <div class="paya form-group col-6 col-lg-4">
                     <label for="inputSecurity">Security Code (CVV)</label>
                     <div class="paya-card-brand">
                       <i class="fas fa-question-circle paya-card-brand-icon" data-toggle="tooltip" data-html="true" title="<img src='../img/cc-tooltip-sml.png' />"></i>
@@ -198,7 +198,7 @@
                   </div>
                 </div>
               </div>
-              <!-- Bank Account option -->
+              <!-- Bank Account (ACH) option -->
               <div class="tab-pane fade" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="form-row">
                   <div class="paya form-group col-12">
@@ -252,11 +252,50 @@
                     </div>
                   </div>
                 </div>
+                <div class="form-row">
+                  <div class="paya form-group col-md-6">
+                    <label for="inputDrivers">Driver's License Number</label>
+                    <input type="text" class="form-control input" id="inputDrivers" placeholder="A1239875" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                  <div class="paya form-group col-6 col-md-2">
+                    <label for="inputDriversState">State</label>
+                    <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                  <div class="paya form-group col-6 col-md-4">
+                    <label for="inputDob">Date of birth</label>
+                    <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="paya form-group col-12 col-lg-6">
+                    <label for="inputBankPhone">Phone number</label>
+                    <input type="number" class="form-control input" id="inputBankPhone" placeholder="(703) 848-2980" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                  <div class="paya form-group col-12 col-lg-6">
+                    <label for="inputSSN">Social Security Number</label>
+                    <input type="number" class="form-control input" id="inputSSN" placeholder="542 12 7895" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Save Card UI -->
-          <div class="card-footer border-top-0 mb-0 pb-2 px-4">
+          <div class="card-footer border-top-0 mt-2 mb-0 pb-2 px-4">
             <div class="form-group col-md-12 pl-0 mb-1">
               <span class="switch switch-sm">
                 <input type="checkbox" class="switch" id="switchSave">
