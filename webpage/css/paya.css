@@ -658,11 +658,14 @@ input[type=number]::-webkit-outer-spin-button {
   width: 30px;
   height: 30px;
   text-align: center;
-  padding: 6px 9px;
-  font-size: 0.75rem;
+  padding: 4px 9px;
   line-height: 1rem;
   border-radius: 50%;
   color: inherit;
+}
+.btn-circle-sm:hover img {
+    -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
 }
 
 .btn-circle-lg {
