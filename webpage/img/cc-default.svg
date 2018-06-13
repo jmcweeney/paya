@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="375px" height="235px" viewBox="0 0 375 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>cc-default</title>
+    <title>CC Default</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="cc-default" fill="#DEE2E6" fill-rule="nonzero">
-            <path d="M347.479,0.994 L27.53,0.994 C12.329,0.994 0.006,13.267 0.006,28.407 L0.006,50.489 L375.003,50.489 L375.003,28.407 C375.003,13.268 362.68,0.994 347.479,0.994 Z M0.006,207.588 C0.006,222.727 12.329,235.001 27.53,235.001 L347.479,235.001 C362.68,235.001 375.003,222.727 375.003,207.588 L375.003,96.785 L0.006,96.785 L0.006,207.588 Z M278.669,133.945 L333.412,133.945 L333.412,151.306 L278.669,151.306 L278.669,133.945 Z M42.209,133.945 L163.469,133.945 L163.469,151.306 L42.209,151.306 L42.209,133.945 Z M42.209,170.038 L107.962,170.038 L107.962,187.399 L42.209,187.399 L42.209,170.038 Z" id="Shape"></path>
-        </g>
+    <g id="CC-Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-6-Copy-13" fill="#ACB4B8" x="1" y="5" width="26" height="4"></rect>
+        <rect id="Rectangle-6-Copy-12" fill="#ACB4B8" x="16" y="10" width="2" height="2"></rect>
+        <rect id="Rectangle-6-Copy-10" fill="#ACB4B8" x="19" y="10" width="2" height="2"></rect>
+        <rect id="Rectangle-6-Copy-9" fill="#ACB4B8" x="22" y="10" width="2" height="2"></rect>
+        <rect id="Rectangle-5-Copy-2" stroke="#ACB4B8" stroke-width="2" x="1" y="1" width="26" height="18" rx="3"></rect>
     </g>
 </svg>
