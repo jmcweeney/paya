@@ -841,14 +841,11 @@ input[type=number] {
   margin-left: 1rem;
 }
 
-/* ----- Settings Modal ----- */
+/* ----- Payments Modal ----- */
 
-/* .bg-settings {
-  background-color: rgba(0,0,0,0.1);
-} */
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 560px;
     margin: 1.75rem auto;
   }
   .modal-dialog-centered {
@@ -865,37 +862,6 @@ input[type=number] {
   }
 }
 
-.modal.fade .modal-dialog {
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out,
-  -webkit-transform 0.3s ease-out;
-  -webkit-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-}
-
-.center-align {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-.modal-full {
-    min-width: 100%;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.modal-full .modal-content {
-    min-height: 100vh;
-}
-
-.lead {
-  font-size: 1rem;
-  font-weight: 300;
-}
 
 /* Docs overrides */
 

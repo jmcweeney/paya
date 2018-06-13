@@ -67,12 +67,12 @@
         </div>
       </div>
 
-      <!-- Customer Details -->
+      <!-- Billing Information -->
       <div class="card payment-card border-bottom-2">
         <div class="card-header pt-4">
-          <h4 class="card-title">Customer Details</h4>
+          <h4 class="card-title">Billing Information</h4>
         </div>
-          <div class="card-body pb-0">
+          <div class="card-body">
             <div class="form-row">
               <div class="paya form-group col-12">
                 <label for="inputName">Full name</label>
@@ -82,12 +82,11 @@
                 </div>
               </div>
               <div class="paya form-group col-12">
-                <label for="inputAddr">Billing address</label>
+                <label for="inputAddr">Address</label>
                 <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Required
                 </div>
-                <input type="text" class="form-control input mt-3" id="inputAddr2" placeholder="Suite 500 (Optional)">
               </div>
             </div>
             <div class="form-row">
@@ -113,25 +112,6 @@
                 </div>
               </div>
             </div>
-            <div class="form-row">
-              <div class="paya form-group col-12 col-lg-6 mb-2">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control input" id="inputEmail" placeholder="help@paya.com" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-              <div class="paya form-group col-12 col-lg-6 mb-2">
-                <label for="inputCardNumber">Phone number</label>
-                <input type="number" class="form-control input" id="inputPhone" placeholder="(703) 848-2980" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer pl-4 mt-2 pt-0 border-top-0">
-            <small class="text-gray font-italic">Any correspondence will be sent to the above email address.</small>
           </div>
         </div>
 
@@ -151,18 +131,9 @@
               </div>
           </div>
           <div class="card-body pb-0">
-            <!-- Credit of Debit Card option -->
+            <!-- Credit or Debit Card option -->
             <div class="tab-content">
               <div class="tab-pane fade show active" id="card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="paya form-row">
-                  <div class="form-group col-12">
-                    <label for="inputNameCard">Name on card</label>
-                    <input type="text" class="form-control input" id="inputNameCard" placeholder="Michael Scott" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
                 <div class="paya form-row">
                   <div class="form-group col-12 col-lg-6">
                     <label for="inputCardNumber">Card</label>
@@ -197,13 +168,6 @@
               <!-- Bank Account (ACH) option -->
               <div class="tab-pane fade" id="bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="form-row">
-                  <div class="paya form-group col-12 col-lg-6">
-                    <label for="inputNameCard">Name on account</label>
-                    <input type="text" class="form-control input" id="inputNameCard" placeholder="Michael Scott" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
                   <div class="form-group col-12 col-lg-6">
                     <label class="paya-label" for="inputCardNumber">Account type</label>
                     <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
@@ -245,45 +209,6 @@
                     <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Wells Fargo" readonly>
                   </div>
                 </div>
-                <div class="paya form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputDrivers">Driver's license number</label>
-                    <input type="text" class="form-control input" id="inputDrivers" placeholder="A1239875" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                  <div class="form-group col-6 col-md-3">
-                    <label for="inputDriversState">Licensed state</label>
-                    <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                  <div class="form-group col-6 col-md-3">
-                    <label for="inputDob">Date of birth</label>
-                    <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="paya form-row">
-                  <div class="form-group col-12 col-lg-6">
-                    <label for="inputBankPhone">Phone number</label>
-                    <input type="number" class="form-control input" id="inputBankPhone" placeholder="(703) 848-2980" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                  <div class="form-group col-12 col-lg-6">
-                    <label for="inputSSN">Social Security number</label>
-                    <input type="number" class="form-control input" id="inputSSN" placeholder="542 12 7895" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -308,8 +233,65 @@
         </div>
         <!-- Recurring UI -->
 
+        <!-- Customer Information -->
+        <div class="card payment-card border-bottom-2">
+          <div class="card-header pt-4">
+            <h4 class="card-title">Customer Information</h4>
+          </div>
+            <div class="card-body">
+            <div class="paya form-row">
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control input" id="inputEmail" placeholder="help@paya.com" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputCardNumber">Phone number</label>
+                <input type="number" class="form-control input" id="inputPhone" placeholder="(703) 848-2980" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+            </div>
+            <div class="paya form-row">
+              <div class="form-group col-md-6">
+                <label for="inputDrivers">Driver's license number</label>
+                <input type="text" class="form-control input" id="inputDrivers" placeholder="A1239875" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+              <div class="form-group col-6 col-md-3">
+                <label for="inputDriversState">Licensed state</label>
+                <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+              <div class="form-group col-6 col-md-3">
+                <label for="inputDob">Date of birth</label>
+                <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+            </div>
+            <div class="paya form-row">
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputSSN">Social Security number</label>
+                <input type="number" class="form-control input" id="inputSSN" placeholder="542 12 7895" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Shipping Details -->
-        <div class="card payment-card border-bottom-2 pb-3">
+        <div class="card payment-card pb-3">
           <div class="card-header pt-4">
             <h4 class="card-title">Shipping Details</h4>
           </div>
@@ -322,7 +304,7 @@
             </div>
               <div class="form-row">
                 <div class="paya form-group col-12">
-                  <label for="inputAddr">Shipping address</label>
+                  <label for="inputAddr">Address</label>
                   <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
@@ -448,7 +430,6 @@
 </div>
 </form>
 
-
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
@@ -456,8 +437,6 @@
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/vendor/holder.min.js"></script>
 <script src="../js/paya.js"></script>
-<script>
 
-</script>
 </body>
 </html>
