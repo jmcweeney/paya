@@ -16,7 +16,6 @@
   <link href="../css/paya.css" rel="stylesheet">
 
 </head>
-
 <body>
 
 <form action="../receipt/index.html" method="post" class="needs-validation" novalidate>
@@ -27,7 +26,7 @@
   <div class="paya-cards col-md-6 col-lg-6 mb-3">
 
         <!-- Service Details -->
-        <div class="card payment-card border-top-2 border-bottom-2">
+        <div class="card payment-card border-bottom-2">
           <div class="card-header pt-4">
             <h4 class="card-title">Service Items</h4>
           </div>
@@ -140,7 +139,7 @@
         <div class="card payment-card border-bottom-2">
           <div class="card-header pt-4">
             <h4 class="card-title">Payment Options</h4>
-              <div class="mt-4 mb-1 paya-card-save pt-3 px-3 pb-1">
+              <div class="paya-payment-options mt-4 mb-1 pt-3 px-0 pb-1">
                 <div class="custom-control custom-radio custom-control-inline">
                   <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
                   <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
@@ -378,7 +377,7 @@
         <div class="transactions card box-shadow sticky-top">
           <div class="card-header pt-4 pb-0">
             <h5 class="card-title">Transaction Summary</h5>
-            <p class="card-text text-gray">Customer Service No: (703) 555-1212</p>
+            <p class="card-text text-gray">Customer Service No: <a class="text-muted" href="tel:703-555-1212">(703) 555-1212</a></p>
             <hr>
           </div>
           <div class="card-body pt-0 my-0">
@@ -421,7 +420,7 @@
               </li>
             </ul>
             <hr class="black-rule-1">
-            <ul class="list-group">
+            <ul class="list-group text-muted">
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Subtotal
                 <span>$80.00</span>

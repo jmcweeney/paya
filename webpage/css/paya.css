@@ -385,11 +385,14 @@ hr.black-rule-2 {
   -webkit-animation: 1ms void-animation-out;
 }
 
-.paya-card-save {
+.paya-payment-options {
+  border-bottom: 2px #000 solid;
+}
+/* .paya-card-save {
   background: rgba(248, 252, 255, 1.0);
   border: 1px solid rgba(72, 169, 253, .25);
   border-radius: .25rem;
-}
+} */
 .paya-save-brand-icon {
   height:15px;
   position:absolute;
@@ -821,6 +824,33 @@ input[type=number]::-webkit-outer-spin-button {
 /* .bg-settings {
   background-color: rgba(0,0,0,0.1);
 } */
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+  .modal-dialog-centered {
+    min-height: calc(100% - (1.75rem * 2));
+  }
+  .modal-sm {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 800px;
+  }
+}
+
+.modal.fade .modal-dialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out,
+  -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
 
 .center-align {
   display: -ms-flexbox;
@@ -832,6 +862,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .modal-full {
     min-width: 100%;
+    min-height: 100vh;
     margin: 0;
 }
 
