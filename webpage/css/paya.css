@@ -196,7 +196,9 @@ hr.black-rule-2 {
 .payment-card {
   border: 0;
   border-radius: 0;
+  box-shadow: 0;
 }
+
 
 .card-header {
   padding: 0.75rem 1.5rem;
@@ -220,6 +222,21 @@ hr.black-rule-2 {
 
 
 /* ----- Transactions ----- */
+
+.transactions-card {
+  border: 0;
+  box-shadow: 0;
+  /* background: #F8FCFF; */
+}
+
+@media (min-width: 576px) {
+  .transactions-card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    /* background: #F8FCFF; */
+  }
+}
 
 .transactions p {
   font-size: 85%;
