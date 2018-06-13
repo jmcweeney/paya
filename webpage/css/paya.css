@@ -18,7 +18,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
+  --gray: #ACB4B8;
   --gray-dark: #343a40;
   --primary: #4699FE;
   --secondary: #8E9BAD;
@@ -186,7 +186,7 @@ hr.black-rule-2 {
   border-bottom: 1px solid #000 !important;
 }
 .border-bottom-2 {
-  border-bottom: 2px solid #000 !important;
+  border-bottom: 2px solid #ACB4B8 !important;
 }
 
 .border-left {
@@ -386,7 +386,7 @@ hr.black-rule-2 {
 }
 
 .paya-payment-options {
-  border-bottom: 2px #000 solid;
+  border-bottom: 2px #ACB4B8 solid;
 }
 /* .paya-card-save {
   background: rgba(248, 252, 255, 1.0);
