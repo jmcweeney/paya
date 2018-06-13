@@ -149,38 +149,26 @@
                   <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
                 </div>
               </div>
-              <!-- <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#pills-card-payment">Credit or Debit Card</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#pills-bank-account">Bank Account</a>
-                </li>
-              </ul> -->
-              <!-- <nav class="nav nav-tabs flex-column flex-sm-row">
-                <a class="flex-sm-fill text-sm-center nav-link active border-0 border-bottom" href="#card-payment" data-toggle="tab" role="tab">Credit or Bank Card</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="#bank-payment" data-toggle="tab" role="tab">Bank Account</a>
-              </nav> -->
           </div>
           <div class="card-body pb-0">
             <!-- Credit of Debit Card option -->
-            <div class="tab-content" id="one">
+            <div class="tab-content">
               <div class="tab-pane fade show active" id="card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="form-row">
-                  <div class="form-group paya col-12">
+                <div class="paya form-row">
+                  <div class="form-group col-12 col-lg-6">
                     <label for="inputNameCard">Name on card</label>
                     <input type="text" class="form-control input" id="inputNameCard" placeholder="Michael Scott" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
                   </div>
-                  <div class="form-group paya col-12">
+                  <div class="form-group col-12 col-lg-6">
                     <label for="inputBusinessName">Business name</label>
                     <input type="text" class="form-control input" id="inputBusinessName" placeholder="Optional">
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="paya form-group col-12 col-lg-6">
+                <div class="paya form-row">
+                  <div class="form-group col-12 col-lg-6">
                     <label for="inputCardNumber">Card</label>
                     <div class="paya-card-brand">
                       <span class="paya-card-icon"><img src="../img/cc-default.svg"></span>
@@ -190,14 +178,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="paya form-group col-6 col-lg-2">
+                  <div class="form-group col-6 col-lg-2">
                     <label for="inputCardNumber">Expiration</label>
                     <input type="number" class="form-control input text-uppercase" id="inputExpiration" maxlength="4" placeholder="MM/YY" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
                   </div>
-                  <div class="paya form-group col-6 col-lg-4">
+                  <div class="form-group col-6 col-lg-4">
                     <label for="inputSecurity">Security Code (CVV)</label>
                     <div class="paya-card-brand">
                       <span class="paya-cvv-icon"><img data-toggle="tooltip" data-html="true" title="<img src='../img/cvv-tooltip.svg' />"src="../img/cvv-question.svg"></span>
@@ -212,39 +200,9 @@
               <!-- Bank Account (ACH) option -->
               <div class="tab-pane fade" id="bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="form-row">
-                  <div class="paya form-group col-12">
+                  <div class="paya form-group col-12 col-lg-6">
                     <label for="inputNameCard">Name on account</label>
                     <input type="text" class="form-control input" id="inputNameCard" placeholder="Michael Scott" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="paya form-row">
-                  <div class="form-group col-12 col-lg-6">
-                    <label for="inputFn">Routing number</label>
-                    <input type="number" class="form-control input" id="inputFn" maxlength="13" placeholder="123-123-123" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                  <div class="form-group col-12 col-lg-6">
-                    <span class="align-baseline">
-                      <img src="../img/bank-numbers.svg" />
-                    </span>
-                  </div>
-                  <div class="form-group col-12">
-                    <label for="inputFn">Bank name</label>
-                    <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Wells Fargo" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="paya form-group col-12 col-lg-6">
-                    <label class="paya-label "for="inputCardNumber">Account number</label>
-                    <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="123-123-123-123" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
@@ -263,22 +221,49 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="paya form-group col-md-6">
+                <div class="paya form-row">
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="inputFn">Routing number</label>
+                    <input type="number" class="form-control input" id="inputFn" maxlength="13" placeholder="123-123-123" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                    <span class="align-baseline">
+                      <img src="../img/bank-numbers.svg" />
+                    </span>
+                  </div>
+                </div>
+                <div class="paya form-row">
+                  <div class="form-group col-12 col-lg-6">
+                    <label class="paya-label "for="inputCardNumber">Account number</label>
+                    <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="123-123-123-123" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="inputFn">Bank name</label>
+                    <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Wells Fargo">
+                  </div>
+                </div>
+                <div class="paya form-row">
+                  <div class="form-group col-md-6">
                     <label for="inputDrivers">Driver's license number</label>
                     <input type="text" class="form-control input" id="inputDrivers" placeholder="A1239875" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
                   </div>
-                  <div class="paya form-group col-6 col-md-3">
+                  <div class="form-group col-6 col-md-3">
                     <label for="inputDriversState">Licensed state</label>
                     <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
                   </div>
-                  <div class="paya form-group col-6 col-md-3">
+                  <div class="form-group col-6 col-md-3">
                     <label for="inputDob">Date of birth</label>
                     <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
                     <div class="invalid-feedback" style="width: 100%;">
@@ -286,15 +271,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="paya form-group col-12 col-lg-6">
+                <div class="paya form-row">
+                  <div class="form-group col-12 col-lg-6">
                     <label for="inputBankPhone">Phone number</label>
                     <input type="number" class="form-control input" id="inputBankPhone" placeholder="(703) 848-2980" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
                   </div>
-                  <div class="paya form-group col-12 col-lg-6">
+                  <div class="form-group col-12 col-lg-6">
                     <label for="inputSSN">Social Security number</label>
                     <input type="number" class="form-control input" id="inputSSN" placeholder="542 12 7895" required>
                     <div class="invalid-feedback" style="width: 100%;">

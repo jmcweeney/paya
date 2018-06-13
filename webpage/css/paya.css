@@ -400,7 +400,7 @@ hr.black-rule-2 {
   top:10px;
 }
 .paya-card-brand {
-  height:20px;
+  height:auto;
   position:relative;
 }
 .paya-card-icon,
