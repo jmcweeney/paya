@@ -29,7 +29,9 @@ $(function () {
       format: 'L',
       sideBySide: true,
       debug: false,
-      locale: 'en-gb'
+      locale: 'en-gb',
+      ignoreReadonly: true,
+      allowInputToggle: true
     });
 
     $('#datetimepicker8').datetimepicker({
@@ -37,7 +39,9 @@ $(function () {
         format: 'L',
         sideBySide: true,
         debug: false,
-        locale: 'en-gb'
+        locale: 'en-gb',
+        ignoreReadonly: true,
+        allowInputToggle: true
     });
     $("#datetimepicker7").on("change.datetimepicker", function (e) {
         $('#datetimepicker8').datetimepicker('minDate', e.date);
