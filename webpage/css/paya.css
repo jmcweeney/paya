@@ -226,6 +226,7 @@ hr.black-rule-2 {
 .transactions-card {
   border: 0;
   box-shadow: 0;
+  border-top: 2px solid #000;
   /* background: #F8FCFF; */
 }
 
