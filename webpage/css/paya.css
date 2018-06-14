@@ -376,6 +376,10 @@ hr.dashed {
     border-style: none;
     border-radius: 0;
 }
+.paya select option { color: black; }
+.paya select option:first-child {
+  color: #ff0099;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
