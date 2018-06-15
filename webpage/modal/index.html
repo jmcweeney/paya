@@ -13,6 +13,7 @@
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,400italic" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- <link href="../css/toolkit-light.css" rel="stylesheet"> -->
   <link href="../css/paya.css" rel="stylesheet">
 
 </head>
@@ -20,9 +21,31 @@
 
 <div class="container">
   <div class="row justify-content-left my-4 my-lg-5">
-    <a class="nav-link" href="#payModalSmall" data-toggle="modal">
-      Payment Options Small Modal
-    </a>
+    <h3>Modal Samples</h3>
+  </div>
+
+  <div class="row justify-content-left my-4 my-lg-5">
+
+    <ul class="nav nav-pills nav-stacked flex-column mt-3">
+      <li class="nav-header mb-3">Payment Options</li>
+      <li class="nav-item">
+        <a class="nav-link" href="#payModalSmall" data-toggle="modal">
+          Small Modal (with Save & Recurring features)
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal">
+          Full Screen Modal (WIP)
+        </a>
+      </li>
+      <hr class="visible-xs my-3">
+      <li class="nav-header mb-3">Experiments</li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Work in progress..
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -134,7 +157,7 @@
             <div class="form-group col-md-12 mb-0 pb-0 pl-0">
               <span class="switch switch-sm">
                 <input type="checkbox" class="switch" id="switchSave">
-                <label for="switchSave" class="mb-0 pb-0">Save my payment type</label>
+                <label for="switchSave" class="mb-0 pb-0">Save payment type</label>
               </span>
             </div>
             <hr>
