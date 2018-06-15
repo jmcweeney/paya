@@ -1206,6 +1206,17 @@ input[type=number] {
   }
 }
 
+.modal-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 1rem 1rem 1rem;
+  border-top: 0;
+}
+
 /* ----- Paya Alerts ----- */
 
 .alert-light-paya {
