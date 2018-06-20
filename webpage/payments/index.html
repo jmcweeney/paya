@@ -117,7 +117,7 @@
       </div>
 
       <div class="alert alert-danger mt-4" role="alert">
-        <strong>Houston, we've had a problem!</strong> The credit card number is invalid. Please review and re-submit...
+        <strong>Houston, we have a problem!</strong> The credit card number is invalid. Please review and re-submit...
       </div>
 
       <!-- Payment Options -->
@@ -218,21 +218,32 @@
           </div>
         </div>
 
-        <!-- Save Card Switch -->
-        <div class="card-footer border-top-0 mb-0 pb-0 px-4">
-          <div class="form-group col-md-12 mb-0 pb-0 pl-0">
-            <div class="onoffswitch">
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchSave">
-              <label class="onoffswitch-label" for="switchSave"></label>
+        <!-- Switches -->
+        <div class="card-footer border-top-0 mb-0 pb-2 px-4">
+          <div class="d-flex flex-row">
+            <div class="col-10 pl-0">
+              Save payment option on file
+            </div>
+            <div class="col-2 pl-0">
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchSave">
+                <label class="onoffswitch-label" for="switchSave"></label>
+              </div>
             </div>
           </div>
           <hr>
           <!-- Recurring Switch -->
-          <div class="form-group col-md-12 mt-0 pl-0 ml-0">
-            <div class="onoffswitch">
-              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchRecurring" data-toggle="collapse" data-target="#recurringUI" aria-expanded="false" aria-controls="recurringUI">
-              <label class="onoffswitch-label" for="switchRecurring"></label>
+          <div class="d-flex flex-row">
+            <div class="col-10 pl-0">
+              Setup recurring payment
             </div>
+            <div class="col-2 pl-0 ml-0">
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchRecurring" data-toggle="collapse" data-target="#recurringUI" aria-expanded="false" aria-controls="recurringUI">
+                <label class="onoffswitch-label" for="switchRecurring"></label>
+              </div>
+            </div>
+
           </div>
         </div>
         <!-- Recurring UI -->
