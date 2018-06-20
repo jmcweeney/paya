@@ -32,29 +32,29 @@
             <h4 class="card-title">Service Items</h4>
           </div>
           <div class="card-body pb-0">
-            <div class="form-row">
-              <div class="paya form-group col-12 col-lg-5">
+            <div class="paya form-row">
+              <div class="form-group col-12 col-lg-5">
                 <label for="inputDesc">Description</label>
                 <input type="text" class="form-control input" id="inputDesc" placeholder="Office visit" required autofocus>
                 <div class="invalid-feedback" style="width: 100%;">
                   Required
                 </div>
               </div>
-              <div class="form-group paya col-6 col-lg-2">
+              <div class="form-group col-6 col-lg-2">
                 <label for="inputQty">Quantity</label>
                 <input type="number" class="form-control input" id="inputQty" placeholder="2" required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Required
                 </div>
               </div>
-              <div class="form-group paya col-6 col-lg-2">
+              <div class="form-group col-6 col-lg-2">
                 <label for="inputCost">Cost</label>
                 <input type="number" class="form-control input" id="inputCost" placeholder="$40.00" required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Required
                 </div>
               </div>
-              <div class="form-group paya col-6 col-lg-3">
+              <div class="form-group col-6 col-lg-3">
                 <label for="inputTotal">Total</label>
                 <input type="number" class="form-control input" id="inputTotal" placeholder="$80.00" required>
                 <div class="invalid-feedback" style="width: 100%;">
@@ -74,15 +74,15 @@
           <h4 class="card-title">Billing Information</h4>
         </div>
         <div class="card-body">
-          <div class="form-row">
-            <div class="paya form-group col-12">
+          <div class="paya form-row">
+            <div class="form-group col-12">
               <label for="inputName">Full name</label>
               <input type="text" class="form-control input" id="inputFn" placeholder="Michael Scott" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
             </div>
-            <div class="paya form-group col-12">
+            <div class="form-group col-12">
               <label for="inputAddr">Billing address</label>
               <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
               <div class="invalid-feedback" style="width: 100%;">
@@ -90,22 +90,22 @@
               </div>
             </div>
           </div>
-          <div class="form-row">
-            <div class="paya form-group col-md-6">
+          <div class="paya form-row">
+            <div class="form-group col-md-6">
               <label for="inputCity">City</label>
               <input type="text" class="form-control input" id="inputCity" placeholder="Reston" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
             </div>
-            <div class="paya form-group col-6 col-md-2">
+            <div class="form-group col-6 col-md-2">
               <label for="inputState">State</label>
               <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
             </div>
-            <div class="paya form-group col-6 col-md-4">
+            <div class="form-group col-6 col-md-4">
               <label for="inputZip">Zip Code</label>
               <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
               <div class="invalid-feedback" style="width: 100%;">
@@ -251,7 +251,10 @@
         <div class="collapse" id="recurringUI">
           <div class="card border-0 px-4">
             <div class="card-header text-center bg-recurring my-0 py-4 rounded">
-              <h5 class="card-title text-white">Recurring Payment Name</h5>
+              <!-- <h5 class="card-title text-white">Recurring Payment Name</h5> -->
+              <div class="paya form-group col-12">
+                <input type="text" class="form-control input-recurring" id="inputFn" placeholder="Recurring payment" autocomplete="no">
+              </div>
               <h6 class="card-subtitle text-white font-weight-light">Staten Island Office</h6>
             </div>
             <div class="card-body text-center mt-0 pt-0 px-0">
@@ -281,14 +284,14 @@
                 </div>
                 <div class="form-group col-6 col-lg-3">
                   <label for="inputRecAmount">From</label>
-                  <input type="text" class="form-control datetimepicker-input input" id="datetimepicker7" data-toggle="datetimepicker" data-target="#datetimepicker7" placeholder="Start date" autocomplete="nope" readonly required/>
+                  <input type="text" class="form-control datetimepicker-input input" id="datetimepicker7" data-toggle="datetimepicker" data-target="#datetimepicker7" placeholder="Start date" autocomplete="no" readonly required/>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
                 <div class="form-group col-6 col-lg-3">
                   <label for="inputRecAmount">To</label>
-                  <input type="text" class="form-control datetimepicker-input input" id="datetimepicker8" data-toggle="datetimepicker" data-target="#datetimepicker8" placeholder="End date" autocomplete="nope" readonly required/>
+                  <input type="text" class="form-control datetimepicker-input input" id="datetimepicker8" data-toggle="datetimepicker" data-target="#datetimepicker8" placeholder="End date" autocomplete="no" readonly required/>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
@@ -490,7 +493,7 @@
           <hr class="black-rule-2">
           <div class="paya-ach-agree">
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <input type="checkbox" class="custom-control-input" id="customCheck1" required>
               <label class="custom-control-label small font-weight-normal" for="customCheck1">I agree to the ACH <a href="#">Terms & Conditions</a>.</label>
             </div>
             <hr>
