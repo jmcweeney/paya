@@ -764,19 +764,20 @@ input[type=number] {
 }
 
 
-/* ----- Paya On/Off Switch ----- */
+/* ----- Paya Recurring Switch ----- */
 
-.onoffswitch {
+.payaSwitch {
     position: relative;
     width: 48px;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select: none;
 }
-.onoffswitch-checkbox {
+.payaSwitch-checkbox,
+.payaSwitchSave-checkbox {
     display: none;
 }
-.onoffswitch-label {
+.payaSwitch-label {
     display: block;
     overflow: hidden;
     cursor: pointer;
@@ -788,7 +789,8 @@ input[type=number] {
     background-color: #e9ecef;
     transition: background-color 0.2s ease-in;
 }
-.onoffswitch-label:before {
+
+.payaSwitch-label:before {
     content: "";
     display: block;
     width: 24px;
@@ -802,14 +804,54 @@ input[type=number] {
     border-radius: 36px;
     transition: all 0.2s ease-in 0s;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label {
+.payaSwitch-checkbox:checked + .payaSwitch-label {
     background-color: #FF9E03;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label,
-.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+.payaSwitch-checkbox:checked + .payaSwitch-label,
+.payaSwitch-checkbox:checked + .payaSwitch-label:before {
    border-color: #FF9E03;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+.payaSwitch-checkbox:checked + .payaSwitch-label:before {
+    right: 0px;
+}
+
+/* ----- Paya Save Payment Switch ----- */
+
+.payaSwitchSave-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 24px;
+    padding: 0;
+    line-height: 36px;
+    border: 2px solid #E3E3E3;
+    border-radius: 36px;
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease-in;
+}
+
+.payaSwitchSave-label:before {
+    content: "";
+    display: block;
+    width: 24px;
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 24px;
+    border: 2px solid #E3E3E3;
+    border-radius: 36px;
+    transition: all 0.2s ease-in 0s;
+}
+.payaSwitchSave-checkbox:checked + .payaSwitchSave-label {
+    background-color: #4699FE;
+}
+.payaSwitchSave-checkbox:checked + .payaSwitchSave-label,
+.payaSwitchSave-checkbox:checked + .payaSwitchSave-label:before {
+   border-color: #4699FE;
+}
+.payaSwitchSave-checkbox:checked + .payaSwitchSave-label:before {
     right: 0px;
 }
 
