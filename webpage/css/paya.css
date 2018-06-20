@@ -764,6 +764,54 @@ input[type=number] {
 }
 
 
+/* ----- Paya On/Off Switch ----- */
+
+.onoffswitch {
+    position: relative;
+    width: 48px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 24px;
+    padding: 0;
+    line-height: 36px;
+    border: 2px solid #E3E3E3;
+    border-radius: 36px;
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block;
+    width: 24px;
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 24px;
+    border: 2px solid #E3E3E3;
+    border-radius: 36px;
+    transition: all 0.2s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #FF9E03;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #FF9E03;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px;
+}
+
 /* ----- Paya Recurring Switch ----- */
 
 .bg-recurring {
@@ -1213,7 +1261,7 @@ input[type=number] {
   align-items: center;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1 1rem 1rem;
   border-top: 0;
 }
 
