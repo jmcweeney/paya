@@ -569,9 +569,16 @@ input[type=number] {
   right:0;
   top:8px;
 }
-.paya-card-icon img,
+.paya-card-icon img {
+  height:20px;
+  width: 28px;
+  position:absolute;
+  right:0;
+  top: 0;
+}
 .paya-cvv-icon img {
   height:20px;
+  width: 70px;
   position:absolute;
   right:0;
   top: 0;
