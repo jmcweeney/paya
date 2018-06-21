@@ -371,41 +371,44 @@
             </div>
             <div class="col-2 pr-0 mr-0">
               <div class="payaSwitch">
-                <input type="checkbox" name="payaSwitchShip" class="payaSwitchShip-checkbox" id="switchShip">
-                <label class="payaSwitchShip-label" for="switchShip"></label>
+                <input type="checkbox" name="payaSwitchShip" class="payaSwitchShip-checkbox" id="switchShipping" data-toggle="collapse" data-target="#shippingUI" aria-expanded="false" aria-controls="shippingUI">
+                <label class="payaSwitchShip-label" for="switchShipping"></label>
               </div>
             </div>
           </div>
           <hr>
-            <div class="form-row">
-              <div class="paya form-group col-12">
-                <label for="inputAddr">Address</label>
-                <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
+            <!-- Shipping UI -->
+            <div class="collapse show" id="shippingUI">
+              <div class="form-row">
+                <div class="paya form-group col-12">
+                  <label for="inputAddr">Address</label>
+                  <input type="text" class="form-control input" id="inputAddr1" placeholder="12120 Sunset Hills Rd" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-row">
-              <div class="paya form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control input" id="inputCity" placeholder="Reston" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
+              <div class="form-row">
+                <div class="paya form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control input" id="inputCity" placeholder="Reston" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
                 </div>
-              </div>
-              <div class="paya form-group col-6 col-md-2">
-                <label for="inputState">State</label>
-                <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
+                <div class="paya form-group col-6 col-md-2">
+                  <label for="inputState">State</label>
+                  <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
                 </div>
-              </div>
-              <div class="paya form-group col-6 col-md-4">
-                <label for="inputZip">Zip Code</label>
-                <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
+                <div class="paya form-group col-6 col-md-4">
+                  <label for="inputZip">Zip Code</label>
+                  <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
                 </div>
               </div>
             </div>
