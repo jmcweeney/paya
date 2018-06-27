@@ -1193,6 +1193,12 @@ input[type=number] {
   cursor: pointer;
   border-radius: 0.25rem;
 }
+.bootstrap-datetimepicker-widget .picker-switch span:before {
+   content: "No End Date";
+   color: #333;
+   font-weight: 500;
+   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 .bootstrap-datetimepicker-widget table td span:hover {
   background: #e9ecef;
 }

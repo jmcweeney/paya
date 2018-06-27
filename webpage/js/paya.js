@@ -36,12 +36,11 @@ $(function () {
 
     $('#datetimepicker8').datetimepicker({
         useCurrent: false,
-        format: 'L',
-        sideBySide: true,
-        debug: false,
+        sideBySide: false,
         locale: 'en-gb',
         ignoreReadonly: true,
-        allowInputToggle: true
+        allowInputToggle: true,
+        debug: false
     });
     $("#datetimepicker7").on("change.datetimepicker", function (e) {
         $('#datetimepicker8').datetimepicker('minDate', e.date);
