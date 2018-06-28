@@ -832,12 +832,12 @@ input[type=number] {
     -moz-user-select:none;
     -ms-user-select: none;
 }
-.payaSwitch-checkbox,
+.payaSwitchRec-checkbox,
 .payaSwitchSave-checkbox,
 .payaSwitchShip-checkbox {
     display: none;
 }
-.payaSwitch-label {
+.payaSwitchRec-label {
     display: block;
     overflow: hidden;
     cursor: pointer;
@@ -850,7 +850,7 @@ input[type=number] {
     transition: background-color 0.2s ease-in;
 }
 
-.payaSwitch-label:before {
+.payaSwitchRec-label:before {
     content: "";
     display: block;
     width: 24px;
@@ -864,14 +864,14 @@ input[type=number] {
     border-radius: 36px;
     transition: all 0.2s ease-in 0s;
 }
-.payaSwitch-checkbox:checked + .payaSwitch-label {
-    background-color: #FF9E03;
+.payaSwitchRec-checkbox:checked + .payaSwitchRec-label {
+    background-color: #4699FE /* #FF9E03; */
 }
-.payaSwitch-checkbox:checked + .payaSwitch-label,
-.payaSwitch-checkbox:checked + .payaSwitch-label:before {
-   border-color: #FF9E03;
+.payaSwitchRec-checkbox:checked + .payaSwitchRec-label,
+.payaSwitchRec-checkbox:checked + .payaSwitchRec-label:before {
+   border-color: #4699FE /* #FF9E03; */
 }
-.payaSwitch-checkbox:checked + .payaSwitch-label:before {
+.payaSwitchRec-checkbox:checked + .payaSwitchRec-label:before {
     right: 0px;
 }
 
