@@ -81,7 +81,7 @@
           <h4 class="card-title">Payment Options</h4>
             <div class="paya-payment-options mt-4 mb-1 px-0 pb-1">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')">
+                <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="achUI">
                 <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
@@ -284,7 +284,7 @@
             </div>
           </div>
           <!-- Specific ACH Customer Information -->
-          <div class="collapse" id="achUI">
+          <div class="collapse multi-collapse" id="achUI">
             <div class="paya form-row">
               <div class="form-group col-md-6">
                 <label for="inputDrivers">Driver's license number</label>
