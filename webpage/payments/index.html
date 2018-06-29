@@ -85,7 +85,7 @@
                 <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')">
+                <input type="radio" id="bankAccountPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')" data-toggle="collapse" data-target="#achUI" aria-expanded="false" aria-controls="achUI">
                 <label class="custom-control-label custom-control-header" for="bankAccountPayment">Bank Account</label>
               </div>
             </div>
@@ -283,35 +283,36 @@
               </div>
             </div>
           </div>
-          <div class="paya form-row">
-            <div class="form-group col-md-6">
-              <label for="inputDrivers">Driver's license number</label>
-              <input type="text" class="form-control input" id="inputDrivers" placeholder="A1234567" required>
-              <div class="invalid-feedback" style="width: 100%;">
-                Required
+          <!-- Specific ACH Customer Information -->
+          <div class="collapse" id="achUI">
+            <div class="paya form-row">
+              <div class="form-group col-md-6">
+                <label for="inputDrivers">Driver's license number</label>
+                <input type="text" class="form-control input" id="inputDrivers" placeholder="A1234567" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-            </div>
-            <div class="form-group col-6 col-md-3">
-              <label for="inputDriversState">Licensed state</label>
-              <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
-              <div class="invalid-feedback" style="width: 100%;">
-                Required
+              <div class="form-group col-6 col-md-3">
+                <label for="inputDriversState">Licensed state</label>
+                <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-            </div>
-            <div class="form-group col-6 col-md-3">
-              <label for="inputDob">Date of birth</label>
-              <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
-              <div class="invalid-feedback" style="width: 100%;">
-                Required
+              <div class="form-group col-6 col-md-3">
+                <label for="inputDob">Date of birth</label>
+                <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="paya form-row">
-            <div class="form-group col-12 col-lg-6">
-              <label for="inputSSN">Social Security number</label>
-              <input type="number" class="form-control input" id="inputSSN" placeholder="Number" required>
-              <div class="invalid-feedback" style="width: 100%;">
-                Required
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputSSN">Social Security number</label>
+                <input type="number" class="form-control input" id="inputSSN" placeholder="Number" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
               </div>
             </div>
           </div>
