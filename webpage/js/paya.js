@@ -80,3 +80,11 @@ $(function () {
     }
   } );
 } );
+
+$('input').on('blur keyup', function() {
+    if ($("#processPayment").valid()) {
+        $('#submit').prop('disabled', false);
+    } else {
+        $('#submit').prop('disabled', 'disabled');
+    }
+});
