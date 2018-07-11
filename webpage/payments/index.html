@@ -97,8 +97,8 @@
                 <div class="form-group col-12 col-lg-6">
                   <label for="inputCardNumber">Card</label>
                   <div class="paya-card-brand">
-                    <span class="paya-card-icon"><img src="../img/cc-default.svg"></span>
-                    <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="1234 1234 1234 1234" required>
+                    <span class="paya-card-icon"><img src="../img/cc-visa.svg"></span>
+                    <input type="text" class="form-control input" id="inputCardNumber" maxlength="19" placeholder="1234 1234 1234 1234" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="form-group col-6 col-lg-2">
                   <label for="inputCardNumber">Expiration</label>
-                  <input type="number" class="form-control input text-uppercase" id="inputExpiration" maxlength="4" placeholder="MM/YY" required>
+                  <input type="text" class="form-control input text-uppercase" id="inputExpiration" maxlength="5" placeholder="MM/YY" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
@@ -185,7 +185,7 @@
         </div>
 
         <!-- Switches -->
-        <div class="card-footer border-top-0 my-0 py-2 px-4">
+        <div class="card-footer">
           <!-- Save Payment Switch -->
           <div class="d-flex flex-row">
             <div class="col-10 pl-0">
