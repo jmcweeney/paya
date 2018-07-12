@@ -294,6 +294,7 @@ hr.dashed {
 .nav-link {
     display: block;
     padding: 0.375rem 1rem;
+    background-color: #f5f5f5;
 }
 
 /* ----- Custom Cards ----- */
