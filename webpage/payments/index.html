@@ -91,25 +91,24 @@
                 <a class="flex-sm-fill text-sm-center nav-link active mr-2" id="credit-tab" data-toggle="tab" href="#card-payment" role="tab" aria-controls="card-payment" aria-selected="true">Credit or Debit Card</a>
                 <a class="flex-sm-fill text-sm-center nav-link" id="bank-tab" data-toggle="tab" href="#bank-payment" role="tab" aria-controls="bank-payment" aria-selected="false">Bank Account</a>
               </nav>
-              <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                </li>
-              </ul>
-
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
-              </div> -->
             </div>
           </div>
+
+          <!-- <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample">Toggle both elements</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div> -->
+
         <div class="card-body pb-0">
           <!-- Credit or Debit Card option -->
           <div class="tab-content">
@@ -289,7 +288,7 @@
         <div class="card-header pt-4 pb-0">
           <h4 class="card-title">Customer Information</h4>
         </div>
-          <div class="card-body">
+        <div class="card-body">
           <div class="paya form-row">
             <div class="form-group col-12 col-lg-6">
               <label for="inputEmail">Email</label>
@@ -307,7 +306,7 @@
             </div>
           </div>
           <!-- Specific ACH Customer Information -->
-          <div class="collapse multi-collapse" id="achUI">
+          <div class="collapse multi-collapse" id="achUI" data-parent="#bank-payment">
             <div class="paya form-row">
               <div class="form-group col-md-6">
                 <label for="inputDrivers">Driver's license number</label>
