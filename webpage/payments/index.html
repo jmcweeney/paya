@@ -78,21 +78,42 @@
       <div class="card payment-card border-bottom-2">
         <div class="card-header pt-4 pb-2">
           <h4 class="card-title">Payment Options</h4>
-            <div class="paya-payment-options mt-4 mb-1 px-0 pb-1">
-              <div class="custom-control custom-radio custom-control-inline">
+            <div class="paya-payment-options mt-4 mb-1 px-0 pb-3" role="tablist">
+              <!-- <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="achUI">
                 <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
               </div>
               <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="bankPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')" data-toggle="collapse" data-target="#achUI" aria-expanded="false" aria-controls="achUI">
                 <label class="custom-control-label custom-control-header" for="bankPayment">Bank Account</label>
-              </div>
+              </div> -->
+              <nav class="nav nav-pills flex-sm-row" id="paymentTabs" role="tablist">
+                <a class="flex-sm-fill text-sm-center nav-link active" id="credit-tab" data-toggle="tab" href="#card-payment" role="tab" aria-controls="card-payment" aria-selected="true">Credit or Debit Card</a>
+                <a class="flex-sm-fill text-sm-center nav-link" id="bank-tab" data-toggle="tab" href="#bank-payment" role="tab" aria-controls="bank-payment" aria-selected="false">Bank Account</a>
+              </nav>
+              <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+              </div> -->
             </div>
-        </div>
+          </div>
         <div class="card-body pb-0">
           <!-- Credit or Debit Card option -->
           <div class="tab-content">
-            <div class="tab-pane fade show active" id="card-payment" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="tab-pane fade show active" id="card-payment" role="tabpanel" aria-labelledby="credit-tab">
               <div class="paya form-row">
                 <div class="form-group col-12 col-lg-6">
                   <label for="inputCardNumber">Card</label>
@@ -124,19 +145,20 @@
                 </div>
               </div>
             </div>
+
             <!-- Bank Account (ACH) option -->
-            <div class="tab-pane fade" id="bank-account" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane fade" id="bank-payment" role="tabpanel" aria-labelledby="bank-tab">
               <div class="form-row">
                 <div class="form-group col-12 col-lg-6">
                   <label class="paya-label" for="inputCardNumber">Account type</label>
                   <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
                     <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked required>
-                      <label class="custom-control-label" for="customRadioInline1">Checking</label>
+                      <input type="radio" id="customRadioInlineChecking" name="customRadioInlineChecking" class="custom-control-input" checked required>
+                      <label class="custom-control-label" for="customRadioInlineChecking">Checking</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
-                      <label class="custom-control-label" for="customRadioInline2">Savings</label>
+                      <input type="radio" id="customRadioInlineSavings" name="customRadioInlineChecking" class="custom-control-input" required>
+                      <label class="custom-control-label" for="customRadioInlineSavings">Savings</label>
                     </div>
                   </div>
                 </div>
@@ -181,6 +203,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -243,14 +266,14 @@
                 </div>
                 <div class="form-group col-6 col-lg-3">
                   <label for="inputRecAmount">From</label>
-                  <input type="text" class="form-control datetimepicker-input input" id="datetimepicker7" data-toggle="datetimepicker" data-target="#datetimepicker7" placeholder="Start date" autocomplete="no" readonly/>
+                  <input type="text" class="form-control datetimepicker-input input" id="datetimepickerStart" data-toggle="datetimepicker" data-target="#datetimepickerStart" placeholder="Start date" autocomplete="no" readonly/>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
                 <div class="form-group col-6 col-lg-3">
                   <label for="inputRecAmount">To</label>
-                  <input type="text" class="form-control datetimepicker-input input" id="datetimepicker8" data-toggle="datetimepicker" data-target="#datetimepicker8" placeholder="End date" autocomplete="no" readonly/>
+                  <input type="text" class="form-control datetimepicker-input input" id="datetimepickerEnd" data-toggle="datetimepicker" data-target="#datetimepickerEnd" placeholder="End date" autocomplete="no" readonly/>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
@@ -402,25 +425,41 @@
               266 Pacific Ave
               <span>11:39 AM</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex align-items-center">
               melissa.perosi@gmail.com
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex align-items-center">
               (718) 555-1212
             </li>
           </ul>
-          <hr class="black-rule-1">
+          <hr>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
               Method of payment
               <span>VISA 5489</span>
             </li>
           </ul>
+          <hr class="black-rule-2">
+          <p class="font-weight-bold mb-2">Recurring Payment</p>
+          <ul class="list-group text-muted">
+            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+              Amount
+              <span>$20.00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+              Frequency
+              <span>Monthly</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+              Starts 08/12/18
+              <span>Ends 08/12/19</span>
+            </li>
+          </ul>
           <hr class="black-rule-1">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
               Total
-              <span>$80.00</span>
+              <span>$40.00</span>
             </li>
           </ul>
           <hr class="black-rule-2">

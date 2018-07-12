@@ -1,28 +1,29 @@
 /*!
- * Some custom features we can eventually bake into a different .js file
+ *
+ * Some custom features we can eventually bake into a different .js file if need be
  *
  *
  */
 
-function changePaymentMethod(method) {
-  if (method == "card") {
-    $("#card-payment").addClass('active');
-    $('#card-payment').fadeIn('slow');
-    $("#bank-account").removeClass('active');
-  }
-else {
-    $("#card-payment").removeClass('active');
-    $("#bank-account").addClass('active');
-    $('#bank-account').fadeIn('slow');
-  }
-}
+// function changePaymentMethod(method) {
+//   if (method == "card") {
+//     $('#card-payment').addClass('show');
+//     $('#bank-account').removeClass('show');
+//     $('#card-payment').addClass('active');
+//     $('#bank-account').removeClass('active');
+//     $('#card-payment').fadeToggle('slow');
+//   }
+//   else {
+//     $('#bank-account').addClass('show');
+//     $('#card-payment').removeClass('show');
+//     $('#bank-account').addClass('active');
+//     $('#card-payment').removeClass('active');
+//     $('#bank-account').fadeToggle('slow');
+//   }
+// };
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-
-$(function () {
-    $('#datetimepicker7').datetimepicker({
+    $('#datetimepickerStart').datetimepicker({
       useCurrent: true,
       format: 'L',
       sideBySide: true,
@@ -32,7 +33,7 @@ $(function () {
       allowInputToggle: true
     });
 
-    $('#datetimepicker8').datetimepicker({
+    $('#datetimepickerEnd').datetimepicker({
         useCurrent: false,
         sideBySide: false,
         locale: 'en-gb',
@@ -40,16 +41,16 @@ $(function () {
         allowInputToggle: true,
         debug: false
     });
-    $("#datetimepicker7").on("change.datetimepicker", function (e) {
-        $('#datetimepicker8').datetimepicker('minDate', e.date);
+    $("#datetimepickerStart").on("change.datetimepicker", function (e) {
+        $('#datetimepickerEnd').datetimepicker('minDate', e.date);
     });
-    $("#datetimepicker8").on("change.datetimepicker", function (e) {
-        $('#datetimepicker7').datetimepicker('maxDate', e.date);
+    $("#datetimepickerEnd").on("change.datetimepicker", function (e) {
+        $('#datetimepickerStart').datetimepicker('maxDate', e.date);
     });
 });
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
+$(function() {
   'use strict';
 
   window.addEventListener('load', function() {
