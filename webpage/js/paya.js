@@ -5,22 +5,22 @@
  *
  */
 
-// function changePaymentMethod(method) {
-//   if (method == "card") {
-//     $('#card-payment').addClass('show');
-//     $('#bank-account').removeClass('show');
-//     $('#card-payment').addClass('active');
-//     $('#bank-account').removeClass('active');
-//     $('#card-payment').fadeToggle('slow');
-//   }
-//   else {
-//     $('#bank-account').addClass('show');
-//     $('#card-payment').removeClass('show');
-//     $('#bank-account').addClass('active');
-//     $('#card-payment').removeClass('active');
-//     $('#bank-account').fadeToggle('slow');
-//   }
-// };
+function changePaymentMethod(method) {
+  if (method == "card") {
+    $('#card-payment').addClass('show');
+    $('#bank-account').removeClass('show');
+    $('#card-payment').addClass('active');
+    $('#bank-account').removeClass('active');
+    $('#card-payment').fadeToggle('slow');
+  }
+  else {
+    $('#bank-account').addClass('show');
+    $('#card-payment').removeClass('show');
+    $('#bank-account').addClass('active');
+    $('#card-payment').removeClass('active');
+    $('#bank-account').fadeToggle('slow');
+  }
+};
 
 $(function () {
     $('#datetimepickerStart').datetimepicker({
