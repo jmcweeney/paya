@@ -7,15 +7,13 @@
 function changePaymentMethod(method) {
   if (method == "card") {
     $("#card-payment").addClass('active');
-    $("#card-payment").addClass('show');
+    $('#card-payment').fadeIn('slow');
     $("#bank-account").removeClass('active');
-    $("#bank-account").removeClass('show');
   }
 else {
-    $("#card-payment").removeClass('show');
     $("#card-payment").removeClass('active');
     $("#bank-account").addClass('active');
-    $("#bank-account").addClass('show');
+    $('#bank-account').fadeIn('slow');
   }
 }
 
