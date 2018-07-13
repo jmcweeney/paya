@@ -100,7 +100,7 @@
           <div class="tab-content">
             <div class="tab-pane fade show active" id="card-payment" role="tabpanel" aria-labelledby="credit-tab">
               <div class="paya form-row">
-                <div class="form-group col-12 col-lg-6">
+                <div class="form-group col-12 col-lg-6 mb-2">
                   <label for="inputCardNumber">Card</label>
                   <div class="paya-card-brand">
                     <span class="paya-card-icon"><img src="../img/cc-default.svg"></span>
@@ -110,14 +110,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-group col-6 col-lg-2">
+                <div class="form-group col-6 col-lg-2 mb-2">
                   <label for="inputCardNumber">Expiration</label>
                   <input type="text" class="form-control input text-uppercase" id="inputExpiration" maxlength="5" placeholder="MM/YY" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
-                <div class="form-group col-6 col-lg-4">
+                <div class="form-group col-6 col-lg-4 mb-2">
                   <label for="inputSecurity">Security Code (CVV)</label>
                   <div class="paya-card-brand">
                     <span class="paya-cvv-icon"><img src="../img/cvv-tooltip-inline.svg"></span>
@@ -134,7 +134,7 @@
             <!-- Bank Account (ACH) option -->
             <div class="tab-pane fade" id="bank-payment" role="tabpanel" aria-labelledby="bank-tab">
               <div class="form-row">
-                <div class="form-group col-12 col-lg-6">
+                <div class="form-group col-12 col-lg-6 mb-2">
                   <label class="paya-label" for="inputCardNumber">Account type</label>
                   <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
                     <div class="custom-control custom-radio custom-control-inline">
@@ -163,14 +163,14 @@
                 </div>
               </div>
               <div class="paya form-row">
-                <div class="form-group col-12 col-lg-6">
+                <div class="form-group col-12 col-lg-6 mb-2">
                   <label class="paya-label "for="inputCardNumber">Account number</label>
                   <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="123 123 123 123" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
-                <div class="form-group col-12 col-lg-6">
+                <div class="form-group col-12 col-lg-6 mb-2">
                   <label for="inputFn">Bank name</label>
                   <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Your bank" readonly>
                 </div>
@@ -183,7 +183,7 @@
                       <label class="custom-control-label" for="achCheck">I agree to the ACH Terms & Conditions:</label>
                       <p class="small text-muted pt-2">By authorizing this transaction, customer agrees that merchant may convert this transaction into an Electronic Funds Transfer (EFT) transaction or paper draft, and to debit this account for the amount of the transaction. Additionally, in the event this draft or EFT is returned unpaid, a service fee, as allowable by law, will be charged to this account via EFT or draft. In the event you choose to revoke this authorization, please do so by contacting the merchant directly. Please note that processing times may not allow for revocation of this authorization.</p>
                     </div>
-                    <hr>
+                    <hr class="mb-2">
                   </div>
                 </div>
               </div>
@@ -425,17 +425,17 @@
             </li>
           </ul>
           <hr class="black-rule-2">
-          <p class="font-weight-bold mb-2">Recurring Payment</p>
+          <p class="font-weight-medium mb-2">Recurring Payment</p>
           <ul class="list-group text-muted">
-            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
               Amount
               <span>$20.00</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
               Frequency
               <span>Monthly</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
               Starts 08/12/18
               <span>Ends 08/12/19</span>
             </li>
