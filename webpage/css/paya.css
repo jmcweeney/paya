@@ -1438,7 +1438,7 @@ input[type=number] {
 
 /* ----- Paya Alerts ----- */
 
-.paya-alert {
+.alert {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -1446,15 +1446,32 @@ input[type=number] {
   border-radius: 0.25rem;
 }
 
-.paya-alert-error {
+.alert-error {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.error-display {
+.alert-error .close:hover {
+  color: #fff;
+  outline: none;
+}
+.alert-error span:first-child {
+  border-bottom: 1px solid #fff;
+}
+.alert-dismissible .close {
+    position: absolute;
+    top: inherit;
+    right: 0;
+    bottom: 0;
+    padding: .75rem 1.25rem;
+    color: inherit;
+}
+.close {
+    text-shadow: 0;
+}
+.alert-error-timestamp {
   opacity: 0.5;
 }
-
 
 /* ----- Paya Branding ----- */
 
