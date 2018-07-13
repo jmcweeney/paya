@@ -1438,10 +1438,21 @@ input[type=number] {
 
 /* ----- Paya Alerts ----- */
 
-.alert-light-paya {
-  color: #818182;
-  background-color: #ffffff;
-  border-color: #f8f8f8;
+.paya-alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.paya-alert-error {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.error-display {
+  opacity: 0.5;
 }
 
 

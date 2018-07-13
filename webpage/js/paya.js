@@ -50,7 +50,7 @@ $(function () {
 });
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-$(function() {
+(function() {
   'use strict';
 
   window.addEventListener('load', function() {
@@ -80,10 +80,10 @@ $(function() {
   } );
 } );
 
-$('input').on('blur keyup', function() {
-    if ($("#processPayment").valid()) {
-        $('#submit').prop('disabled', false);
-    } else {
-        $('#submit').prop('disabled', 'disabled');
-    }
-});
+// $('input').on('blur keyup', function() {
+//     if ($("#processPayment").valid()) {
+//         $('#submit').prop('disabled', false);
+//     } else {
+//         $('#submit').prop('disabled', 'disabled');
+//     }
+// });

@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<form action="../receipt/index.html" method="post" class="needs-validation" novalidate id="processPayment">
+<form action="../receipt/index.html" method="post" class="needs-validation" novalidate>
 
 <div class="container">
 
@@ -74,40 +74,23 @@
         </div>
       </div>
 
+      <!-- Sample Alert -->
+      <div class="paya-alert paya-alert-error mt-4 mb-0" role="alert">
+        <p class="mb-2">Sorry, your card was declined due to <strong>insufficient funds</strong>.</p>
+        <p class="small error-display m-0">Error 51 &#8212; Jul 13, 2:11 PM</p>
+      </div>
+
       <!-- Payment Options -->
       <div class="card payment-card border-bottom-2">
         <div class="card-header pt-4 pb-2">
           <h4 class="card-title">Payment Options</h4>
             <div class="paya-payment-options mt-4 px-0 pb-3" role="tablist">
-              <!-- <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="cardPayment" name="paymentOptions" class="custom-control-input" checked onChange="changePaymentMethod('card')" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="achUI">
-                <label class="custom-control-label custom-control-header" for="cardPayment">Credit or Debit Card</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="bankPayment" name="paymentOptions" class="custom-control-input" onChange="changePaymentMethod('check')" data-toggle="collapse" data-target="#achUI" aria-expanded="false" aria-controls="achUI">
-                <label class="custom-control-label custom-control-header" for="bankPayment">Bank Account</label>
-              </div> -->
               <nav class="nav nav-pills flex-sm-row" id="paymentTabs" role="tablist">
                 <a class="flex-sm-fill text-sm-center nav-link active mr-2" id="credit-tab" data-toggle="tab" href="#card-payment" role="tab" aria-controls="card-payment" aria-selected="true">Credit or Debit Card</a>
                 <a class="flex-sm-fill text-sm-center nav-link" id="bank-tab" data-toggle="tab" href="#bank-payment" role="tab" aria-controls="bank-payment" aria-selected="false">Bank Account</a>
               </nav>
             </div>
           </div>
-
-          <!-- <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample">Toggle both elements</button>
-          </p>
-          <div class="row">
-            <div class="col">
-              <div class="collapse multi-collapse" id="multiCollapseExample">
-                <div class="card card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-              </div>
-            </div>
-          </div> -->
 
         <div class="card-body pb-0">
           <!-- Credit or Debit Card option -->
