@@ -4,6 +4,13 @@
  *
  */
 
+/* ----- Sandbox Elements ----- */
+
+
+.sandbox {
+  color: #ff0099;
+}
+
 /* -----  Code for index.html -- */
 
 :root {
