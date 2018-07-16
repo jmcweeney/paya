@@ -653,6 +653,18 @@ input[type=number] {
    background-image: none;
 }
 
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #4699FE;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #4699FE;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #4699FE;
+}
+
 /* ----- Paya Custom Inputs ----- */
 
 .form-group {
