@@ -40,35 +40,53 @@
                 Required
               </div>
             </div>
-            <div class="form-group col-12">
-              <label for="inputAddr">Billing address</label>
+          </div>
+          <div class="paya form-row">
+            <div class="paya form-group col-12 col-md-6">
+              <label for="inputAddr">Address</label>
               <input type="text" class="form-control input" id="inputAddr1" placeholder="123 Anystreet" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
             </div>
-          </div>
-          <div class="paya form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-12 col-md-6">
               <label for="inputCity">City</label>
               <input type="text" class="form-control input" id="inputCity" placeholder="Anytown" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
             </div>
-            <div class="form-group col-6 col-md-2">
+          </div>
+          <div class="paya form-row">
+            <div class="form-group col-6 col-md-3">
               <label for="inputState">State</label>
               <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
             </div>
-            <div class="form-group col-6 col-md-4">
+            <div class="form-group col-6 col-md-3">
               <label for="inputZip">Zip Code</label>
               <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
               <div class="invalid-feedback" style="width: 100%;">
                 Required
               </div>
+            </div>
+            <div class="form-group col-12 col-lg-6">
+              <label for="inputRecAmount">Country</label>
+                <select class="custom-select select" required>
+                  <option value="" selected hidden>United States</option>
+                  <option value="1">Afghanistan</option>
+                  <option value="2">Albania</option>
+                  <option value="3">Algeria</option>
+                  <option value="4">Andorra</option>
+                  <option value="5">Angola</option>
+                  <option value="6">Antigua and Barbuda</option>
+                  <option value="7">Argentina</option>
+                </select>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
             </div>
           </div>
         </div>
@@ -238,20 +256,20 @@
                   </div>
                 </div>
                 <div class="form-group col-6 col-lg-4">
-                <label for="inputRecAmount">Frequency</label>
-                  <select class="custom-select select">
-                    <option value="" disabled selected hidden><span class="text-gray">When</span></option>
-                    <option value="1">Weekly</option>
-                    <option value="2">Every 2 weeks</option>
-                    <option value="3">Monthly</option>
-                    <option value="4">Every 2 months</option>
-                    <option value="5">Quarterly</option>
-                    <option value="6">Every 6 months</option>
-                    <option value="7">Yearly</option>
-                  </select>
-                  <div class="invalid-feedback" style="width: 100%;">
-                    Required
-                  </div>
+                  <label for="inputRecAmount">Frequency</label>
+                    <select class="custom-select select">
+                      <option value="" disabled selected hidden><span class="text-gray">When</span></option>
+                      <option value="1">Weekly</option>
+                      <option value="2">Every 2 weeks</option>
+                      <option value="3">Monthly</option>
+                      <option value="4">Every 2 months</option>
+                      <option value="5">Quarterly</option>
+                      <option value="6">Every 6 months</option>
+                      <option value="7">Yearly</option>
+                    </select>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                 </div>
                 <div class="form-group col-6 col-lg-3">
                   <label for="inputRecAmount">From</label>
@@ -351,36 +369,52 @@
           <hr>
             <!-- Shipping UI -->
             <div class="collapse show" id="shippingUI">
-              <div class="form-row">
-                <div class="paya form-group col-12">
+              <div class="paya form-row">
+                <div class="paya form-group col-12 col-md-6">
                   <label for="inputAddr">Address</label>
                   <input type="text" class="form-control input" id="inputAddr1" placeholder="123 Anystreet" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="paya form-group col-md-6">
+                <div class="form-group col-12 col-md-6">
                   <label for="inputCity">City</label>
                   <input type="text" class="form-control input" id="inputCity" placeholder="Anytown" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
-                <div class="paya form-group col-6 col-md-2">
+              </div>
+              <div class="paya form-row">
+                <div class="form-group col-6 col-md-3">
                   <label for="inputState">State</label>
                   <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="VA" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
-                <div class="paya form-group col-6 col-md-4">
+                <div class="form-group col-6 col-md-3">
                   <label for="inputZip">Zip Code</label>
                   <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="20190" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
+                </div>
+                <div class="form-group col-12 col-lg-6">
+                  <label for="inputRecAmount">Country</label>
+                    <select class="custom-select select" required>
+                      <option value="" selected hidden>United States</option>
+                      <option value="1">Afghanistan</option>
+                      <option value="2">Albania</option>
+                      <option value="3">Algeria</option>
+                      <option value="4">Andorra</option>
+                      <option value="5">Angola</option>
+                      <option value="6">Antigua and Barbuda</option>
+                      <option value="7">Argentina</option>
+                    </select>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
                 </div>
               </div>
             </div>

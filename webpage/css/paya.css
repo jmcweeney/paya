@@ -562,10 +562,10 @@ hr.dashed {
     border-style: none;
     border-radius: 0;
 }
-.paya select option { color: gray; }
+/* .paya select option { color: gray; }
 .paya select option:first-child {
   color: #666;
-}
+} */
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -611,6 +611,10 @@ input[type=number] {
   outline: 0;
   box-shadow: 0;
   margin: 0;
+}
+
+.paya select option:not(:checked) {
+    color: #ff0099 !important;
 }
 
 .custom-select {
@@ -1489,7 +1493,7 @@ input[type=number] {
     text-shadow: 0;
 }
 .alert-error-timestamp {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* ----- Paya Branding ----- */
