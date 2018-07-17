@@ -55,7 +55,7 @@ footer p {
 
 .card-title {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 32px;
   margin-bottom: 12px;
   color: #1D2129;
@@ -662,7 +662,7 @@ input[type=number] {
 }
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: #4699FE;
+    background-color: #4699FEcard-title;
 }
 
 /* ----- Paya Custom Inputs ----- */
