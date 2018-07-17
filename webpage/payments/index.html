@@ -71,6 +71,23 @@
               </div>
             </div>
           </div>
+          <div class="paya form-row">
+            <div class="form-group col-12 col-lg-6">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control input" id="inputEmail" placeholder="janedoe@gmail.com" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Required
+              </div>
+            </div>
+            <div class="form-group col-12 col-lg-6">
+              <label for="inputCardNumber">Phone number</label>
+              <input type="number" class="form-control input" id="inputPhone" placeholder="(703) 555-1212" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Required
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -89,8 +106,8 @@
           <h4 class="card-title">Payment Options</h4>
             <div class="paya-payment-options mt-4 px-0 pb-2" role="tablist">
               <nav class="nav nav-pills flex-sm-row" id="paymentTabs" role="tablist">
-                <a class="flex-sm-fill text-sm-center nav-link active mr-2 mb-3" id="credit-tab" data-toggle="tab" href="#card-payment" role="tab" aria-controls="card-payment" aria-selected="true">Credit or Debit Card</a>
-                <a class="flex-sm-fill text-sm-center nav-link mb-3" id="bank-tab" data-toggle="tab" href="#bank-payment" role="tab" aria-controls="bank-payment" aria-selected="false">Bank Account</a>
+                <a class="flex-sm-fill text-sm-center nav-link active mr-2 mb-3 mb-md-2" id="credit-tab" data-toggle="tab" href="#card-payment" role="tab" aria-controls="card-payment" aria-selected="true">Credit or Debit Card</a>
+                <a class="flex-sm-fill text-sm-center nav-link mb-3 mb-md-2" id="bank-tab" data-toggle="tab" href="#bank-payment" role="tab" aria-controls="bank-payment" aria-selected="false">Bank Account</a>
               </nav>
             </div>
           </div>
@@ -133,7 +150,7 @@
             <!-- Bank Account (ACH) option -->
             <div class="tab-pane fade" id="bank-payment" role="tabpanel" aria-labelledby="bank-tab">
               <div class="form-row">
-                <div class="form-group col-12 col-lg-6 mb-2">
+                <div class="form-group col-12 mb-2">
                   <label class="paya-label" for="inputCardNumber">Account type</label>
                   <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
                     <div class="custom-control custom-radio custom-control-inline">
@@ -162,26 +179,55 @@
                 </div>
               </div>
               <div class="paya form-row">
-                <div class="form-group col-12 col-lg-6 mb-2">
+                <div class="form-group col-12 col-lg-6">
                   <label class="paya-label "for="inputCardNumber">Account number</label>
                   <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="1234 5678 9101 2345" required>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
                 </div>
-                <div class="form-group col-12 col-lg-6 mb-2">
+                <div class="form-group col-12 col-lg-6">
                   <label for="inputFn">Bank name</label>
-                  <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Your bank" readonly>
+                  <input type="text" class="form-control input" id="inputFn" maxlength="13" placeholder="Bank" readonly>
+                </div>
+              </div>
+              <div class="paya form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputDrivers">Driver's License No.</label>
+                  <input type="text" class="form-control input" id="inputDrivers" placeholder="A12345678" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+                <div class="form-group col-6 col-md-2">
+                  <label for="inputDriversState">State</label>
+                  <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                  <label for="inputDob">Date of birth</label>
+                  <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+                <div class="form-group col-12 col-lg-3">
+                  <label for="inputSSN">Social Security No.</label>
+                  <input type="number" class="form-control input" id="inputSSN" placeholder="123 456 7890" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-12 mb-0">
-                  <div class="mt-3">
                     <div class="custom-control custom-checkbox">
                       <div class="d-lg-flex justify-content-between">
                         <input type="checkbox" class="custom-control-input" id="achChecks" required>
                         <label class="custom-control-label" for="achChecks">I agree to ACH Terms & Conditions</label>
-                        <a role="button" class="btn btn-link text-muted mr-3 p-0" id="toggleACH" data-toggle="collapse" data-target="#achTerms" aria-expanded="false" aria-controls="achTerms">Review</a>
+                        <a role="button" class="btn btn-link text-gray mr-3 p-0" id="toggleACH" data-toggle="collapse" data-target="#achTerms" aria-expanded="false" aria-controls="achTerms">Review</a>
                       </div>
                     </div>
                     <!-- ACH Terms & Conditions -->
@@ -189,7 +235,6 @@
                       <p class="small text-muted mx-4 mt-2 mb-0">By authorizing this transaction, customer agrees that merchant may convert this transaction into an Electronic Funds Transfer (EFT) transaction or paper draft, and to debit this account for the amount of the transaction. Additionally, in the event this draft or EFT is returned unpaid, a service fee, as allowable by law, will be charged to this account via EFT or draft. In the event you choose to revoke this authorization, please do so by contacting the merchant directly. Please note that processing times may not allow for revocation of this authorization.</p>
                     </div>
                     <hr class="mt-3 mb-1">
-                  </div>
                 </div>
               </div>
             </div>
@@ -229,7 +274,7 @@
         <div class="collapse" id="recurringUI">
           <div class="card border-0 px-4">
             <div class="card-body text-center mt-0 pt-0 px-0">
-              <div class="paya form-row text-left mt-3">
+              <div class="paya form-row text-left mt-1">
                 <div class="form-group col-6 col-lg-2">
                   <label for="inputRecAmount">Amount</label>
                   <input type="number" class="form-control input" id="inputRecAmount" maxlength="6" placeholder="$0.00">
@@ -272,64 +317,6 @@
           </div>
         </div><!-- /recurring -->
       </div><!-- /payment options -->
-
-      <!-- Customer Information -->
-      <div class="card payment-card border-bottom-2">
-        <div class="card-header pt-4 pb-0">
-          <h4 class="card-title">Customer Information</h4>
-        </div>
-        <div class="card-body">
-          <div class="paya form-row">
-            <div class="form-group col-12 col-lg-6">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control input" id="inputEmail" placeholder="janedoe@gmail.com" required>
-              <div class="invalid-feedback" style="width: 100%;">
-                Required
-              </div>
-            </div>
-            <div class="form-group col-12 col-lg-6">
-              <label for="inputCardNumber">Phone number</label>
-              <input type="number" class="form-control input" id="inputPhone" placeholder="(703) 555-1212" required>
-              <div class="invalid-feedback" style="width: 100%;">
-                Required
-              </div>
-            </div>
-          </div>
-          <!-- Specific ACH Customer Information -->
-          <div class="collapse multi-collapse" id="achUI" data-parent="#bank-payment">
-            <div class="paya form-row">
-              <div class="form-group col-md-6">
-                <label for="inputDrivers">Driver's license number</label>
-                <input type="text" class="form-control input" id="inputDrivers" placeholder="A1234567" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-              <div class="form-group col-6 col-md-3">
-                <label for="inputDriversState">Licensed state</label>
-                <input type="text" class="form-control input text-uppercase" id="inputDriversState" maxlength="2" placeholder="VA" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-              <div class="form-group col-6 col-md-3">
-                <label for="inputDob">Date of birth</label>
-                <input type="number" class="form-control input" id="inputDob" maxlength="5" placeholder="11/06/85" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-              <div class="form-group col-12 col-lg-6">
-                <label for="inputSSN">Social Security number</label>
-                <input type="number" class="form-control input" id="inputSSN" placeholder="Number" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Shipping Details -->
       <div class="card payment-card pb-3">
@@ -404,7 +391,7 @@
             <li class="list-group-item align-items-center ">1012 Wuhrer Ave, Staten Island, NY 10312</li>
           </ul>
           <hr class="black-rule-2">
-          <p class="card-text font-weight-bold mb-0">Buyer</p>
+          <p class="card-text font-weight-bold mb-0">Billing Information</p>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center">
               Melissa Perosi
