@@ -602,7 +602,7 @@ input[type=number] {
 }
 .paya .select {
   width: 100%;
-  color: #000;
+  /* color: #000; */
   /* background: transparent; */
   padding: 3px 0 5px 0;
   line-height: 1.5;
@@ -613,8 +613,18 @@ input[type=number] {
   margin: 0;
 }
 
-.paya select option:not(:checked) {
-    color: #ff0099 !important;
+.paya select,
+.paya select option {
+  color: #000;
+}
+.paya select:invalid,
+.paya select option[value=""] {
+  color: #9B9B9B;
+}
+
+/*Added for browser compatibility*/
+[hidden] {
+  display: none;
 }
 
 .custom-select {
