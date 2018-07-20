@@ -22,7 +22,7 @@
         <span class="sidebar-brand-icon"><img src="../img/paya-logo.png"></span>
       </a>
       <div class="progress w-25">
-        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
 
@@ -30,8 +30,8 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h2 class="pb-2">Create your account</h2>
-          <h5 class="lead text-gray">This quick step gives you login access should you want to continue later.</h5>
+          <h2 class="pb-2">Define your business</h2>
+          <h5 class="lead text-gray">Tell us what you do so we can tailor the rest of the process to suit your needs.</h5>
         </div>
       </section>
 
@@ -43,43 +43,51 @@
         <div class="card payment-card border-bottom-2">
           <div class="card-body">
             <div class="paya form-row">
-              <div class="form-group col-12 col-md-6">
-                <label for="inputName">Enter your email</label>
-                <input type="text" class="form-control input" id="inputEm" placeholder="janedoe@gmail.com" required autofocus>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputRecAmount">What industry are you in?</label>
+                  <select class="custom-select select" required>
+                    <option value="" selected disabled hidden>Agriculture</option>
+                    <option value="1">Agriculture & Forestry</option>
+                    <option value="2">Business & Information</option>
+                    <option value="3">Construction</option>
+                    <option value="4">Education</option>
+                    <option value="5">Finance & Insurance</option>
+                    <option value="6">Food & Hospitality</option>
+                    <option value="7">Gaming</option>
+                  </select>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
               </div>
-              <div class="form-group col-12 col-md-6">
-                <label for="inputAddr">Re-enter your email</label>
-                <input type="text" class="form-control input" id="inputConfEmail" placeholder="janedoe@gmail.com" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputRecAmount">What type of business are you?</label>
+                  <select class="custom-select select" required>
+                    <option value="" selected disabled hidden>Extermination</option>
+                    <option value="1">Extermination</option>
+                    <option value="2">Farming</option>
+                    <option value="3">Fishing</option>
+                    <option value="4">Landscape Services</option>
+                    <option value="5">Other</option>
+                  </select>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
               </div>
             </div>
             <div class="paya form-row">
-              <div class="form-group col-12 col-md-6">
-                <label for="inputCity">Create a password</label>
-                <input type="password" class="form-control input" id="inputPw" placeholder="Make it memorable" required>
+              <div class="form-group col-12">
+                <label for="inputCity">What do you sell or provide?</label>
+                <input type="text" class="form-control input" id="inputPw" placeholder="Describe your product or service(s)..." required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Required
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 small text-gray">
-                <p>Passwords must be a minimum of 8 characters with a mix of letters, numbers and special characters such as !#$%^&amp;.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="paya d-flex justify-content-center my-4">
-          <!-- <a role="button" class="btn btn-outline-secondary" href="#">Back</a> -->
-          <a role="button" class="btn btn-primary" href="2-business.html">Continue</a>
-        </div>
-        <div class="paya d-flex justify-content-center">
-          <p class="text-gray">Already have an account? <a href="login.html" class="text-dark">Log in</a></p>
+        <div class="paya d-flex justify-content-between my-4">
+          <a role="button" class="btn btn-outline-secondary" href="index.html">Back</a>
+          <a role="button" class="btn btn-primary" href="3-bundle.html">Continue</a>
         </div>
       </div>
     </div>
