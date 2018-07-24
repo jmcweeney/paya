@@ -345,11 +345,11 @@
       </div>
 
       <!-- Shipping Details -->
-      <div class="card payment-card pb-3">
+      <div class="card payment-card">
         <div class="card-header pt-4 pb-0">
           <h4 class="card-title">Shipping Details</h4>
         </div>
-        <div class="card-body pb-0">
+        <div class="card-body pb-2">
           <div class="d-flex flex-row">
             <div class="col-9 col-lg-10 px-0">
               Same as Billing address?
@@ -361,130 +361,67 @@
               </div>
             </div>
           </div>
+
+          <!-- Shipping UI -->
+          <div class="collapse show" id="shippingUI">
           <hr>
-            <!-- Shipping UI -->
-            <div class="collapse show" id="shippingUI">
-              <div class="paya form-row">
-                <div class="paya form-group col-12 col-md-6">
-                  <label for="inputAddr">Address</label>
-                  <input type="text" class="form-control input" id="inputAddr1" placeholder="123 Anystreet" required>
-                  <div class="invalid-feedback" style="width: 100%;">
-                    Required
-                  </div>
-                </div>
-                <div class="form-group col-12 col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control input" id="inputCity" placeholder="Anytown" required>
-                  <div class="invalid-feedback" style="width: 100%;">
-                    Required
-                  </div>
+            <div class="paya form-row">
+              <div class="paya form-group col-12 col-md-6">
+                <label for="inputAddr">Address</label>
+                <input type="text" class="form-control input" id="inputAddr1" placeholder="123 Anystreet" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
                 </div>
               </div>
-              <div class="paya form-row">
-                <div class="form-group col-6 col-md-3">
-                  <label for="inputState">State</label>
-                  <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="AL" required>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control input" id="inputCity" placeholder="Anytown" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+            </div>
+            <div class="paya form-row">
+              <div class="form-group col-6 col-md-3">
+                <label for="inputState">State</label>
+                <input type="text" class="form-control input text-uppercase" id="inputState" maxlength="2" placeholder="AL" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+              <div class="form-group col-6 col-md-3">
+                <label for="inputZip">Zip Code</label>
+                <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="12345" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Required
+                </div>
+              </div>
+              <div class="form-group col-12 col-lg-6">
+                <label for="inputRecAmount">Country</label>
+                  <select class="custom-select select" required>
+                    <option value="" selected disabled hidden>Any country</option>
+                    <option value="1">United States</option>
+                    <option value="2">Canada</option>
+                  </select>
                   <div class="invalid-feedback" style="width: 100%;">
                     Required
                   </div>
-                </div>
-                <div class="form-group col-6 col-md-3">
-                  <label for="inputZip">Zip Code</label>
-                  <input type="number" class="form-control input" id="inputZip" maxlength="5" placeholder="12345" required>
-                  <div class="invalid-feedback" style="width: 100%;">
-                    Required
-                  </div>
-                </div>
-                <div class="form-group col-12 col-lg-6">
-                  <label for="inputRecAmount">Country</label>
-                    <select class="custom-select select" required>
-                      <option value="" selected disabled hidden>Any country</option>
-                      <option value="1">United States</option>
-                      <option value="2">Canada</option>
-                    </select>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <hr class="black-rule-2">
+      <div class="transactions transactions-card">
+        <ul class="paya list-group my-3">
+          <li class="list-group-item d-flex justify-content-between align-items-center text-muted">
+            <a role="button" class="btn btn-outline-secondary" href="../index.html">Cancel</a>
+            <button type="submit" id="submit" class="btn btn-success">Pay $40.00</button>
+          </li>
+        </ul>
+      </div>
     </div> <!-- /col -->
 
-    <!-- Transaction Summary -->
-    <div class="col-md-6 col-lg-4">
-      <div class="transactions transactions-card sticky-top">
-        <div class="card-header pt-4 pb-0">
-          <h4 class="card-title mb-2">Transaction Summary</h4>
-          <p class="card-text text-gray">Customer Service No: <a class="text-muted" href="tel:703-555-1212">(703) 555-1212</a></p>
-          <hr>
-        </div>
-        <div class="card-body pt-0 my-0">
-          <p class="card-text text-gray font-weight-medium mb-0">Merchant</p>
-          <ul class="list-group text-gray">
-            <li class="list-group-item align-items-center">Staten Island Office</li>
-            <li class="list-group-item align-items-center">James Gold, MD</li>
-            <li class="list-group-item align-items-center ">1012 Wuhrer Ave, Staten Island, NY 10312</li>
-          </ul>
-          <hr class="black-rule-2">
-          <p class="card-text font-weight-bold mb-0">Billing Information</p>
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Melissa Perosi
-              <span>Mar 29, 2018</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              266 Pacific Ave
-              <span>11:39 AM</span>
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              melissa.perosi@gmail.com
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              (718) 555-1212
-            </li>
-          </ul>
-          <hr>
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-medium">
-              Method of payment
-              <span>VISA 5489</span>
-            </li>
-          </ul>
-          <hr class="black-rule-2">
-          <p class="font-weight-medium mb-2">Recurring Payment</p>
-          <ul class="list-group text-muted">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Amount
-              <span>$20.00</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Frequency
-              <span>Monthly</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Starts 08/12/18
-              <span>Ends 08/12/19</span>
-            </li>
-          </ul>
-          <hr class="black-rule-1">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
-              Total
-              <span>$40.00</span>
-            </li>
-          </ul>
-          <hr class="black-rule-2">
-          <ul class="paya list-group my-3">
-            <li class="list-group-item d-flex justify-content-between align-items-center text-muted">
-              <a role="button" class="btn btn-outline-secondary" href="../index.html">Cancel</a>
-              <button type="submit" id="submit" class="btn btn-success">Pay $40.00</button>
-            </li>
-          </ul>
-        </div>
-      </div><!-- /transactions -->
-    </div><!-- /col -->
   </div><!-- /row -->
 </div><!-- /container -->
 </form>

@@ -436,7 +436,7 @@ hr.dashed {
 
 @media (min-width: 576px) {
   .transactions-card {
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 0;
     border-radius: 0.25rem;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
     background: #ffffff;
