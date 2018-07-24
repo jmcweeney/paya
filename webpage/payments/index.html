@@ -26,6 +26,15 @@
 
   <div class="paya-cards col-md-6 col-lg-6 mb-3">
 
+    <!-- Sample Alert -->
+    <div class="alert alert-error alert-dismissible fade show mb-3" role="alert">
+      <p class="mb-2">Sorry, your card was declined due to <span>insufficient funds</span>.</p>
+      <p class="alert-error-timestamp small m-0">Error 51 &#8212; Jul 13, 2:11 PM</p>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
       <!-- Billing Information -->
       <div class="card payment-card border-bottom-2">
         <div class="card-header pt-4 pb-0">
@@ -85,15 +94,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Sample Alert -->
-      <div class="alert alert-error alert-dismissible fade show mt-4 mb-0" role="alert">
-        <p class="mb-2">Sorry, your card was declined due to <span>insufficient funds</span>.</p>
-        <p class="alert-error-timestamp small m-0">Error 51 &#8212; Jul 13, 2:11 PM</p>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
 
       <!-- Payment Options -->
@@ -498,7 +498,7 @@
 <script src="../js/util.js"></script>
 <script src="../js/moment.js"></script>
 <script src="../js/en-gb.js"></script>
-<script src="../js/datepicker.min.js"></script>
+<script src="../js/datepicker.js"></script>
 <script src="../js/paya.js"></script>
 
 </body>
