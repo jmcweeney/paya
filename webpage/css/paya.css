@@ -439,7 +439,7 @@ hr.dashed {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
-    /* background: #F8FCFF; */
+    background: #ffffff;
   }
 }
 
@@ -808,7 +808,7 @@ input[type=number] {
 }
 
 #inputCardNumber {
-  width:100%
+  width:100%;
 }
 
 .custom-label,
@@ -818,6 +818,24 @@ input[type=number] {
 .custom-control-header {
   font-size: 1rem;
   padding: 0 0 .75rem 0;
+}
+
+/* ----- Date Picker ----- */
+
+.paya-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+.paya-icon-prev {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 10 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='1' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon fill='%23000000' transform='translate%285.000000, 8.000000%29 scale%28-1, 1%29 translate%28-5.000000, -8.000000%29 ' points='0 1.86666666 1.89189182 0 10 7.99999998 1.89189182 16 0 14.1333334 6.21621621 7.99999998'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+}
+.paya-icon-next {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 10 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='1' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon fill='%23000000' points='0 1.86666666 1.89189182 0 10 7.99999998 1.89189182 16 0 14.1333334 6.21621621 7.99999998'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
 }
 
 
