@@ -338,8 +338,8 @@ hr.dashed {
 @media (min-width: 992px) {
   .paya-cards {
     background-color: #fff;
-    border: 1px solid #E3E3E3;
-    border-radius: 0.25rem;
+    /* border: 1px solid #E3E3E3;
+    border-radius: 0.25rem; */
   }
 }
 
@@ -709,6 +709,42 @@ input[type=number] {
     background-color: #4699FEcard-title;
 }
 
+/* ----- Paya Add Button ----- */
+
+.paya-add {
+	border: 1px solid #999999 !important;
+	background-color: #fff;
+	font-size: 9px;
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 5rem !important;
+	position: relative;
+}
+.paya-add::after,
+.paya-add::before {
+	content: "";
+	display: block;
+	background-color: #666666;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  border: 1px solid #666666;
+}
+
+.paya-add::before {
+	height: 1em;
+	width: 0.15em;
+}
+
+.paya-add::after {
+	height: 0.15em;
+	width: 1em;
+}
+.paya-add:hover {
+	border: 1px solid #4699FE !important;
+}
+
 /* ----- Paya Custom Inputs ----- */
 
 .form-group {
@@ -837,6 +873,14 @@ input[type=number] {
 .custom-control-header {
   font-size: 1rem;
   padding: 0 0 .75rem 0;
+}
+
+.paya-notes {
+  width: 100%;
+  margin-top: 0.75rem;
+  font-size: 80%;
+  line-height: 1rem;
+  color: #9B9B9B;
 }
 
 /* ----- Date Picker ----- */
