@@ -21,20 +21,21 @@
 <form action="../receipt/index.html" method="post" class="needs-validation" novalidate>
 
 <div class="container">
+  <div class="row justify-content-center">
+   <div class="col-md-10 col-lg-6">
+     <!-- Sample Alert -->
+     <div class="alert alert-error alert-dismissible fade show mt-3 mt-md-5 mb-0" role="alert">
+       <p class="mb-2">Sorry, your card was declined due to <span>insufficient funds</span>.</p>
+       <p class="alert-error-timestamp small m-0">Error 51 &#8212; Jul 13, 2:11 PM</p>
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+   </div>
+ </div>
 
-  <div class="row justify-content-center my-4 my-lg-5">
-
-  <div class="paya-cards col-md-6 col-lg-6 mb-3">
-
-    <!-- Sample Alert -->
-    <div class="alert alert-error alert-dismissible fade show my-3" role="alert">
-      <p class="mb-2">Sorry, your card was declined due to <span>insufficient funds</span>.</p>
-      <p class="alert-error-timestamp small m-0">Error 51 &#8212; Jul 13, 2:11 PM</p>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
+ <div class="row justify-content-center my-4 my-lg-5">
+  <div class="paya-cards col-md-10 col-lg-6 mb-3">
       <!-- Billing Information -->
       <div class="card payment-card border-bottom-2">
         <div class="card-header pt-4 pb-0">
