@@ -333,8 +333,14 @@ hr.dashed {
 
 .paya-cards {
   background-color: #fff;
-  border: 1px solid #E3E3E3;
-  border-radius: 0.25rem;
+  border: 0;
+}
+@media (min-width: 576px) {
+  .paya-cards{
+    background-color: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: 0.25rem;
+  }
 }
 
 .border {
