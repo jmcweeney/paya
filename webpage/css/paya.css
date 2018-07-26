@@ -698,12 +698,29 @@ input[type=number] {
     margin-left: 0;
     border-width: .2rem;
 }
-
+.custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff; /*dee2e6*/
+    border: 1px solid #999999;
+}
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
     background-color: #48A9FD;
+    border: none;
 }
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
    background-image: none;
+   border: none;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -715,7 +732,7 @@ input[type=number] {
 }
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: #4699FEcard-title;
+    background-color: #4699FE;
 }
 
 /* ----- Paya Add Button ----- */
