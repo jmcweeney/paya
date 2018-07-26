@@ -524,6 +524,10 @@ hr.dashed {
 
 /* ----- Paya Forms ----- */
 
+/* .paya.form-row {
+  padding: 0.5rem;
+} */
+
 .paya .btn {
   display: inline-block;
   font-weight: 400;
@@ -551,6 +555,10 @@ hr.dashed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.paya input {
+  text-overflow: ellipsis;
 }
 
 .paya-label {
