@@ -445,19 +445,184 @@ hr.dashed {
   color: #4699FE;
 }
 
+/* ----- Enrollment Process ----- */
+
+.enroll .list-group-item {
+  position: relative;
+  display: block;
+  padding: 1rem 0 1rem 0;
+  font-size: 100%;
+  margin-bottom: 0;
+  background-color: #fff;
+  border: 0;
+}
+
+.enroll .paya-table h6,
+.enroll .paya-table p,
+.enroll .list-group-item h6,
+.enroll .list-group-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.enroll .table td,
+.enroll .table th {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    vertical-align: top;
+    border-top: 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.enroll .list-group-item p.text-gray {
+  font-weight: 300;
+}
+
+/* ----- Enrollment Tables ----- */
+
+.paya-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.paya-cell {
+  flex-grow: 1;
+  width: 100%;
+  padding: 1.0rem 0.5rem 1.0rem 0.5rem;
+  overflow: hidden;
+  list-style: none;
+}
+.paya-cell > h1,
+.paya-cell > h2,
+.paya-cell > h3,
+.paya-cell > h4,
+.paya-cell > h5,
+.paya-cell > h6 {
+  margin: 0;
+}
+
+.paya--2cols > .paya-cell {
+  width: 50%;
+}
+.paya--3cols > .paya-cell {
+  width: 33.33%;
+}
+.paya--4cols > .paya-cell {
+  width: 25%;
+}
+.paya--5cols > .paya-cell {
+  width: 20%;
+}
+.paya--6cols > .paya-cell {
+  width: 16.6%;
+}
+
+.paya-table {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.paya-cell {
+  margin: 0;
+  background-color: #fff;
+}
+
+/* Cell styles
+================================== */
+.paya-cell--dark {
+  background-color: slategrey;
+  border-color: #5a6673;
+  color: white;
+}
+.paya-cell--dark > h1,
+.paya-cell--dark > h2,
+.paya-cell--dark > h3,
+.paya-cell--dark > h4,
+.paya-cell--dark > h5,
+.paya-cell--dark > h6 {
+  color: white;
+}
+.paya-cell--medium {
+  background-color: #b8c0c8;
+  border-color: #a9b3bc;
+}
+.paya-cell--light {
+  background-color: white;
+  border-color: #e2e6e9;
+}
+.paya-cell--highlight {
+  background-color: lightgreen;
+  border-color: #64e764;
+}
+.paya-cell--alert {
+  background-color: darkorange;
+  border-color: #cc7000;
+  color: white;
+}
+.paya-cell--alert > h1,
+.paya-cell--alert > h2,
+.paya-cell--alert > h3,
+.paya-cell--alert > h4,
+.paya-cell--alert > h5,
+.paya-cell--alert > h6 {
+  color: white;
+}
+.paya-cell--head {
+  background-color: #fff;
+  color: #000;
+}
+.paya-cell--head > h1,
+.paya-cell--head > h2,
+.paya-cell--head > h3,
+.paya-cell--head > h4,
+.paya-cell--head > h5,
+.paya-cell--head > h6 {
+  color: #000;
+}
+.paya-cell--foot {
+  background-color: #b8c0c8;
+  border-color: #a9b3bc;
+}
+/* Responsive
+==================================== */
+@media all and (max-width: 576px) {
+  .paya--collapse {
+    display: block;
+  }
+  .paya--collapse > .paya-cell {
+    width: 100% !important;
+  }
+  .paya--collapse > .paya-cell--foot {
+    margin-bottom: 1em;
+  }
+}
+.no-flexbox .paya-table {
+  display: block;
+}
+.no-flexbox .paya-table > .paya-cell {
+  width: 100%;
+}
+.no-flexbox .paya-table > .paya-cell--foot {
+  margin-bottom: 1em;
+}
+
+
+
 /* ----- Transactions ----- */
 
 .transactions-card {
   border: 0;
   box-shadow: 0;
+  /* border: 1px solid #ccc; */
   /* border-top: 2px solid #000; */
   /* background: #F8FCFF; */
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .transactions-card {
     border: 0;
     border-radius: 0.25rem;
+    border: 1px solid #E3E3E3;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
     background: #ffffff;
   }
