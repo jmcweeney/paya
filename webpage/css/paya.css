@@ -458,23 +458,9 @@ hr.dashed {
 }
 
 .enroll .paya-table h6,
-.enroll .paya-table p,
-.enroll .list-group-item h6,
-.enroll .list-group-item p {
+.enroll .paya-table p {
   margin: 0;
   padding: 0;
-}
-
-.enroll .table td,
-.enroll .table th {
-    padding: 1rem 0.5rem 1rem 0.5rem;
-    vertical-align: top;
-    border-top: 0;
-    border-bottom: 1px solid #dee2e6;
-}
-
-.enroll .list-group-item p.text-gray {
-  font-weight: 300;
 }
 
 /* ----- Enrollment Tables ----- */
@@ -524,6 +510,7 @@ hr.dashed {
 }
 .paya-cell {
   margin: 0;
+  padding: 0;
   background-color: #fff;
 }
 
@@ -622,7 +609,7 @@ hr.dashed {
   .transactions-card {
     border: 0;
     border-radius: 0.25rem;
-    border: 1px solid #E3E3E3;
+    /* border: 1px solid #E3E3E3; */
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
     background: #ffffff;
   }
