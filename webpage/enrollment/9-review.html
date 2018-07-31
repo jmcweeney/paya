@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Create your account</title>
+    <title>Review</title>
 
     <!-- Bootstrap core CSS, Google Font & custom Paya CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,12 +17,12 @@
 
   <body>
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-lg-2 bg-white">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-lg-2">
       <a href="../index.html" class="sidebar-brand img-responsive mr-md-auto ml-lg-3 mt-3 mb-2">
         <span class="sidebar-brand-icon"><img src="../img/paya-logo.png"></span>
       </a>
       <div class="progress w-25">
-        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
 
@@ -30,62 +30,94 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h2 class="pb-2">Create your account</h2>
-          <h5 class="lead text-gray">This quick step gives you login access should you want to continue later.</h5>
+          <h2 class="pb-2">Review your bundle and contracts.</h2>
+          <h5 class="lead text-gray">Review the business details, features, and contracts, then submit everything for approval. <span>You’ll receive an email from us in about 60 minutes.</span></h5>
         </div>
       </section>
 
-<div class="pt-1 pb-4">
-  <div class="container">
+      <div class="pt-1 pb-4">
+        <div class="container">
 
-    <div class="d-flex justify-content-center">
-      <div class="paya-cards col-md-6 col-lg-6">
-        <div class="card payment-card border-bottom-2">
-          <div class="card-body">
-            <div class="paya form-row">
-              <div class="form-group col-12 col-md-6">
-                <label for="inputName">Enter your email</label>
-                <input type="text" class="form-control input" id="inputEm" placeholder="janedoe@gmail.com" required autofocus>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
+          <div class="d-flex justify-content-center">
+            <div class="paya-cards col-md-8">
+              <div class="card payment-card">
+                <div class="enroll card-body mt-md-4 mb-2">
+                  <div class="paya-table paya--2cols paya--collapse">
+
+                    <div class="paya-cell paya-cell--head"><h6 class="font-weight-bold p-0 m-0">Business information</h6></div>
+                    <div class="paya-cell">
+                      <span class="paya-edit-icon">
+                        <a href="2-business.html" class="float-right ml-5" data-toggle="tooltip" data-placement="top" title="Edit"><img src="../img/edit-rev.svg"></a>
+                      </span>
+                      <p>Melissa Perosi, M.D.<p/>
+                      <p>Perosi Pediatrics</p>
+                      <p class="text-gray">EIN: 12-3456789</p>
+                      <p class="text-gray">266 Pacific Ave</p>
+                      <p class="text-gray">Staten Island, NY 10312</p>
+                    </div>
+                    <div class="paya-cell paya-cell--head"><h6 class="font-weight-bold">Bank information</h6></div>
+                    <div class="paya-cell">
+                      <span class="paya-edit-icon">
+                        <a href="6-bank.html" class="float-right ml-5" data-toggle="tooltip" data-placement="top" title="Edit"><img src="../img/edit-rev.svg"></a>
+                      </span>
+                      <p>Routing number: &#42;&#42;&#42; 542<p/>
+                      <p>Account number: &#42;&#42;&#42;&#42; 1546<p/>
+                    </div>
+                    <!-- Review Bundle -->
+                    <div class="paya-cell paya-cell--head mt-4 border-0"><h4 class="text-primary">Enterprise Bundle</h4></div>
+                    <div class="paya-cell mt-4 border-0">
+                      <span class="paya-edit-icon">
+                        <a href="3-bundle.html" class="float-right ml-5" data-toggle="tooltip" data-placement="top" title="Edit"><img src="../img/edit-rev.svg"></a>
+                      </span>
+                    </div>
+                    <div class="paya-cell paya-cell--head"><h6 class="font-weight-bold">Pricing</h6></div>
+                    <div class="paya-cell">
+                      <p>Card Swiped: 1.49&percnt; + $0.19<p/>
+                      <p>Card Keyed: 1.99&percnt; + $0.19<p/>
+                      <p>Check: $0.29 per item<p/>
+                      <p class="font-weight-bold">Montly Fee: $9.99<p/>
+                    </div>
+                    <div class="paya-cell paya-cell--head">
+                      <h6 class="font-weight-bold">BankCard Processing Rate</h6>
+                      <p class="text-gray">Card Present</p>
+                    </div>
+                    <div class="paya-cell">
+                      <p>Included</p>
+                      <!-- <span class="bundle-circle-selected">
+                        <img src="../img/check.svg">
+                      </span> -->
+                    </div>
+                    <div class="paya-cell paya-cell--head">
+                      <h6 class="font-weight-bold">POS Solution</h6>
+                      <p class="text-gray">Paya Virtual Terminal</p>
+                    </div>
+                    <div class="paya-cell">
+                      <p>Included</p>
+                    </div>
+                    <div class="paya-cell paya-cell--head">
+                      <h6 class="font-weight-bold">ACH Debit Processing</h6>
+                    </div>
+                    <div class="paya-cell">
+                      <p>Included</p>
+                    </div>
+                    <div class="paya-cell paya-cell--head">
+                      <h6 class="font-weight-bold">Term of Contract</h6>
+                    </div>
+                    <div class="paya-cell">
+                      <p>3 year</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="form-group col-12 col-md-6">
-                <label for="inputAddr">Re-enter your email</label>
-                <input type="text" class="form-control input" id="inputConfEmail" placeholder="janedoe@gmail.com" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-            </div>
-            <div class="paya form-row">
-              <div class="form-group col-12 col-md-6">
-                <label for="inputCity">Create a password</label>
-                <input type="password" class="form-control input" id="inputPw" placeholder="Make it memorable" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 small text-gray">
-                <p>Passwords must be a minimum of 8 characters with a mix of letters, numbers and special characters such as !#$%^&amp;.</p>
+              <div class="paya d-flex justify-content-between my-4">
+                <a role="button" class="btn btn-outline-secondary" href="8-shipping.html">Back</a>
+                <a role="button" class="btn btn-success" href="#">Submit to Paya</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="paya d-flex justify-content-center my-4">
-          <!-- <a role="button" class="btn btn-outline-secondary" href="#">Back</a> -->
-          <a role="button" class="btn btn-primary" href="#">Continue</a>
-        </div>
-        <div class="paya d-flex justify-content-center">
-          <p class="text-gray">Already have an account? <a href="#" class="text-dark">Log in</a></p>
+
         </div>
       </div>
-    </div>
-
-  </div>
-</div>
 
     </main>
 

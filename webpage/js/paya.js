@@ -80,6 +80,10 @@ $(function () {
   } );
 } );
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 // $('input').on('blur keyup', function() {
 //     if ($("#processPayment").valid()) {
 //         $('#submit').prop('disabled', false);

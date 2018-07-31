@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>ACH Details</title>
+    <title>Bank Account</title>
 
     <!-- Bootstrap core CSS, Google Font & custom Paya CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,8 +30,8 @@
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h2 class="pb-2">Provide your ACH details.</h2>
-        <h5 class="lead">Link your bank account so you can accept bank deposits and checks, <span>as well as some underwriting details and transaction types.</span></h5>
+        <h2 class="pb-2">Link your bank account.</h2>
+        <h5 class="lead">This will allow us to deposit the funds you receive from card payments. <span>Once your account is verified, card payments are deposited in 1 to 2 business days.</span></h5>
       </div>
     </section>
 
@@ -42,202 +42,38 @@
           <div class="paya-cards col-md-7">
             <div class="card payment-card">
               <div class="card-body mt-md-4 mb-2">
-                <div class="mb-4">
-                  <h5>Buiness Preferred ACH Descriptor</h5>
-                </div>
-                <div class="paya form-row mb-4">
-                  <div class="form-group col-12 col-md-6">
-                    <label for="inputCity">Legal business name</label>
-                    <input type="text" class="form-control input" id="inputBusName" placeholder="Include Inc., LLC, etc." required autofocus>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                  <div class="form-group col-12 col-md-6">
-                    <label for="inputCity">Business phone number</label>
-                    <input type="number" class="form-control input" id="inputPhone" placeholder="(703) 555-1212" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-4">
-                  <h5>Underwriting Profile</h5>
-                </div>
-                <div class="paya form-row">
-                  <div class="form-group col-12 col-md-6">
-                    <label for="inputName">What do you sell or provide?</label>
-                    <input type="text" class="form-control input" id="inputBusCon" placeholder="Describe your products or services..." required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                  <div class="form-group col-12 col-md-6">
-                    <label for="inputName">How will ACH services be used?</label>
-                    <input type="text" class="form-control input" id="inputBusCon" placeholder="Will you accept checks or deposits..." required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="paya form-row">
-                  <div class="form-group col-6 col-lg-4">
-                    <label for="inputRecAmount">Monthly revenue</label>
-                      <select class="custom-select select" required>
-                        <option value="" selected disabled hidden>Optional</option>
-                        <option value="1">$1,000 - $5,000</option>
-                        <option value="2">$10,000 - $15,000</option>
-                      </select>
-                      <div class="invalid-feedback" style="width: 100%;">
-                        Required
-                      </div>
-                  </div>
-                  <div class="form-group col-6 col-lg-4">
-                    <label for="inputRecAmount">Average ticket</label>
-                      <select class="custom-select select" required>
-                        <option value="" selected disabled hidden>Daily</option>
-                        <option value="1">$100</option>
-                        <option value="2">$500</option>
-                      </select>
-                      <div class="invalid-feedback" style="width: 100%;">
-                        Required
-                      </div>
-                  </div>
-                  <div class="form-group col-6 col-lg-4">
-                    <label for="inputRecAmount">Highest ticket</label>
-                      <select class="custom-select select" required>
-                        <option value="" selected disabled hidden>Daily</option>
-                        <option value="1">$1,000</option>
-                        <option value="2">$5,000</option>
-                      </select>
-                      <div class="invalid-feedback" style="width: 100%;">
-                        Required
-                      </div>
-                  </div>
-                </div>
-                <div class="paya form-row">
-                  <div class="form-group col-12">
-                    <label for="inputState">Return policy</label>
-                    <input type="text" class="form-control input" id="inputPhone" maxlength="11" placeholder="30, 60, 90 days? Please explain..." required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="paya form-row">
-                  <div class="form-group col-12">
-                    <label for="inputState">General comments</label>
-                    <input type="text" class="form-control input" id="inputPhone" maxlength="11" placeholder="Do you ship items? Handle sensitive materials?" required>
-                    <div class="invalid-feedback" style="width: 100%;">
-                      Required
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">Funds returns</label>
-                    <div class="paya-notes mt-0 mb-2" style="width: 100%;">
-                      On non-sufficient funds (NSF) returns, should processor automatically resubit transactions?
-                    </div>
-                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="returnsYes" name="returnsRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="returnsYes">Yes</label>
-                      </div>
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="returnsNo" name="returnsRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="returnsNo">No</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="mt-3 mb-4">
-                  <h5>Transaction Types</h5>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">Does business receive physical checks?</label>
-                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="physicalChecks" name="checksRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="physicalChecks">Yes</label>
-                      </div>
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="physicalChecksNo" name="checksRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="physicalChecksNo">No</label>
-                      </div>
-                    </div>
+              <div class="paya form-row">
+                <div class="form-group col-12 col-lg-6">
+                  <label for="inputFn">Routing number</label>
+                  <input type="number" class="form-control input" id="inputFn" maxlength="13" placeholder="123 456 789" required autofocus>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">Electronic debit</label>
-                    <div class="paya-notes mt-0 mb-2" style="width: 100%;">
-                      If no physical check is presented, how is the customer’s consent to debit electronically captured?
-                    </div>
-                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                      <div class="custom-control custom-radio mb-2">
-                        <input type="radio" id="debitPPD" name="debitRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="debitPPD">Signed written authorization (PPD or CCD)</label>
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="debitWeb" name="debitRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="debitWeb">Web authorization (WEB)</label>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form-group col-12 col-lg-6">
+                  <span class="align-baseline">
+                    <img src="../img/ba-numbers.svg" />
+                  </span>
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">ACH transactions</label>
-                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="achTrans" name="achRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="achTrans">Yes</label>
-                      </div>
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="achTransNo" name="achRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="achTransNo">No</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">Business use</label>
-                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                      <div class="custom-control custom-radio mb-2">
-                        <input type="radio" id="procProvide" name="businessRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="procProvide">Processor provided authorization form/script</label>
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="mercProvide" name="businessRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="mercProvide">Merchant created authorization form/script</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 mb-4">
-                  <h5>Customer Authentication Method</h5>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">Customer authentication</label>
-                    <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                      <div class="custom-control custom-radio mb-2">
-                        <input type="radio" id="authSig" name="authRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="authSig">Provide electronic signature</label>
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="loginUn" name="authRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="loginUn">Login with a Username and Password</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
               </div>
+              <div class="paya form-row">
+                <div class="form-group col-12 col-lg-6 mb-2">
+                  <label class="paya-label "for="inputCardNumber">Account number</label>
+                  <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="1234 5678 9101 2345" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+                <div class="form-group col-12 col-lg-6 mb-2">
+                  <label class="paya-label "for="inputCardNumber">Re-enter Account number</label>
+                  <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="1234 5678 9101 2345" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Required
+                  </div>
+                </div>
+              </div>
+
             </div>
             <div class="paya d-flex justify-content-between my-4">
               <a role="button" class="btn btn-outline-secondary" href="5-details.html">Back</a>

@@ -461,6 +461,17 @@ hr.dashed {
 .enroll .paya-table p {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+}
+
+.paya-edit {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
 }
 
 /* ----- Enrollment Tables ----- */
@@ -468,7 +479,7 @@ hr.dashed {
 .paya-table {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 3em 0;
+  margin: 0 0 2em 0;
   padding: 0;
 }
 .paya-cell {
@@ -477,6 +488,7 @@ hr.dashed {
   padding: 1.0rem 0.5rem 1.0rem 0.5rem;
   overflow: hidden;
   list-style: none;
+  border-bottom: 1px solid #E9EBEE;
 }
 .paya-cell > h1,
 .paya-cell > h2,
@@ -502,20 +514,17 @@ hr.dashed {
 .paya--6cols > .paya-cell {
   width: 16.6%;
 }
+.paya-cell--edit {
+  width: 15%;
+  padding: 1.0rem 0 1.0rem 0.5rem;
+}
 
 .paya-table {
   position: relative;
   top: 0;
   left: 0;
 }
-.paya-cell {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
 
-/* Cell styles
-================================== */
 .paya-cell--dark {
   background-color: slategrey;
   border-color: #5a6673;
@@ -570,8 +579,7 @@ hr.dashed {
   background-color: #b8c0c8;
   border-color: #a9b3bc;
 }
-/* Responsive
-==================================== */
+
 @media all and (max-width: 576px) {
   .paya--collapse {
     display: block;
@@ -594,7 +602,6 @@ hr.dashed {
 }
 
 
-
 /* ----- Transactions ----- */
 
 .transactions-card {
@@ -607,10 +614,8 @@ hr.dashed {
 
 @media (min-width: 992px) {
   .transactions-card {
-    border: 0;
     border-radius: 0.25rem;
-    /* border: 1px solid #E3E3E3; */
-    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
+    border: 1px solid #E3E3E3;
     background: #ffffff;
   }
 }
@@ -659,8 +664,8 @@ hr.dashed {
   border-bottom: none;
   color: #fff;
 }
-.receipt-circle-success {
-  display: block;
+.receipt-circle-success img {
+  display: inline-block;
   width: 56px;
   height: 56px;
   text-align: center;
@@ -671,6 +676,20 @@ hr.dashed {
   color: #fff;
   background-color: rgba(105,196,65,1.0);
   border: 6px solid #fff;
+  z-index: 10;
+}
+.bundle-circle-selected img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(105,196,65,1.0);
+  border: 3px solid #fff;
   z-index: 10;
 }
 
@@ -1038,6 +1057,17 @@ input[type=number] {
   position:absolute;
   right:0;
   top: 0;
+}
+.paya-edit-icon img {
+  height:24px;
+  width: 24px;
+  position:relative;
+  right:0;
+  top: 0;
+  fill: #ff0099;
+}
+.paya-edit-icon a img:hover {
+  color: #ff0099;
 }
 
 #inputCardNumber {
