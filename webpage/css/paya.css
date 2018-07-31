@@ -114,7 +114,12 @@ footer p {
      height: 100%;
      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
      font-weight: 400;
-     background-color: #F8FCFF;
+     background-color: #FFFFFF;
+ }
+ @media (min-width: 576px) {
+   body {
+       background-color: #F8FCFF;
+   }
  }
 
 a {
@@ -153,6 +158,11 @@ a {
   background-color: #F8FCFF;
 }
 
+.bg-terms {
+  border: 1px solid #EAEEF0;
+  background-color: #F8FCFF;
+  border-radius: 0.25rem;
+}
 progress[value] {
   width: 250px;
   height: 20px;
@@ -446,6 +456,23 @@ hr.dashed {
 }
 
 /* ----- Enrollment Process ----- */
+
+
+.enroll.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: .75rem 0;
+}
+
+@media (min-width: 992px) {
+  .enroll.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: .75rem 1.5rem;
+    }
+}
 
 .enroll .list-group-item {
   position: relative;
