@@ -111,14 +111,18 @@ footer p {
 
  html,
  body {
-     height: 100%;
-     font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-     font-weight: 400;
-     background-color: #FFFFFF;
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   font-weight: 400;
+   background-color: #ffffff;
+   height: 100%;
  }
- @media (min-width: 576px) {
+ @media (min-width: 992px) {
+   html,
    body {
-       background-color: #F8FCFF;
+     margin: 0;
+     background-color: #F8FCFF;
+     height: 100%;
    }
  }
 
@@ -128,7 +132,6 @@ a {
      background-color: transparent;
      -webkit-text-decoration-skip: objects;
  }
-
  a:hover {
    color: #258BE3;
    text-decoration: underline;
