@@ -206,6 +206,11 @@ progress[value] {
 .text-primary {
   color: #4699FE;
 }
+.paya-display-1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
 .paya-display-2 {
   font-size: 2rem;
   font-weight: 300;
