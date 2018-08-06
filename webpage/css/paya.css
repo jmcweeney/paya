@@ -33,16 +33,22 @@
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
-
 .jumbotron-heading {
   font-weight: 300;
 }
 .jumbotron {
   color: #5b6770;
 }
-/* .jumbotron .container {
-  max-width: 40rem;
-} */
+
+@media (max-width: 575.98px) {
+  .jumbotron h2 {
+    font-size: 1.5rem;
+  }
+  .jumbotron h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 
 footer {
   padding-top: 3rem;
