@@ -48,6 +48,32 @@ $(function () {
         $('#datetimepickerStart').datetimepicker('maxDate', e.date);
     });
 });
+$(function () {
+    $('#datetimepickerStartACH').datetimepicker({
+      useCurrent: true,
+      format: 'L',
+      sideBySide: true,
+      debug: false,
+      locale: 'en-gb',
+      ignoreReadonly: true,
+      allowInputToggle: true
+    });
+
+    $('#datetimepickerEndACH').datetimepicker({
+        useCurrent: false,
+        sideBySide: false,
+        locale: 'en-gb',
+        ignoreReadonly: true,
+        allowInputToggle: true,
+        debug: false
+    });
+    $("#datetimepickerStartACH").on("change.datetimepicker", function (e) {
+        $('#datetimepickerEndACH').datetimepicker('minDate', e.date);
+    });
+    $("#datetimepickerEndACH").on("change.datetimepicker", function (e) {
+        $('#datetimepickerStartACH').datetimepicker('maxDate', e.date);
+    });
+});
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
@@ -80,14 +106,13 @@ $(function () {
   } );
 } );
 
+// Enrollment Tooltip
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-// $('input').on('blur keyup', function() {
-//     if ($("#processPayment").valid()) {
-//         $('#submit').prop('disabled', false);
-//     } else {
-//         $('#submit').prop('disabled', 'disabled');
-//     }
-// });
+// ACH Carousel feature
+$('.carousel').carousel({
+  interval: false,
+  wrap: false
+})

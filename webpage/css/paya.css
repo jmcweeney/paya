@@ -469,6 +469,8 @@ hr.dashed {
   color: #4699FE;
 }
 
+
+
 /* ----- Enrollment Process ----- */
 
 
@@ -1809,6 +1811,55 @@ input[type=number] {
   padding: 0 1 1rem 1rem;
   border-top: 0;
 }
+/* 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  position: relative;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators .active {
+  background-color: #48A9FD;
+} */
+
 
 /* ----- Paya Alerts ----- */
 
