@@ -949,6 +949,22 @@ input[type=number] {
     background-color: #4699FE;
 }
 
+.btn-success.disabled,
+.btn-success:disabled {
+  color: #666;
+  background-color: #e9ecef;
+  border-color: #E3E3E3;
+}
+.btn-success.disabled:hover,
+.btn-success:disabled:hover {
+  color: inherit;
+  background-color: #e9ecef;
+  border-color: inherit;
+  cursor: not-allowed;
+}
+
+
+
 /* ----- Paya Add Button ----- */
 
 .paya-add {
@@ -1811,7 +1827,7 @@ input[type=number] {
   padding: 0 1 1rem 1rem;
   border-top: 0;
 }
-/* 
+/*
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
