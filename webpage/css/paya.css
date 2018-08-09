@@ -470,9 +470,7 @@ hr.dashed {
 }
 
 
-
 /* ----- Enrollment Process ----- */
-
 
 .enroll.card-body {
   -webkit-box-flex: 1;
@@ -1798,6 +1796,10 @@ input[type=number] {
 
 /* ----- Payments Modal ----- */
 
+.ba-numbers img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 560px;
@@ -1808,6 +1810,12 @@ input[type=number] {
   }
   .modal-sm {
     max-width: 300px;
+  }
+}
+@media (max-width: 575.98px) {
+  .card-header,
+  .card-body {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -1827,8 +1835,26 @@ input[type=number] {
   padding: 0 1 1rem 1rem;
   border-top: 0;
 }
-/*
-.carousel-control-prev,
+
+.card-ach-modal {
+  height: 100%;
+  min-height: 250px;
+}
+
+.modal-prev span {
+  display: inline-block;
+  /* width: 30px;
+  height: 30px; */
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  border-radius: 5rem;
+  color: #ff0099;
+  background-color: rgba(255,255,255,1.0);
+  z-index: 10;
+}
+/* .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
   top: 0;
@@ -1875,7 +1901,6 @@ input[type=number] {
 .carousel-indicators .active {
   background-color: #48A9FD;
 } */
-
 
 /* ----- Paya Alerts ----- */
 
