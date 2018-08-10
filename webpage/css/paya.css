@@ -1854,6 +1854,28 @@ input[type=number] {
   background-color: rgba(255,255,255,1.0);
   z-index: 10;
 }
+
+.modal-prev-arrow {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #a7a7a7;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 50%;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.modal-prev-arrow:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(0,0,0,0.1);
+}
+
 /* .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
