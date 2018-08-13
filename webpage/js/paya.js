@@ -115,4 +115,4 @@ $(function () {
 $('.carousel').carousel({
   interval: false,
   wrap: false
-})
+});

@@ -1850,7 +1850,7 @@ input[type=number] {
   font-size: 1.5rem;
   line-height: 1rem;
   border-radius: 5rem;
-  color: #ff0099;
+  color: #a7a7a7;
   background-color: rgba(255,255,255,1.0);
   z-index: 10;
 }
@@ -1876,53 +1876,69 @@ input[type=number] {
   background-color: rgba(0,0,0,0.1);
 }
 
-/* .carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 15%;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
+/* ----- Dot Indicators ----- */
+
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  z-index: 15;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 8px;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
 }
 
-.carousel-indicators li {
-  position: relative;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  background-color: rgba(0, 0, 0, 0.2);
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #a7a7a7;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+	position: absolute;
 }
-.carousel-indicators .active {
-  background-color: #48A9FD;
-} */
+
+.dotstyle li a:focus {
+	outline: none;
+}
+
+/* Individual styles and effects */
+
+.dotstyle-fillin li a {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px #a7a7a7;
+	-webkit-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+
+.dotstyle-fillin li a:hover,
+.dotstyle-fillin li a:focus {
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6)
+}
+
+.dotstyle-fillin li.current a {
+	box-shadow: inset 0 0 0 10px #a7a7a7;
+}
+
 
 /* ----- Paya Alerts ----- */
 
