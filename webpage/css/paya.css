@@ -258,7 +258,8 @@ small,
 }
 
 @media (min-width: 576px) {
-  .lead span {
+  .lead span,
+  .bundle span {
       display: block;
       &::before {
         content: attr(data-text);
@@ -504,6 +505,41 @@ hr.dashed {
   padding: 0;
   line-height: 1.5;
 }
+.bundle span {
+  display: block;
+}
+.bundle .paya-table h6,
+.bundle .paya-table p,
+.bundle .list-group-item {
+  position: relative;
+  /* display: block; */
+  padding: 0;
+  line-height: 1.75;
+  font-size: 95%;
+  background-color: #fff;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.bundle-circle-selected {
+  /* width: 100%; */
+}
+.bundle-circle-selected img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  /* margin: 0 auto; */
+  margin-top: 0;
+  padding: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(105,196,65,1.0);
+  /* border: 3px solid #fff; */
+  z-index: 10;
+}
 
 .paya-edit {
   display: inline-block;
@@ -526,11 +562,20 @@ hr.dashed {
 .paya-cell {
   flex-grow: 1;
   width: 100%;
-  padding: 1.0rem 0.5rem 1.0rem 0.5rem;
+  padding: 1.0rem 2.0rem 1.0rem 0.5rem;
   overflow: hidden;
   list-style: none;
   border-bottom: 1px solid #E9EBEE;
 }
+.bundle-cell {
+  flex-grow: 1;
+  width: 100%;
+  padding: 1.0rem;
+  overflow: hidden;
+  list-style: none;
+  border-left: 1px solid #E9EBEE;
+}
+
 .paya-cell > h1,
 .paya-cell > h2,
 .paya-cell > h3,
@@ -555,6 +600,7 @@ hr.dashed {
 .paya--6cols > .paya-cell {
   width: 16.6%;
 }
+
 .paya-cell--edit {
   width: 15%;
   padding: 1.0rem 0 1.0rem 0.5rem;
@@ -630,6 +676,12 @@ hr.dashed {
   }
   .paya--collapse > .paya-cell--foot {
     margin-bottom: 1em;
+  }
+  .bundle-cell {
+    border-left: 0;
+  }
+  .paya-cell {
+    padding: 1.0rem 0.5rem 1.0rem 0.5rem;
   }
 }
 .no-flexbox .paya-table {
@@ -717,20 +769,6 @@ hr.dashed {
   color: #fff;
   background-color: rgba(105,196,65,1.0);
   border: 6px solid #fff;
-  z-index: 10;
-}
-.bundle-circle-selected img {
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding: 12px 0;
-  font-size: 1rem;
-  line-height: 1rem;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgba(105,196,65,1.0);
-  border: 3px solid #fff;
   z-index: 10;
 }
 
