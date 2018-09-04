@@ -482,7 +482,8 @@ hr.dashed {
 }
 
 @media (min-width: 992px) {
-  .enroll.card-body {
+  .enroll.card-body,
+  .bundle.card-body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
