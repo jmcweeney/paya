@@ -549,6 +549,14 @@ hr.dashed {
   background-size: 100% 100%;
 }
 
+.bundle .form-group {
+  border: 1px solid #b6ddfe;
+  border-radius: 5rem;
+}
+.bundle .form-group:hover {
+  background-color: #e9f5ff;
+}
+
 /* ----- Enrollment Tables ----- */
 
 .paya-table {
