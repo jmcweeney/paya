@@ -512,6 +512,7 @@ hr.dashed {
 }
 .bundle .paya-table h6,
 .bundle .paya-table p,
+.bundle .paya-table li,
 .bundle .list-group-item {
   position: relative;
   /* display: block; */
@@ -559,18 +560,19 @@ hr.dashed {
 .paya-cell {
   flex-grow: 1;
   width: 100%;
-  padding: 1.0rem 2.0rem 1.0rem 0.5rem;
+  padding: 1.0rem;
   overflow: hidden;
   list-style: none;
   border-bottom: 1px solid #E9EBEE;
 }
+
 .bundle-cell {
   flex-grow: 1;
   width: 100%;
   padding: 1.0rem;
   overflow: hidden;
   list-style: none;
-  border-left: 1px solid #E9EBEE;
+  border-right: 1px solid #E9EBEE;
 }
 
 .paya-cell > h1,
