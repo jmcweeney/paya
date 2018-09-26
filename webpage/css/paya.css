@@ -553,10 +553,15 @@ hr.dashed {
   border: 1px solid #b6ddfe;
   border-radius: 5rem;
 }
+
 .bundle .form-group:hover {
   background-color: #e9f5ff;
 }
-
+.bundle .form-agree,
+.bundle .form-agree:hover {
+  border: none;
+  background-color: #fff;
+}
 /* ----- Enrollment Tables ----- */
 
 .paya-table {
