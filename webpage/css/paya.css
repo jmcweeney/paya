@@ -574,6 +574,10 @@ hr.dashed {
   border-bottom: 1px solid #E9EBEE;
 }
 
+.title-cell,
+.select-cell {
+  border-bottom: 1px solid #ced4da;
+}
 .bundle-cell {
   flex-grow: 1;
   width: 100%;
