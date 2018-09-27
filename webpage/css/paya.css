@@ -37,7 +37,7 @@
   font-weight: 300;
 }
 .jumbotron {
-  color: #000;
+  color: #535e66;
 }
 
 @media (max-width: 575.98px) {
@@ -61,24 +61,6 @@ footer p {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-.card-title {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  margin-bottom: 12px;
-  color: #1D2129;
-}
-.card-text {
-  display: -webkit-box;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 20px;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: #4B4F56;
-}
 
 /* ----- SASS Colors ---- */
 
@@ -160,6 +142,81 @@ a {
      background-color: #48A9FD;
      border-color: #48A9FD;
  }
+
+ /* ----- Sign In ----- */
+
+ .login-body {
+   height: 100%;
+ }
+
+ .login-body {
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+   -ms-flex-align: center;
+   -ms-flex-pack: center;
+   -webkit-box-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   justify-content: center;
+   padding-top: 40px;
+   padding-bottom: 40px;
+ }
+
+ .card-title {
+   line-height: 1.6rem;
+   font-weight: 400;
+   margin-bottom: 1rem;
+   color: #535e66;
+ }
+ .card-subtitle {
+   margin-bottom: 0;
+   line-height: 1.6rem;
+   font-weight: 300;
+ }
+
+ .card-text {
+   display: -webkit-box;
+   font-size: 0.9rem;
+   font-weight: 400;
+   text-align: left;
+   line-height: 20px;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   color: #4B4F56;
+ }
+
+ .form-signin {
+   width: 100%;
+   max-width: 560px;
+   padding: 15px;
+   margin: 0 auto;
+ }
+ .form-signin .checkbox {
+   font-weight: 400;
+ }
+ .form-signin .form-control {
+   position: relative;
+   box-sizing: border-box;
+   height: auto;
+   padding: 10px;
+   font-size: 16px;
+ }
+ .form-signin .form-control:focus {
+   z-index: 2;
+ }
+ .form-signin input[type="email"] {
+   margin-bottom: -1px;
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+ }
+ .form-signin input[type="password"] {
+   margin-bottom: 10px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+ }
+
 
 /* ----- Enrollment UI ----- */
 
@@ -1383,6 +1440,7 @@ input[type=number] {
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
+
 /* ----- Custom Buttons ----- */
 
 .btn-primary {
@@ -1408,6 +1466,12 @@ input[type=number] {
   border-color: #1e7e34;
 }
 
+.btn-login {
+  padding: .5rem 1rem;
+  font-size: 1.1rem !important;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
 .btn-circle-sm {
   width: 30px;
   height: 30px;
