@@ -180,17 +180,32 @@
                     <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
                       <div class="custom-control custom-radio mb-2">
                         <input type="radio" id="debitPPD" name="debitRadio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="debitPPD">Signed written authorization (PPD or CCD)</label>
+                        <label class="custom-control-label" for="debitPPD">Signed written authorization (Personal or Commerical account)</label>
                       </div>
                       <div class="custom-control custom-radio">
                         <input type="radio" id="debitWeb" name="debitRadio" class="custom-control-input" required>
                         <label class="custom-control-label" for="debitWeb">Web authorization (WEB)</label>
                       </div>
                     </div>
+                    <div class="form-row">
+                      <div class="form-group col-12 my-2">
+                        <label class="paya-label" for="inputCardNumber">How are you authenticating your users?</label>
+                        <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
+                          <div class="custom-control custom-radio mb-2">
+                            <input type="radio" id="authSig" name="authRadio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="authSig">Provide electronic signature</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="loginUn" name="authRadio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="loginUn">Login with a Username and Password</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group col-12 mb-2 ">
+                  <div class="form-group col-12 mb-2">
                     <label class="paya-label" for="inputCardNumber">ACH transactions</label>
                     <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0 d-flex justify-content-start">
                       <div class="custom-control custom-radio custom-control-inline">
@@ -224,12 +239,12 @@
                   </div>
                 </div>
 
-                <div class="mt-3 mb-4">
-                  <h5>Customer Authentication Method</h5>
+                <!-- <div class="mt-3 mb-4">
+                  <h5>Web Authentication</h5>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-12 mb-2">
-                    <label class="paya-label" for="inputCardNumber">Customer authentication</label>
+                    <label class="paya-label" for="inputCardNumber">How are you authenticating your users?</label>
                     <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
                       <div class="custom-control custom-radio mb-2">
                         <input type="radio" id="authSig" name="authRadio" class="custom-control-input" required>
@@ -241,7 +256,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
               </div>
             </div>
