@@ -183,25 +183,30 @@
                         <label class="custom-control-label" for="debitPPD">Signed written authorization (Personal or Commerical account)</label>
                       </div>
                       <div class="custom-control custom-radio">
-                        <input type="radio" id="debitWeb" name="debitRadio" class="custom-control-input" required>
+                        <input type="radio" id="debitWeb" name="debitRadio" class="custom-control-input" data-toggle="collapse" data-target="#webUI" aria-expanded="false" aria-controls="webUI" required>
                         <label class="custom-control-label" for="debitWeb">Online authorization (Website)</label>
                       </div>
                     </div>
-                    <div class="form-row">
-                      <div class="form-group col-12 my-2">
-                        <label class="paya-label" for="inputCardNumber">How are you authenticating your users?</label>
-                        <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
-                          <div class="custom-control custom-radio mb-2">
-                            <input type="radio" id="authSig" name="authRadio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="authSig">Electronic signature</label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="loginUn" name="authRadio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="loginUn">Username and Password</label>
+
+                    <!-- Web UI Expandable -->
+                    <div class="collapse hide" id="webUI">
+                      <div class="form-row">
+                        <div class="form-group col-12 my-2">
+                          <label class="paya-label" for="inputCardNumber">How are you authenticating your users?</label>
+                          <div class="custom-control-spacer mx-0 mt-0 pt-2 px-0">
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" id="authSig" name="authRadio" class="custom-control-input" required>
+                              <label class="custom-control-label" for="authSig">Electronic signature</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="loginUn" name="authRadio" class="custom-control-input" required>
+                              <label class="custom-control-label" for="loginUn">Username and Password</label>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
                 <div class="form-row">

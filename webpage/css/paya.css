@@ -1092,12 +1092,12 @@ input[type=number] {
 .paya-add::before {
 	content: "";
 	display: block;
-	background-color: #666666;
+	background-color: #4699FE;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  border: 1px solid #666666;
+  border: 1px solid #4699FE;
 }
 
 .paya-add::before {
@@ -1111,6 +1111,7 @@ input[type=number] {
 }
 .paya-add:hover {
 	border: 1px solid #4699FE !important;
+  background-color: rgba(70,153,254,0.1);
 }
 
 /* ----- Paya Custom Inputs ----- */
