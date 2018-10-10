@@ -258,6 +258,10 @@ progress[value] {
   transition: width 0.6s ease;
 }
 
+.indent-left {
+  border-left: 2px solid #dee2e6 !important;
+}
+
 /* ----- Typography ---- */
 
 .text-primary {
@@ -1074,7 +1078,6 @@ input[type=number] {
   border-color: inherit;
   cursor: not-allowed;
 }
-
 
 
 /* ----- Paya Add Button ----- */
