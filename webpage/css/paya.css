@@ -262,6 +262,14 @@ progress[value] {
   border-left: 2px solid #dee2e6 !important;
 }
 
+.form-signin .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 90%;
+    color: #dc3545;
+}
+
 /* ----- Typography ---- */
 
 .text-primary {
@@ -610,12 +618,12 @@ hr.dashed {
   background-size: 100% 100%;
 }
 
-.bundle .form-group {
+.bundle .select-cell .form-group {
   border: 1px solid #b6ddfe;
   border-radius: 5rem;
 }
 
-.bundle .form-group:hover {
+.bundle .select-cell .form-group:hover {
   background-color: #e9f5ff;
 }
 .bundle .form-agree,
@@ -1515,7 +1523,7 @@ input[type=number] {
   color: #6c757d;
   background-color: transparent;
   background-image: none;
-  border-color: #ccc;
+  border-color: #ccc !important;
 }
 
 

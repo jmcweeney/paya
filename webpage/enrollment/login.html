@@ -16,6 +16,7 @@
   </head>
 
   <body class="login-body">
+    <form action="index.html" method="post" class="needs-validation" novalidate>
 
     <div class="container">
 
@@ -31,14 +32,14 @@
               <h4 class="card-title text-center text-muted">Log in to your account.</h4>
             </div>
             <div class="paya form-row pt-3">
-              <div class="form-group col-12 col-md-6">
+              <div class="form-group col-12">
                 <label for="inputName">Email</label>
                 <input type="text" class="form-control input" id="inputEm" placeholder="janedoe@gmail.com" required autofocus>
                 <div class="invalid-feedback" style="width: 100%;">
                   Required
                 </div>
               </div>
-              <div class="form-group col-12 col-md-6">
+              <div class="form-group col-12">
                 <label for="inputAddr">Password</label>
                 <div class="paya-card-brand">
                   <input type="password" class="form-control input" id="inputPw" placeholder="Not sure? Click below..." required>
@@ -58,14 +59,18 @@
           </div>
         </div>
         <div class="paya d-flex align-items-center justify-content-center my-3">
-          <a role="button" class="btn btn-primary btn-login" href="2-business.html">Log In</a>
+          <button type="submit" id="submit" class="btn btn-primary btn-login">Log In</button>
         </div>
       </div>
-
     </div> <!-- /container -->
+  </form>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vendor/holder.min.js"></script>
+    <script src="../js/paya.js"></script>
   </body>
 </html>
