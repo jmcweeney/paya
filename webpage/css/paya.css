@@ -221,7 +221,7 @@ a {
 /* ----- Enrollment UI ----- */
 
 .bg-color-paya {
-  background-color: #F8FCFF;
+  background-color: rgba(210, 236, 255, 0.4);
 }
 .bg-color-sig {
   background-color: rgba(210, 236, 255, 0.4);
