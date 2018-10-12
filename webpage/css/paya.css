@@ -223,6 +223,9 @@ a {
 .bg-color-paya {
   background-color: #F8FCFF;
 }
+.bg-color-sig {
+  background-color: rgba(210, 236, 255, 0.4);
+}
 
 .bg-terms {
   border: 1px solid #EAEEF0;
