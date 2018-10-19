@@ -382,7 +382,7 @@ hr.dashed {
 
 .sticky-top {
   position: -ms-sticky;
-  top: 2em;
+  top: 0.5em;
   z-index: 1020;
 }
 
