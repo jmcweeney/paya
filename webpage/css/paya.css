@@ -37,7 +37,7 @@
   font-weight: 300;
 }
 .jumbotron {
-  color: #535e66;
+  color: #333;
 }
 
 @media (max-width: 575.98px) {
@@ -362,7 +362,7 @@ hr.black-rule-2 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   border: 0;
-  border-top: 2px solid rgba(0, 0, 0, 1.0);
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
 }
 hr.dashed {
   margin-top: 0.75rem;
@@ -438,7 +438,7 @@ hr.dashed {
 @media (min-width: 992px) {
   .paya-cards {
     background-color: #fff;
-    border: 1px solid #E3E3E3;
+    /* border: 1px solid #E3E3E3; */
     border-radius: 0.25rem;
     /* box-shadow: 0 10px 20px rgba(0,0,0,.08); */
   }
