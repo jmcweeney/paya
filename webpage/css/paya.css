@@ -1636,6 +1636,9 @@ input[type=number] {
     border-left: 1px solid #fff;
     border-radius: 0 .25rem .25rem 0;
 }
+.was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
+    border-color: #fff;
+}
 
 /* ----- Paya Recurring Switch ----- */
 
