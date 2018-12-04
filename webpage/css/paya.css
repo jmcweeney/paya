@@ -223,8 +223,8 @@ a {
 .bg-color-paya {
   background-color: rgba(210, 236, 255, 0.4);
 }
-.bg-color-sig {
-  background-color: rgba(210, 236, 255, 0.4);
+.bg-sig {
+  background-color: rgba(235, 250, 235, 1.0);
 }
 
 .bg-terms {
@@ -449,10 +449,10 @@ hr.dashed {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #e6e6e6 !important;
 }
 .border-top-1 {
-  border-top: 1px solid #000 !important;
+  border-top: 1px solid #8c8c8c !important;
 }
 .border-top-2 {
   border-top: 2px solid #000 !important;
@@ -464,10 +464,13 @@ hr.dashed {
   border-bottom: 1px solid #dee2e6 !important;
 }
 .border-bottom-1 {
-  border-bottom: 1px solid #000 !important;
+  border-bottom: 1px solid #8c8c8c !important;
 }
 .border-bottom-2 {
   border-bottom: 2px solid #ACB4B8 !important;
+}
+.border-bottom-none {
+  border-bottom: none;
 }
 .border-left {
   border-left: 1px solid #dee2e6 !important;
@@ -589,9 +592,9 @@ hr.dashed {
   position: relative;
   /* display: block; */
   padding: 0;
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 95%;
-  background-color: #fff;
+  background-color: transparent;
   border: 0;
   margin-bottom: 0;
 }
@@ -1487,6 +1490,12 @@ input[type=number] {
   line-height: 1.5;
   border-radius: .3rem;
 }
+.btn-signout {
+  padding: .5rem 1rem;
+  font-size: 1.0rem !important;
+  line-height: 1.5;
+  border-radius: 5rem !important;
+}
 .btn-circle-sm {
   width: 30px;
   height: 30px;
@@ -1529,13 +1538,110 @@ input[type=number] {
   border-color: #ccc !important;
 }
 
+/* ----- Paya Products & Details ----- */
+
+.bg-details {
+  background: #f9f9f9;
+}
+.details-circle-success img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(105,196,65,1.0);
+  border: 6px solid #fff;
+  z-index: 10;
+}
+.details-circle-empty img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 6px 0;
+  margin-right: 6px;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(255,255,255,1.0);
+  border: 2px solid #ccc;
+  z-index: 10;
+}
+
+/* ----- Custom File Upload ----- */
+
+.input-group>.custom-file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin-bottom: 0;
+}
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 0;
+    line-height: 1.5;
+    color: #48A9FD;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+}
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block; /* block */
+    height: calc(calc(2.25rem + 2px) - 1px * 2);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #999;
+    content: "Add" !important;
+    background-color: #fff;
+    border-left: 1px solid #fff;
+    border-radius: 0 .25rem .25rem 0;
+}
 
 /* ----- Paya Recurring Switch ----- */
 
 .bg-recurring {
   background: #FF9E03;
 }
-
 .payaSwitch {
     position: relative;
     width: 48px;
