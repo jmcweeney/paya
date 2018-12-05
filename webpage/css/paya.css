@@ -596,6 +596,7 @@ hr.dashed {
   font-size: 95%;
   background-color: transparent;
   border: 0;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -895,7 +896,7 @@ hr.dashed {
   margin-bottom: 0;
   font-size: .75em;
   color: #666666;
-  font-weight: 600;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1549,6 +1550,7 @@ input[type=number] {
   line-height: 1rem;
   color: #fff;
   font-weight: 500;
+  font-size: 80%;
 }
 
 .bg-details {
