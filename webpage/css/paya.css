@@ -217,6 +217,14 @@ a {
    border-top-right-radius: 0;
  }
 
+@media (max-width: 575.98px) {
+   .form-signin {
+     width: 100%;
+     max-width: 560px;
+     padding: 0;
+     margin: 0 auto;
+   }
+ }
 
 /* ----- Enrollment UI ----- */
 
