@@ -331,7 +331,7 @@ small,
 
 @media (min-width: 576px) {
   .lead span,
-  .bundle span {
+  .bundle span.break {
       display: block;
       &::before {
         content: attr(data-text);
@@ -582,7 +582,7 @@ hr.dashed {
   padding: 0;
   line-height: 1.5;
 }
-.bundle span {
+.bundle span.break {
   display: block;
 }
 .bundle .paya-table h6,
