@@ -329,7 +329,7 @@ progress[value] {
 
 small,
 .small {
-  font-size: 90%;
+  font-size: 90% !important;
 }
 
 .lead {
@@ -606,7 +606,7 @@ hr.dashed {
   font-size: 95%;
   background-color: transparent;
   border: 0;
-  font-weight: 500;
+  font-weight: inherit;
   margin-bottom: 0;
 }
 
