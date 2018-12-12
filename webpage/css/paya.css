@@ -281,6 +281,28 @@ progress[value] {
     color: #dc3545;
 }
 
+.prev-arrow {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #a7a7a7;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 50%;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.prev-arrow:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
 /* ----- Typography ---- */
 
 .text-primary {
@@ -905,7 +927,7 @@ hr.dashed {
   display: inline-block;
   margin-bottom: 0;
   font-size: .75em;
-  color: #666666;
+  color: #5d5d5d;
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1551,6 +1573,25 @@ input[type=number] {
 
 /* ----- Paya Products & Details ----- */
 
+.number-circle {
+  display: inline-block;
+  position: relative;
+  padding: 0.25rem;
+  margin: 0 .5rem 0 0;
+  background-color: #5b6770;
+  /* border: 1px solid #ccc; */
+  color: #a7a7a7;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  font-weight: 400 !important;
+  font-size: 80%;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 50%;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .review-number {
   display: inline;
   background: #5b6770;
@@ -1649,7 +1690,7 @@ input[type=number] {
     right: 0;
     bottom: 0;
     z-index: 3;
-    display: block; /* block */
+    display: block;
     height: calc(calc(2.25rem + 2px) - 1px * 2);
     padding: .375rem .75rem;
     line-height: 1.5;
@@ -1661,6 +1702,42 @@ input[type=number] {
 }
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
     border-color: #fff;
+}
+
+.inputDnD {
+  .form-control-file {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 6em;
+    outline: none;
+    visibility: hidden;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 5px solid currentColor;
+    &:before {
+      content: attr(data-title);
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      width: 100%;
+      min-height: 6em;
+      line-height: 2em;
+      padding-top: 1.5em;
+      opacity: 1;
+      visibility: visible;
+      text-align: center;
+      border: 0.25em dashed currentColor;
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+      overflow: hidden;
+    }
+    &:hover {
+      &:before {
+        border-style: solid;
+        box-shadow: inset 0px 0px 0px 0.25em currentColor;
+      }
+    }
+  }
 }
 
 /* ----- Paya Recurring Switch ----- */

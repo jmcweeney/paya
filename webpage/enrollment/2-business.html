@@ -28,73 +28,79 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h2 class="pb-2">Define your business</h2>
-          <h5 class="lead text-gray">Tell us what you do so we can tailor the rest of the process to suit your needs.</h5>
-        </div>
-      </section>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h2 class="pb-2">Define your business</h2>
+        <h5 class="lead text-gray">Tell us what you do so we can tailor the rest of the process to suit your needs.</h5>
+      </div>
+    </section>
 
-<div class="pt-1 pb-4">
-  <div class="container px-0">
+    <form action="3-bundle.html" method="post" class="needs-validation" novalidate>
 
-    <div class="d-flex justify-content-center">
-      <div class="paya-cards col-md-7">
-        <div class="card payment-card">
-          <div class="card-body mt-md-4 mb-2">
-            <div class="paya form-row">
-              <div class="form-group col-12 col-lg-6">
-                <label for="inputRecAmount">What industry are you in?</label>
-                  <select class="custom-select select" required>
-                    <option value="" selected disabled hidden>Agriculture</option>
-                    <option value="1">Agriculture & Forestry</option>
-                    <option value="2">Business & Information</option>
-                    <option value="3">Construction</option>
-                    <option value="4">Education</option>
-                    <option value="5">Finance & Insurance</option>
-                    <option value="6">Food & Hospitality</option>
-                    <option value="7">Gaming</option>
-                  </select>
-                  <div class="invalid-feedback" style="width: 100%;">
-                    Required
+    <div class="pt-1 pb-4">
+      <div class="container px-0">
+
+        <div class="d-flex justify-content-center">
+          <div class="paya-cards col-md-7">
+            <div class="card payment-card">
+              <div class="card-body mt-md-4 mb-2">
+                <div class="paya form-row">
+                  <div class="form-group col-12">
+                    <label for="inputCity">Which product do you use?</label>
+                    <select class="custom-select select" required>
+                      <option value="" selected disabled hidden>Select a product...</option>
+                      <option value="1">Sage 100 Contractor</option>
+                    </select>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      A product is required
+                    </div>
                   </div>
-              </div>
-              <div class="form-group col-12 col-lg-6">
-                <label for="inputRecAmount">What type of business are you?</label>
-                  <select class="custom-select select" required>
-                    <option value="" selected disabled hidden>Extermination</option>
-                    <option value="1">Extermination</option>
-                    <option value="2">Farming</option>
-                    <option value="3">Fishing</option>
-                    <option value="4">Landscape Services</option>
-                    <option value="5">Other</option>
-                  </select>
-                  <div class="invalid-feedback" style="width: 100%;">
-                    Required
+                </div>
+                <div class="paya form-row">
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="inputRecAmount">What industry are you in?</label>
+                      <select class="custom-select select" required>
+                        <option value="" selected disabled hidden>Agriculture</option>
+                        <option value="1">Agriculture & Forestry</option>
+                        <option value="2">Business & Information</option>
+                        <option value="3">Construction</option>
+                        <option value="4">Education</option>
+                        <option value="5">Finance & Insurance</option>
+                        <option value="6">Food & Hospitality</option>
+                        <option value="7">Gaming</option>
+                      </select>
+                      <div class="invalid-feedback" style="width: 100%;">
+                        An industry is required
+                      </div>
                   </div>
-              </div>
-            </div>
-            <div class="paya form-row">
-              <div class="form-group col-12">
-                <label for="inputCity">What do you sell or provide?</label>
-                <input type="text" class="form-control input" id="inputPw" placeholder="Describe your product or service(s)..." required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Required
+                  <div class="form-group col-12 col-lg-6">
+                    <label for="inputRecAmount">What type of business are you?</label>
+                      <select class="custom-select select" required>
+                        <option value="" selected disabled hidden>Extermination</option>
+                        <option value="1">Extermination</option>
+                        <option value="2">Farming</option>
+                        <option value="3">Fishing</option>
+                        <option value="4">Landscape Services</option>
+                        <option value="5">Other</option>
+                      </select>
+                      <div class="invalid-feedback" style="width: 100%;">
+                        A business type is required
+                      </div>
+                  </div>
+                </div>
+                <hr class="black-rule-1">
+                <div class="paya d-flex justify-content-between my-4">
+                  <a role="button" class="btn btn-outline-secondary" href="index.html">Back</a>
+                  <button type="submit" id="submit" class="btn btn-primary">Continue</button>
                 </div>
               </div>
             </div>
-            <hr class="black-rule-1">
-            <div class="paya d-flex justify-content-between my-4">
-              <a role="button" class="btn btn-outline-secondary" href="index.html">Back</a>
-              <a role="button" class="btn btn-primary" href="3-bundle.html">Continue</a>
-            </div>
           </div>
         </div>
+
       </div>
     </div>
-
-  </div>
-</div>
+    </form>
 
     </main>
 
