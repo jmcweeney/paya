@@ -174,17 +174,14 @@
                       </div>
                       <div style="order:2;" class="paya-cell pt-2 pb-0 pb-sm-3">
                         <div class="input-group">
-                          <!-- <button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('inputFile').click()">Choose file...</button>
-                          <div class="form-group inputDnD">
+                          <div class="form-group mb-0">
                             <label class="sr-only" for="inputFile">File Upload</label>
-                            <input type="file" class="form-control-file text-black" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
-                          </div> -->
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file...</label>
+                            <input type="file" class="form-control-file truncate" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Choose a file...">
                           </div>
                         </div>
                       </div>
+                      <!-- ^ only functioning File Upload UI -->
+
                       <div style="order:2;" class="paya-cell border-bottom-none pt-2 pb-0 pb-sm-3">
                         <p class="font-weight-medium mt-3 mt-md-2">Marketing Materials</p>
                         <p class="break text-gray font-weight-normal">Marketing material (if no webisite available)</p>
@@ -326,7 +323,7 @@
                     <div class="paya-cell p-0 border-bottom-0">
                       <div class="paya form-row bg-sig px-3">
                         <div class="form-group col-12 col-md-9 pt-4">
-                          <input type="text" class="form-control input" id="inputCCSig" placeholder="Enter your Full Name acting as your Digital Signature..." autofocus required>
+                          <input type="text" class="form-control input" id="inputCCSig" placeholder="Enter your Full Name acting as your Digital Signature..." required><!-- autofocus -->
                           <div class="invalid-feedback" style="width: 100%;">
                             This entry does not match our records.</br>Please try again, or contact <a href="#">your representative</a>.
                           </div>
