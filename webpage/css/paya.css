@@ -1764,7 +1764,7 @@ h4.number-text {
     position: absolute;
     top: 0.5em;
     left: 0;
-    width: 80%;
+    width: 78%;
     white-space: nowrap;
     text-overflow: ellipsis;
     min-height: 3em;
@@ -1784,13 +1784,13 @@ h4.number-text {
     width: 100%;
     min-height: 3em;
     line-height: 1.5em;
-    padding: 0 1em 0 0;
+    padding: 0 0.25em 0 0;
     opacity: 1;
     visibility: visible;
     text-align: right;
     border-style: none;
     color: #00a9e0;
-    content: "Add" !important;
+    content: "Browse" !important;
     overflow: hidden;
 }
 .form-control-file:hover {
