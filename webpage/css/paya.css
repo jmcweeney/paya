@@ -232,7 +232,7 @@ a {
   background-color: rgba(210, 236, 255, 0.4);
 }
 .bg-sig {
-  background-color: rgba(235, 250, 235, 1.0);
+  background-color: rgba(238, 255, 230, 1.0);
 }
 
 .bg-terms {
@@ -480,6 +480,9 @@ hr.dashed {
   border: 1px solid #dee2e6 !important;
 }
 
+.border-top-0 {
+  border-top: none;
+}
 .border-top {
   border-top: 1px solid #e6e6e6 !important;
 }
@@ -901,9 +904,9 @@ hr.dashed {
 
 /* ----- Paya Forms ----- */
 
-/* .paya.form-row {
-  padding: 0.5rem;
-} */
+.rounded {
+  border-radius: 0.5rem !important;
+}
 
 .paya .btn {
   display: inline-block;
@@ -1126,6 +1129,19 @@ input[type=number] {
   cursor: not-allowed;
 }
 
+.btn-success-empty.disabled,
+.btn-success-empty:disabled {
+  color: #666;
+  background-color: #e9ecef;
+  border-color: #E3E3E3;
+}
+.btn-success-empty.disabled:hover,
+.btn-success-empty:disabled:hover {
+  color: inherit;
+  background-color: #e9ecef;
+  border-color: inherit;
+  cursor: not-allowed;
+}
 
 /* ----- Paya Add Button ----- */
 
@@ -1505,16 +1521,25 @@ input[type=number] {
   background-color: #0069d9;
   border-color: #0062cc;
 }
-.btn-success {
+.btn-approve {
   color: #fff;
   background-color: #69C441;
   border-color: #69C441;
 }
-
-.btn-success:hover {
+.btn-approve:hover {
   color: #fff;
   background-color: #218838;
   border-color: #1e7e34;
+}
+.btn-approve-waiting {
+  color: #9B9B9B;
+  background-color: #fff;
+  border-color: #ccc !important;
+}
+.btn-approve-waiting:hover {
+  color: #fff;
+  background-color: #69C441;
+  border-color: #69C441 !important;
 }
 
 .btn-login {
@@ -1624,7 +1649,7 @@ h4.number-text {
 .bg-details {
   background: #f6fbfd;
 }
-.details-circle-success img {
+.details-circle-opened img {
   display: inline-block;
   width: 32px;
   height: 32px;
