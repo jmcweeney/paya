@@ -65,14 +65,14 @@ footer p {
 /* ----- SASS Colors ---- */
 
 :root {
-  --blue: #48A9FD;
+  --blue: #00a9e0; /* 48A9FD*/
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: #69c411;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -115,7 +115,7 @@ footer p {
  }
 
 a {
-     color: #48A9FD;
+     color: #00a9e0;
      text-decoration: none;
      background-color: transparent;
      -webkit-text-decoration-skip: objects;
@@ -129,7 +129,7 @@ a {
  }
 
  .btn-outline-primary {
-     color: #48A9FD;
+     color: #00a9e0;
      background-color: transparent;
      background-image: none;
      border-color: #48A9FD;
@@ -139,8 +139,8 @@ a {
  .btn-outline-primary:not(:disabled):not(.disabled):active,
  .show > .btn-outline-primary.dropdown-toggle {
      color: #fff;
-     background-color: #48A9FD;
-     border-color: #48A9FD;
+     background-color: #00a9e0;
+     border-color: #00a9e0;
  }
 
  /* ----- Sign In ----- */
@@ -277,7 +277,7 @@ progress[value] {
     display: none;
     width: 100%;
     margin-top: .25rem;
-    font-size: 90%;
+    font-size: 85%;
     color: #dc3545;
 }
 
@@ -306,7 +306,7 @@ progress[value] {
 /* ----- Typography ---- */
 
 .text-primary {
-  color: #4699FE;
+  color: #00a9e0;
 }
 .paya-display-1 {
   font-size: 2.5rem;
@@ -346,7 +346,7 @@ progress[value] {
   color: #f68e1e !important;
 }
 .text-primary {
-  color: #4699FE !important;
+  color: #00a9e0 !important;
 }
 
 small,
@@ -441,7 +441,7 @@ hr.dashed {
 .paya-payment-options .nav-pills .nav-link.active,
 .paya-payment-options .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #4699FE;
+    background-color: #00a9e0;
     border: 0;
 }
 .paya-payment-options .nav-pills .nav-link {
@@ -574,7 +574,7 @@ hr.dashed {
   border-top: 1px solid #E9EBEE;
 }
 .card-footer-library button {
-  color: #4699FE;
+  color: #00a9e0;
 }
 
 
@@ -1102,14 +1102,14 @@ input[type=number] {
 
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: #4699FE;
+    background-color: #00a9e0;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #4699FE;
+    background-color: #00a9e0;
 }
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: #4699FE;
+    background-color: #00a9e0;
 }
 
 .btn-success.disabled,
@@ -1142,12 +1142,12 @@ input[type=number] {
 .paya-add::before {
 	content: "";
 	display: block;
-	background-color: #4699FE;
+	background-color: #00a9e0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  border: 1px solid #4699FE;
+  border: 1px solid #00a9e0;
 }
 
 .paya-add::before {
@@ -1160,7 +1160,7 @@ input[type=number] {
 	width: 1em;
 }
 .paya-add:hover {
-	border: 1px solid #4699FE !important;
+	border: 1px solid #00a9e0 !important;
   background-color: rgba(70,153,254,0.1);
 }
 
@@ -1578,7 +1578,7 @@ input[type=number] {
   display: inline-block;
   position: relative;
   padding: 0.25rem;
-  margin: 0 .5rem 0 0;
+  margin: 0 .5rem 0 -3rem;
   background-color: #5b6770;
   /* border: 1px solid #ccc; */
   color: #a7a7a7;
@@ -1591,6 +1591,22 @@ input[type=number] {
   line-height: 1.5;
   border-radius: 50%;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+h4.number-text {
+  /* not sure what to do with this yet... */
+}
+
+@media (max-width: 575.98px) {
+  .number-circle {
+    padding: 0.25rem;
+    margin: 0 .5rem 0 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 400 !important;
+    font-size: 65%;
+  }
 }
 
 .review-number {
@@ -1606,7 +1622,7 @@ input[type=number] {
 }
 
 .bg-details {
-  background: #f9f9f9;
+  background: #f6fbfd;
 }
 .details-circle-success img {
   display: inline-block;
@@ -1786,11 +1802,11 @@ input[type=number] {
     transition: all 0.2s ease-in 0s;
 }
 .payaSwitchRec-checkbox:checked + .payaSwitchRec-label {
-    background-color: #4699FE /* #FF9E03; */
+    background-color: #00a9e0 /* #4699FE; */
 }
 .payaSwitchRec-checkbox:checked + .payaSwitchRec-label,
 .payaSwitchRec-checkbox:checked + .payaSwitchRec-label:before {
-   border-color: #4699FE /* #FF9E03; */
+   border-color: #00a9e0 /* #4699FE; */
 }
 .payaSwitchRec-checkbox:checked + .payaSwitchRec-label:before {
     right: 0px;
@@ -1829,13 +1845,13 @@ input[type=number] {
 }
 .payaSwitchSave-checkbox:checked + .payaSwitchSave-label,
 .payaSwitchShip-checkbox:checked + .payaSwitchShip-label {
-    background-color: #4699FE;
+    background-color: #00a9e0;
 }
 .payaSwitchSave-checkbox:checked + .payaSwitchSave-label,
 .payaSwitchSave-checkbox:checked + .payaSwitchSave-label:before,
 .payaSwitchShip-checkbox:checked + .payaSwitchShip-label,
 .payaSwitchShip-checkbox:checked + .payaSwitchShip-label:before {
-   border-color: #4699FE;
+   border-color: #00a9e0;
 }
 .payaSwitchSave-checkbox:checked + .payaSwitchSave-label:before,
 .payaSwitchShip-checkbox:checked + .payaSwitchShip-label:before {
