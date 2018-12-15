@@ -21,7 +21,7 @@
     <div class="container">
 
       <div class="paya-cards form-signin">
-        <div class="card payment-card py-2">
+        <div class="card payment-card">
           <div class="card-body mt-md-2 mb-2">
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
               <a href="../index.html" class="sidebar-brand img-responsive">
@@ -29,7 +29,7 @@
               </a>
             </div>
             <div class="mt-2 mb-5">
-              <h4 class="card-title text-center text-muted">Log in to your account.</h4>
+              <h4 class="card-title text-center text-muted">Sign in to your account.</h4>
             </div>
             <div class="paya form-row pt-3">
               <div class="form-group col-12">
@@ -39,7 +39,7 @@
                   Required
                 </div>
               </div>
-              <div class="form-group col-12">
+              <div class="form-group col-12 mb-2">
                 <label for="inputAddr">Password</label>
                 <div class="paya-card-brand">
                   <input type="password" class="form-control input" id="inputPw" placeholder="Not sure? Click below..." required>
@@ -48,26 +48,29 @@
                   </div>
                 </div>
               </div>
-
             </div>
-            <div class="paya d-flex align-items-center justify-content-between mt-4">
-              <a class="btn btn-primary btn-login" href="index.html">Sign In</a>
-              <!-- <button type="submit" id="submit" class="btn btn-primary btn-login">Sign In</button> -->
-              <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mt-0">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <div class="custom-control custom-checkbox">
+                  <div class="d-lg-flex justify-content-between">
+                    <input type="checkbox" class="custom-control-input" id="loginRem" required>
+                    <label class="text-gray custom-control-label font-weight-normal" for="loginRem">Remember me</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="paya d-flex align-items-center justify-content-between mt-3">
+              <button type="submit" id="submit" class="btn btn-primary btn-login">Sign In</button>
+              <div class="paya d-flex align-items-center justify-content-between mt-3">
                 <div class="small text-gray">
-                  <span>Forgot your <a href="#">password?</a></span>
-                  <span>Or, need some <a href="#">help?</a></span>
+                  <p>Forgot your <a href="#">password?</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <hr class="black-rule-2">
-
-        <div class="paya d-flex align-items-center justify-content-center my-4">
-          <button type="submit" id="submit" class="btn btn-primary btn-login">Log In</button>
-        </div>
       </div>
+
     </div> <!-- /container -->
   </form>
 
@@ -78,5 +81,5 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/vendor/holder.min.js"></script>
     <script src="../js/paya.js"></script>
-  </body>
+</body>
 </html>
