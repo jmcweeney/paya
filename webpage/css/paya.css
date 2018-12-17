@@ -928,10 +928,10 @@ hr.dashed {
 
 .paya label {
   display: inline-block;
-  margin-bottom: 0;
-  font-size: .75em;
-  color: #5d5d5d;
-  font-weight: 500;
+  margin-bottom: 3px;
+  font-size: .85em;
+  color: #464646;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -943,10 +943,10 @@ hr.dashed {
 
 .paya-label {
   display: inline-block;
-  margin-bottom: 0;
-  font-size: .75em;
-  color: #666666;
-  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: .85em;
+  color: #464646;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -957,7 +957,7 @@ hr.dashed {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
   font-weight: 400!important;
-  color: #000;
+  color: #464646;
 }
 
 .paya input,
