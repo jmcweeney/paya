@@ -6,7 +6,6 @@
 
 /* ----- Sandbox Elements ----- */
 
-
 .sandbox {
   color: #ff0099;
 }
@@ -305,6 +304,14 @@ progress[value] {
 
 /* ----- Typography ---- */
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
 .text-primary {
   color: #00a9e0;
 }
@@ -931,7 +938,7 @@ hr.dashed {
   margin-bottom: 3px;
   font-size: .85em;
   color: #464646;
-  font-weight: 400;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -946,7 +953,7 @@ hr.dashed {
   margin-bottom: 0.5rem;
   font-size: .85em;
   color: #464646;
-  font-weight: 400;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -956,7 +963,7 @@ hr.dashed {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  font-weight: 400!important;
+  font-weight: 500 !important;
   color: #464646;
 }
 
