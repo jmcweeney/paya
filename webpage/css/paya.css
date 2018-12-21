@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   color: inherit;
 }
@@ -311,33 +311,33 @@ h1, h2, h3, h4, h5, h6,
 }
 .paya-display-1 {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 .paya-display-2 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 .paya-display-3 {
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.3;
 }
 .paya-display-4 {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 .paya-display-5 {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 .font-weight-medium {
-  font-weight: 500 !important;
+  font-weight: 600 !important;
 }
 
 .text-gray {
