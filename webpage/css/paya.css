@@ -303,7 +303,7 @@ h1, h2,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   color: inherit;
 }
 h3, h4, h5, h6,
@@ -311,7 +311,7 @@ h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.1;
   color: inherit;
 }
 .text-primary {
