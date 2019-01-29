@@ -130,3 +130,19 @@ function readUrl(input) {
     reader.readAsDataURL(input.files[0]);
   }
 }
+
+// Show & Hide Password
+
+var inputPw = document.getElementById('paya-pwt'),
+   icon = document.getElementById('icon');
+   icon.onclick = function () {
+     if(inputPw.className == 'active form-control input') {
+        inputPw.setAttribute('type', 'text');
+        icon.className = 'far fa-eye';
+        inputPw.className = 'form-control input';
+     } else {
+        inputPw.setAttribute('type', 'password');
+        icon.className = 'far fa-eye-slash';
+        inputPw.className = 'active form-control input';
+    }
+   }
