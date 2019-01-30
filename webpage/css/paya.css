@@ -22,6 +22,7 @@
     padding-bottom: calc(var(--jumbotron-padding-y) * 1);
   }
 }
+.jumbotron h1,
 .jumbotron h2 {
   color: #000000;
 }
@@ -143,6 +144,7 @@ a {
 
  .login-body {
    height: 100%;
+   background-color: rgba(244, 250, 255, 0.9) !important;
  }
 
  .login-body {
@@ -160,10 +162,10 @@ a {
  }
 
  .card-title {
-   line-height: 1.8rem;
+   line-height: 2.2rem;
    font-weight: 600;
-   margin-bottom: 1rem;
-   color: #535e66;
+   margin: 1rem 0;
+   color: #000000;
  }
  .card-subtitle {
    margin-bottom: 0;
@@ -185,26 +187,12 @@ a {
 
  /* ----- Login Form ----- */
 
- .paya-pwt > input {
-   width: 100%;
-   color: #000;
-   background: transparent;
-   padding: 5px 0 6px 0;
-   border-bottom: 1px solid #ced4da;
-   transition: border-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-   outline: 0;
-   box-shadow: 0;
+.pwt-icons {
+   height:20px;
+   position:absolute;
+   right:0;
+   top:10px;
  }
-
- .paya-pwt .form-control:focus,
- .paya-pwt .custom-select:focus {
-   color: #495057;
-   background-color: transparent;
-   border-color: #fff;
-   outline: 0;
-   box-shadow: none;
- }
-
 .pwt-icons > i {
   position: absolute;
   cursor: pointer;
@@ -217,21 +205,14 @@ a {
   background-size: 100% 100%;
   z-index: 1020;
  }
-
  .paya-pwt {
    height:auto;
    position:relative;
  }
- .pwt-icons {
-   height:20px;
-   position:absolute;
-   right:0;
-   top:8px;
- }
 
  .form-signin {
    width: 100%;
-   max-width: 640px;
+   max-width: 580px;
    padding: 15px;
    margin: 0 auto;
  }
@@ -474,6 +455,7 @@ hr.dashed {
     top: 0;
     z-index: 1020;
     border-bottom: 1px solid #e9ecef;
+    opacity: 0.9;
   }
 }
 
@@ -507,8 +489,7 @@ hr.dashed {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
-  opacity: 0.9;
+  background-color: rgba(244, 250, 255, 0.9) !important;
 }
 
 /* ----- Payment Options ----- */
