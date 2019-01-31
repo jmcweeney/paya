@@ -213,9 +213,22 @@ a {
  .form-signin {
    width: 100%;
    max-width: 580px;
-   padding: 15px;
-   margin: 0 auto;
+   border: 1px solid #e9ecef;
  }
+@media (max-width: 576px) {
+    .login-body {
+      height: 100%;
+      background-color: rgba(255, 255, 255, 1.0) !important;
+    }
+    .form-signin {
+      width: 100%;
+      max-width: 520px;
+      padding: 0;
+      margin: 0 auto;
+      border: 0;
+    }
+  }
+
  .form-signin .checkbox {
    font-weight: 400;
  }
@@ -243,14 +256,6 @@ a {
    font-size: 17px;
  }
 
-@media (max-width: 575.98px) {
-   .form-signin {
-     width: 100%;
-     max-width: 560px;
-     padding: 0;
-     margin: 0 auto;
-   }
- }
 
 /* ----- Enrollment UI ----- */
 
@@ -432,14 +437,14 @@ hr.black-rule-1 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 1.0);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 hr.black-rule-2 {
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
   border: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 hr.dashed {
   margin-top: 0.75rem;
@@ -519,23 +524,21 @@ hr.dashed {
 
 /* ----- Custom Cards ----- */
 
-.paya-cards {
+.paya-cards .card {
   background-color: #fff;
   border: 0;
 }
 @media (min-width: 992px) {
-  .paya-cards {
+  .paya-cards .card {
     background-color: #fff;
-    /* border: 1px solid #E3E3E3; */
     border-radius: 0.25rem;
-    /* box-shadow: 0 10px 20px rgba(0,0,0,.08); */
+    border: 0;
   }
 }
 
 .border {
   border: 1px solid #dee2e6 !important;
 }
-
 .border-top-0 {
   border-top: none;
 }
@@ -573,10 +576,6 @@ hr.dashed {
   box-shadow: 0;
 }
 
-.card-library {
-  /* box-shadow: 0 12px 12px rgba(0,0,0,0.1); */
-  /* box-shadow: 0 20px 20px rgba(0,0,0,.08); */
-}
 .card-hero {
   background-color: white;
   background-size: contain;
@@ -1310,12 +1309,6 @@ input[type=number] {
 .paya-payment-options {
   border-bottom: 2px #ACB4B8 solid;
 }
-/* .paya-card-save {
-  background: rgba(248, 252, 255, 1.0);
-  border: 1px solid rgba(72, 169, 253, .25);
-  border-radius: .25rem;
-} */
-
 .paya-save-card {
   font-size: 0.9rem;
   line-height: 1.5rem;
@@ -2449,27 +2442,37 @@ h4.number-text {
 
 /* ----- Paya Branding ----- */
 
+.form-signin .sidebar-brand {
+   margin: 20px 0;
+   height: 30px;
+   line-height: 1rem;
+   color: #555;
+}
+
 .sidebar-brand {
    float: left;
    height: 60px;
    line-height: 1rem;
    color: #555;
 }
+.sidebar-brand-icon {
+  height: 60px;
+}
+
 .sidebar-brand > img {
    height: 60px;
 }
 
 @media (max-width: 575.98px) {
+  .form-signin .sidebar-brand-icon > img {
+    width: 100px;
+   }
      .sidebar-brand-icon > img {
        width: 75px;
-       }
+      }
 }
 
 .sidebar-brand:hover {
    color: #222;
    text-decoration: none;
  }
-
-.sidebar-brand-icon {
-  height: 60px;
-}
