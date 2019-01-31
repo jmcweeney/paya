@@ -214,6 +214,7 @@ a {
    width: 100%;
    max-width: 580px;
    border: 1px solid #e9ecef;
+   border-radius: 0.25rem;
  }
 @media (max-width: 576px) {
     .login-body {
@@ -529,10 +530,12 @@ hr.dashed {
   border: 0;
 }
 @media (min-width: 992px) {
+  .form-signin .card,
   .paya-cards .card {
     background-color: #fff;
     border-radius: 0.25rem;
     border: 0;
+    padding: 15px;
   }
 }
 
