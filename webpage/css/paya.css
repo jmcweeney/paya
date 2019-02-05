@@ -23,7 +23,9 @@
   }
 }
 .jumbotron h1,
-.jumbotron h2 {
+.jumbotron h2,
+.bundle h1,
+.bundle h4 {
   color: #000000;
 }
 
@@ -730,6 +732,22 @@ hr.dashed {
   border: none;
   background-color: #fff;
 }
+
+.circle-application-submitted img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin-top: 0;
+  padding: 12px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(105,196,65,1.0);
+  z-index: 10;
+}
+
 /* ----- Enrollment Tables ----- */
 
 .paya-table {
@@ -1688,6 +1706,13 @@ h4.number-text {
     font-weight: 400 !important;
     font-size: 65%;
   }
+  .btn-signout {
+    padding: .5rem 0;
+    font-size: .95rem !important;
+    line-height: 1.5;
+    border-radius: 5rem !important;
+    border: none;
+  }
 }
 
 .review-number {
@@ -1802,7 +1827,7 @@ h4.number-text {
     border-color: #fff;
 }
 
-/* ----- File Upload Drag & Drop ----- */
+/* ----- File Upload ----- */
 
 .form-control-file {
     position: relative;
@@ -1820,7 +1845,7 @@ h4.number-text {
     position: absolute;
     top: 0.5em;
     left: 0;
-    width: 78%;
+    width: 75%;
     white-space: nowrap;
     text-overflow: ellipsis;
     min-height: 3em;
@@ -2470,9 +2495,23 @@ h4.number-text {
   .form-signin .sidebar-brand-icon > img {
     width: 100px;
    }
-     .sidebar-brand-icon > img {
-       width: 75px;
-      }
+   .sidebar-brand-icon > img {
+     width: 75px;
+    }
+    .circle-application-submitted img {
+      display: block;
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      margin-top: 0;
+      padding: 8px 0;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      border-radius: 50%;
+      color: #fff;
+      background-color: rgba(105,196,65,1.0);
+      z-index: 10;
+    }
 }
 
 .sidebar-brand:hover {
