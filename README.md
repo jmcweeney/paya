@@ -1,4 +1,4 @@
 # Paya
-GitHub repository for all Payment, Enrollment and C2A UI.
+Repository for all Payment, Enrollment and C2A UI.
 
-Email me with any questions, required updates or tweaks to help any of this suit different environments. Find my contact information on the index.
+Email me with any questions, suggested updates or tweaks. Find my contact information on the index.
