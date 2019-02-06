@@ -16,23 +16,23 @@
     <link href="../css/paya.css" rel="stylesheet">
   </head>
 
-  <body class="login-body">
+  <body class="password-body">
 
     <form action="index.html" method="post" class="needs-validation" novalidate>
+
+      <section class="jumbotron text-center pb-1">
+        <div class="container">
+          <img class="mb-5" src="../img/paya-logo.png" alt="" width="95">
+          <h2 class="pb-2">Sign into your Account</h2>
+        </div>
+      </section>
 
     <div class="container">
       <div class="paya-cards form-signin">
         <div class="card">
-          <div class="card-body mt-md-2 mb-2">
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-              <a href="../index.html" class="sidebar-brand">
-                <span class="sidebar-brand-icon"><img src="../img/paya-logo.png"></span>
-              </a>
-            </div>
-            <div class="mt-2 mb-5">
-              <h3 class="card-title text-center">Sign in to your account</h3>
-            </div>
-            <div class="paya form-row pt-3">
+
+          <div class="card-body bg-login rounded p-4">
+            <div class="paya form-row">
               <div class="form-group col-12">
                 <label for="inputEmail">Email address</label>
                 <input type="text" class="form-control input" id="inputEm" placeholder="janedoe@gmail.com" required autofocus>
@@ -49,38 +49,38 @@
                    </div>
                </div>
               </div>
-
             </div>
-            <div class="form-row mt-4">
-              <div class="form-group col-12">
-                <div class="custom-control custom-checkbox">
-                  <div class="d-lg-flex justify-content-left">
+            <div class="form-row mt-4 mb-0">
+              <div class="form-group col-12 mb-0">
+                <div class="d-flex flex-wrap justify-content-start justify-content-md-between">
+                  <div class="d-inline custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="loginRem">
                     <label class="text-gray custom-control-label font-weight-normal" for="loginRem">Remember my email</label>
+                  </div>
+                  <div class="d-inline paya mt-3 mt-md-0">
+                    <div class="text-gray">
+                      <span>Forgot your <a href="reset-password.html" class="text-muted">password?</a></span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="paya d-flex align-items-center justify-content-between mt-2 pt-3 border-top-1">
-              <button type="submit" id="submit" class="btn btn-primary btn-login">Sign In</button>
-              <div class="paya d-flex align-items-center justify-content-between mt-3">
-                <div class="small text-gray">
-                  <p>Forgot your <a href="#" class="text-muted">password?</a></p>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="paya d-flex align-items-center justify-content-center mt-4">
+            <button type="submit" id="submit" class="btn btn-primary btn-login">Sign In</button>
           </div>
         </div>
       </div>
     </div> <!-- /container -->
   </form>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../js/vendor/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/vendor/holder.min.js"></script>
-    <script src="../js/paya.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../js/vendor/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/vendor/holder.min.js"></script>
+  <script src="../js/paya.js"></script>
+
 </body>
 </html>
