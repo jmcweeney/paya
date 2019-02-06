@@ -292,8 +292,7 @@ a {
   background-color: rgba(210, 236, 255, 0.4);
 }
 .bg-pw {
-  /* background-color: rgba(238, 255, 230, 1.0); */
-  background-color: rgba(244, 250, 255, 0.9) !important;
+  background-color: rgba(238, 255, 230, 1.0);
 }
 .bg-sig {
   background-color: rgba(238, 255, 230, 1.0);
