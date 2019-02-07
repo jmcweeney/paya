@@ -272,16 +272,16 @@ a {
 /* ------ All Applications ----- */
 
 .btn-outline-primary {
-    color: #00a9e0;
+    color: #00A9E0;
     background-color: transparent;
     background-image: none;
-    border-color: #48A9FD !important;
+    border-color: #00A9E0 !important;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #00A9E0;
+  border-color: #00A9E0;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -781,6 +781,20 @@ hr.dashed {
   z-index: 10;
 }
 .apps-circle-view img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(169,224,100,1.0);
+  z-index: 10;
+}
+.apps-circle-add img {
   display: block;
   width: 24px;
   height: 24px;
