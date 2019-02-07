@@ -128,21 +128,6 @@ a {
    -webkit-tap-highlight-color: transparent;
  }
 
- .btn-outline-primary {
-     color: #00a9e0;
-     background-color: transparent;
-     background-image: none;
-     border-color: #48A9FD;
- }
-
- .btn-outline-primary:not(:disabled):not(.disabled).active,
- .btn-outline-primary:not(:disabled):not(.disabled):active,
- .show > .btn-outline-primary.dropdown-toggle {
-     color: #fff;
-     background-color: #00a9e0;
-     border-color: #00a9e0;
- }
-
  /* ----- Sign In ----- */
 
  .login-body,
@@ -281,11 +266,45 @@ a {
    font-size: 17px;
  }
 
+/* ------ All Applications ----- */
+
+.btn-outline-primary {
+    color: #00a9e0;
+    background-color: transparent;
+    background-image: none;
+    border-color: #48A9FD !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
 
  /* ----- Enrollment UI ----- */
 
 .bg-login {
-   /* background-color: rgba(210, 236, 255, 0.3); */
    background-color: rgba(244, 250, 255, 0.9) !important;
  }
 .bg-color-paya {
@@ -297,6 +316,9 @@ a {
 .bg-sig {
   background-color: rgba(238, 255, 230, 1.0);
 }
+.bg-apps {
+   background-color: rgba(244, 250, 255, 0.9) !important;
+ }
 
 .bg-terms {
   border: 1px solid #EAEEF0;
@@ -675,7 +697,8 @@ hr.dashed {
 /* ----- Enrollment Process ----- */
 
 .enroll.card-body,
-.bundle.card-body {
+.bundle.card-body,
+.all-apps.card-body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -684,7 +707,8 @@ hr.dashed {
 
 @media (min-width: 992px) {
   .enroll.card-body,
-  .bundle.card-body {
+  .bundle.card-body,
+  .all-apps.card-body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -708,13 +732,18 @@ hr.dashed {
   padding: 0;
   line-height: 1.5;
 }
-.bundle span.break {
+.bundle span.break,
+.all-apps span.break {
   display: block;
 }
 .bundle .paya-table h6,
 .bundle .paya-table p,
 .bundle .paya-table li,
-.bundle .list-group-item {
+.all-apps .paya-table h6,
+.all-apps .paya-table p,
+.all-apps .paya-table li,
+.bundle .list-group-item,
+.all-apps .list-group-item {
   position: relative;
   color: #000;
   padding: 0;
@@ -725,7 +754,42 @@ hr.dashed {
   font-weight: inherit;
   margin-bottom: 0;
 }
+.all-apps .paya-table p {
+  font-weight: 600;
+}
+.all-apps .paya-table h6 {
+  font-size: 85%;
+  color: #666;
+}
 
+.apps-circle-submitted img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin-top: 0;
+  padding: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(105,196,65,1.0);
+  z-index: 10;
+}
+.apps-circle-view img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(169,224,100,1.0);
+  z-index: 10;
+}
 .bundle-circle-selected img {
   display: block;
   width: 24px;
@@ -1702,6 +1766,7 @@ input[type=number] {
   background-image: none;
   border-color: #ccc !important;
 }
+
 
 /* ----- Paya Products & Details ----- */
 
