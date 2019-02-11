@@ -1,11 +1,9 @@
 /*
  * Custom styles that override default Bootstrap 4
  * Author: Jeff McWeeney (jeff.mcweeney@paya.com)
-* Updated Feb 7, 2019
+* Updated Feb, 2019
  *
  */
-
-
 
 /* -----  Code for index.html -- */
 
@@ -764,6 +762,10 @@ hr.dashed {
 .all-apps .paya-table h6 {
   font-size: 85%;
   color: #666;
+}
+.all-apps .paya-table li {
+  padding: 4px 0;
+  line-height: 2.0 !important;
 }
 
 .apps-circle-submitted img {
