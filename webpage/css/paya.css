@@ -223,6 +223,7 @@ a {
  .form-signin {
    width: 100%;
    max-width: 580px;
+  margin: 0 auto;
    /* border: 1px solid #e9ecef; */
    border-radius: 0.25rem;
  }
@@ -470,6 +471,7 @@ small,
 }
 
 @media (min-width: 576px) {
+  .jumbotron .signin span,
   .lead span,
   .bundle span.break {
       display: block;
