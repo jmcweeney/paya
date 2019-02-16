@@ -418,7 +418,7 @@ h3, h4, h5, h6,
   color: #00a9e0;
 }
 .text-bundle {
-  color: #FF9E03;
+  color: #FF9E03 !important;
 }
 .paya-display-1 {
   font-size: 2.5rem;
