@@ -19,7 +19,11 @@
 
     <header class="navbar navbar-light bg-light flex-row bd-navbar justify-content-between sticky-top py-1 p-md-3">
       <a href="index.html" class="sidebar-brand img-responsive ml-lg-3">
-        <span class="sidebar-brand-icon d-flex align-items-center"><img src="../img/paya-logo.png"></span>
+        <span class="sidebar-brand-icon d-flex align-items-center">
+          <img src="../img/paya-logo.png">
+          <img class="co-brand-spacer" src="../img/logo-spacer.png">
+          <img class="co-brand" src="../img/partner-logo-isite.png">
+        </span>
       </a>
       <div class="progress w-25 mr-lg-3">
         <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
@@ -68,6 +72,15 @@
                   <div class="form-group col-12 col-md-6 mb-3">
                     <label class="paya-label "for="inputCardNumber">Re-enter Account number</label>
                     <input type="number" class="form-control input" id="inputCardNumber" maxlength="16" placeholder="1234 5678 9101 2345" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Required
+                    </div>
+                  </div>
+                </div>
+                <div class="paya form-row">
+                  <div class="form-group col-12 mb-3">
+                    <label class="paya-label "for="inputBank">Bank name</label>
+                    <input type="text" class="form-control input" id="inputBank" placeholder="Any Bank" required>
                     <div class="invalid-feedback" style="width: 100%;">
                       Required
                     </div>

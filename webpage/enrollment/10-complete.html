@@ -19,11 +19,13 @@
 
     <header class="navbar navbar-light bg-light flex-row bd-navbar justify-content-between sticky-top py-1 p-md-3">
       <a href="index.html" class="sidebar-brand img-responsive ml-lg-3">
-        <span class="sidebar-brand-icon d-flex align-items-center"><img src="../img/paya-logo.png"></span>
+        <span class="sidebar-brand-icon d-flex align-items-center">
+          <img src="../img/paya-logo.png">
+          <img class="co-brand-spacer" src="../img/logo-spacer.png">
+          <img class="co-brand" src="../img/partner-logo-isite.png">
+        </span>
       </a>
-      <span class="circle-application-submitted">
-        <img src="../img/check.svg">
-      </span>
+
       <a role="button" class="btn btn-outline-secondary btn-signout" href="login.html">Sign Out</a>
     </header>
 
@@ -35,8 +37,11 @@
           <div class="d-flex justify-content-center">
             <div class="paya-cards col-md-10 col-lg-8">
               <div class="card payment-card">
-                <div class="bundle card-body mb-2 pb-0 mt-md-2">
+                <div class="bundle card-body mb-2 pb-0 mt-md-1">
                   <div class="mb-5 text-center">
+                    <span class="circle-application-submitted d-flex justify-content-center mb-4">
+                      <img src="../img/check.svg">
+                    </span>
                     <h1>Thank You, Melissa!</h1>
                     <h3 class="text-gray font-weight-normal">Your application has been submitted for review.</h3>
                   </div>

@@ -60,7 +60,11 @@ footer p {
   margin-bottom: .25rem;
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow {
+  -webkit-box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.2);
+}
 
 
 /* ----- SASS Colors ---- */
@@ -352,7 +356,7 @@ progress[value] {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #48A9FD;
+  background-color: #FF9E03;
   transition: width 0.6s ease;
 }
 
@@ -397,16 +401,18 @@ h1, h2,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 700;
-  line-height: 1.21;
-  color: #5b6770;
+  line-height: 1.2;
+  /* color: #5b6770; */
+  color: #000000;
 }
 h3, h4, h5, h6,
 .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 600;
-  line-height: 1.4;
-  color: #5b6770;
+  line-height: 1.2;
+  /* color: #5b6770; */
+  color: #000000;
 }
 .text-primary {
   color: #00a9e0;
@@ -1797,8 +1803,7 @@ input[type=number] {
   position: relative;
   padding: 0.25rem;
   margin: 0 .5rem 0 -3rem;
-  background-color: #5b6770;
-  /* border: 1px solid #ccc; */
+  background-color: #FF9E03;
   color: #a7a7a7;
   width: 36px;
   height: 36px;
@@ -1809,10 +1814,6 @@ input[type=number] {
   line-height: 1.5;
   border-radius: 50%;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-h4.number-text {
-  /* not sure what to do with this yet... */
 }
 
 @media (max-width: 575.98px) {
@@ -2617,7 +2618,13 @@ h4.number-text {
    .sidebar-brand-icon > img {
      width: 75px;
     }
-    .circle-application-submitted img {
+    .sidebar-brand-icon > img.co-brand-spacer {
+      width: 35px;
+     }
+    .sidebar-brand-icon > img.co-brand {
+      width: 115px;
+     }
+    /* .circle-application-submitted img {
       display: block;
       width: 26px;
       height: 26px;
@@ -2630,7 +2637,7 @@ h4.number-text {
       color: #fff;
       background-color: rgba(105,196,65,1.0);
       z-index: 10;
-    }
+    } */
 }
 
 .sidebar-brand:hover {
