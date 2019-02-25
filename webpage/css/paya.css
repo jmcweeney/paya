@@ -25,8 +25,8 @@
 }
 .jumbotron h1,
 .jumbotron h2,
-.bundle h1,
-.bundle h4 {
+.review h1,
+.review h4 {
   color: #000000;
 }
 
@@ -43,6 +43,7 @@
 @media (max-width: 575.98px) {
   .jumbotron h2 {
     font-size: 1.85rem;
+    line-height: 2.15rem;
   }
   .password-card h5,
   .jumbotron h5 {
@@ -342,11 +343,25 @@ progress[value] {
   height: 0.45rem;
   overflow: hidden;
   font-size: 0.75rem;
-  background-color: #e9ecef;
+  background-color: #e3f1ff;
   border-radius: 1rem;
 }
 
 .progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #4eaafa;
+  transition: width 0.6s ease;
+}
+
+.progress-bar-isite {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -417,7 +432,7 @@ h3, h4, h5, h6,
 .text-primary {
   color: #00a9e0;
 }
-.text-bundle {
+.text-review {
   color: #FF9E03 !important;
 }
 .paya-display-1 {
@@ -482,7 +497,7 @@ small,
 @media (min-width: 576px) {
   .jumbotron .signin span,
   .lead span,
-  .bundle span.break {
+  .review span.break {
       display: block;
       &::before {
         content: attr(data-text);
@@ -500,6 +515,19 @@ hr {
   margin-bottom: 0.75rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hr.gray-rule {
+  margin-top: 1.0rem;
+  margin-bottom: 1.0rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+hr.bottom-rule {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 1.0);
 }
 
 hr.black-rule-1 {
@@ -521,6 +549,19 @@ hr.dashed {
   border: 0;
   border-top: 1px dashed rgba(0, 0, 0, 0.4);
 }
+hr.details {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid rgba(246, 251, 253, 1.0);
+}
+
+.details-switch-rounded {
+  border-radius: 0.5rem; /* top left, top right, bottom right, bottom left */
+}
+.details-list-rounded {
+  border-radius: 0 0 0.5rem 0.5rem; /* top left, top right, bottom right, bottom left */
+}
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
@@ -529,7 +570,6 @@ hr.dashed {
     top: 0;
     z-index: 1020;
     border-bottom: 1px solid #e9ecef;
-    opacity: 0.95;
   }
 }
 
@@ -709,7 +749,7 @@ hr.dashed {
 /* ----- Enrollment Process ----- */
 
 .enroll.card-body,
-.bundle.card-body,
+.review.card-body,
 .all-apps.card-body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -719,7 +759,7 @@ hr.dashed {
 
 @media (min-width: 992px) {
   .enroll.card-body,
-  .bundle.card-body,
+  .review.card-body,
   .all-apps.card-body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -744,39 +784,53 @@ hr.dashed {
   padding: 0;
   line-height: 1.5;
 }
-.bundle span.break,
+.review span.break,
 .all-apps span.break {
   display: block;
 }
-.bundle .paya-table h6,
-.bundle .paya-table p,
-.bundle .paya-table li,
+.review .paya-table h6,
+.review .paya-table p,
+.review .paya-table li,
 .all-apps .paya-table h6,
 .all-apps .paya-table p,
 .all-apps .paya-table li,
-.bundle .list-group-item,
+.review .list-group-item,
 .all-apps .list-group-item {
   position: relative;
   color: #000;
   padding: 0;
   line-height: 1.5;
-  font-size: 95%;
+  font-size: 100%;
   background-color: transparent;
   border: 0;
   font-weight: inherit;
   margin-bottom: 0;
+}
+.review .fee-details .list-group-item {
+  line-height: 1.65rem;
+
 }
 .all-apps .paya-table p {
   font-weight: 600;
   font-size: 100%;
 }
 .all-apps .paya-table h6 {
-  font-size: 85%;
+  font-size: 100%;
   color: #666;
 }
 .all-apps .paya-table li {
   padding: 4px 0;
   line-height: 2.0 !important;
+}
+
+.review .paya-cell-card p,
+.review .paya-cell-rate p,
+.review .paya-cell-item p,
+.review .paya-cell-authfee p,
+.review .paya-cell-authrate p {
+  font-weight: 700;
+  height: 2.25rem;
+  color: #9B9B9B !important;
 }
 
 .apps-circle-submitted img {
@@ -821,7 +875,7 @@ hr.dashed {
   background-color: rgba(169,224,100,1.0);
   z-index: 10;
 }
-.bundle-circle-selected img {
+.review-circle-selected img {
   display: block;
   width: 24px;
   height: 24px;
@@ -846,16 +900,16 @@ hr.dashed {
   background-size: 100% 100%;
 }
 
-.bundle .select-cell .form-group {
+.review .select-cell .form-group {
   border: 1px solid #b6ddfe;
   border-radius: 5rem;
 }
 
-.bundle .select-cell .form-group:hover {
+.review .select-cell .form-group:hover {
   background-color: #e9f5ff;
 }
-.bundle .form-agree,
-.bundle .form-agree:hover {
+.review .form-agree,
+.review .form-agree:hover {
   border: none;
   background-color: #fff;
 }
@@ -880,8 +934,11 @@ hr.dashed {
 .paya-table {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .paya-cell {
   flex-grow: 1;
@@ -896,13 +953,14 @@ hr.dashed {
 .select-cell {
   border-bottom: 1px solid #ced4da;
 }
-.bundle-cell {
+.review-cell {
   flex-grow: 1;
   width: 100%;
   padding: 1.0rem;
   overflow: hidden;
   list-style: none;
   border-right: 1px solid #E9EBEE;
+  background: transparent;
 }
 
 .paya-cell > h1,
@@ -917,9 +975,71 @@ hr.dashed {
 .paya--2cols > .paya-cell {
   width: 50%;
 }
+
 .paya--3cols > .paya-cell {
   width: 33.33%;
 }
+
+/* ----- Bundles & Fees ----- */
+
+.paya--3cols > .paya-cell-card {
+  width: 45%;
+}
+.paya--3cols > .paya-cell-rate {
+  width: 35%;
+}
+.paya--3cols > .paya-cell-item {
+  width: 15%;
+}
+.paya--2cols > .paya-cell-authfee {
+  width: 45%;
+}
+.paya--2cols > .paya-cell-authrate {
+  width: 55%;
+}
+
+@media (max-width: 576px) {
+  .paya--3cols > .paya-cell-card {
+    font-size: 90%;
+    width: 50%;
+    display: inline-block;
+  }
+  .paya--3cols > .paya-cell-rate {
+    width: 30%;
+    font-size: 90%;
+    display: inline-block;
+  }
+  .paya--3cols > .paya-cell-item {
+    width: 15%;
+    font-size: 90%;
+    display: inline-block;
+  }
+  .paya--2cols > .paya-cell-authfee {
+    width: 50%;
+    font-size: 90%;
+    display: inline-block;
+  }
+  .paya--2cols > .paya-cell-authrate {
+    width: 35%;
+    font-size: 90%;
+    display: inline-block;
+  }
+  .review .fee-details .list-group-item {
+    line-height: 1.4rem;
+  }
+  .review .paya-cell-card p,
+  .review .paya-cell-rate p,
+  .review .paya-cell-item p {
+    font-weight: 700;
+    line-height: 1.2rem;
+    height: 2.95rem;
+    color: #9B9B9B !important;
+  }
+  .bg-light {
+    background-color: rgba(244, 250, 255, 1.0) !important;
+  }
+}
+
 .paya--4cols > .paya-cell {
   width: 25%;
 }
@@ -933,12 +1053,6 @@ hr.dashed {
 .paya-cell--edit {
   width: 15%;
   padding: 1.0rem 0 1.0rem 0.5rem;
-}
-
-.paya-table {
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .paya-cell--dark {
@@ -1006,13 +1120,14 @@ hr.dashed {
   .paya--collapse > .paya-cell--foot {
     margin-bottom: 1em;
   }
-  .bundle-cell {
+  .review-cell {
     border-left: 0;
   }
   .paya-cell {
     padding: 1.0rem 0.5rem 1.0rem 0.5rem;
   }
-  .bundle .border-bottom-none {
+
+  .review .border-bottom-none {
     border-bottom: none;
   }
 }
@@ -1046,7 +1161,14 @@ hr.dashed {
 }
 
 .transactions p {
-  font-size: 85%;
+  font-size: 100%;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+.transactions h3,
+.bundle-name {
+  font-weight: 700;
+  color: #FF9E03;
 }
 
 .transactions .list-group {
@@ -1062,10 +1184,12 @@ hr.dashed {
   position: relative;
   display: block;
   padding: 0.125rem 0;
-  font-size: 85%;
+  font-size: 100%;
+  font-weight: 400;
   margin-bottom: -1px;
-  background-color: #fff;
+  background-color: transparent;
   border: 0;
+  line-height: 1.5rem;
 }
 
 .transactions .list-group-item:first-child {
@@ -1081,6 +1205,8 @@ hr.dashed {
   z-index: 1;
   text-decoration: none;
 }
+
+/* ----- Receipt UI ----- */
 
 .receipt-header-success {
   padding: 2rem;
@@ -1851,7 +1977,7 @@ input[type=number] {
 }
 
 .bg-details {
-  background: #f6fbfd;
+  background-color: rgba(244, 250, 255, 0.9) !important;
 }
 .details-circle-opened img {
   display: inline-block;
@@ -2606,12 +2732,14 @@ input[type=number] {
    line-height: 1rem;
    color: #555;
 }
+.sidebar-brand > img {
+   height: 60px;
+}
 .sidebar-brand-icon {
   height: 60px;
 }
-
-.sidebar-brand > img {
-   height: 60px;
+img.co-brand {
+  width: 175px;
 }
 
 @media (max-width: 575.98px) {

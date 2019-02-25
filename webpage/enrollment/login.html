@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Log In</title>
+    <title>MSD -- Sign In</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,7 +25,7 @@
         <span class="d-flex align-items-center justify-content-center mb-5">
           <img src="../img/paya-logo.png">
           <img class="co-brand-spacer" src="../img/logo-spacer.png">
-          <img class="co-brand" src="../img/partner-logo-isite.png">
+          <img class="co-brand" src="../img/partner-logo-isite.svg">
         </span>
         <h2 class="pb-2">Sign into your Account</h2>
       </div>
@@ -46,7 +46,7 @@
               <div class="form-group col-12 mb-2">
                 <label for="inputPass">Password</label>
                 <div class="paya-pwt">
-                  <input class="active form-control input" type="password" maxlength="24" id="paya-pwt" placeholder="Not sure? Find help below..." aria-label="User password" aria-describedby="paya-pwt">
+                  <input class="active form-control input" type="password" maxlength="24" id="paya-pwt" placeholder="Not sure? Find help below..." aria-label="User password" aria-describedby="paya-pwt" required>
                    <div class="pwt-icons">
                      <i id="icon" class="text-muted far fa-eye-slash"></i>
                    </div>
@@ -70,8 +70,8 @@
             </div>
           </div>
           <div class="paya d-flex align-items-center justify-content-center mt-4">
-            <a role="button" class="btn btn-primary btn-login" href="applications.html">Sign In</a>
-            <!-- <button type="submit" id="submit" class="btn btn-primary btn-login">Sign In</button> -->
+            <!-- <a role="button" class="btn btn-primary btn-login" href="applications.html">Sign In</a> -->
+            <button type="submit" id="submit" class="btn btn-primary btn-login">Sign In</button>
           </div>
         </div>
       </div>
