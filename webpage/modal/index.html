@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../img/favicon.ico">
 
-  <title>Paya Payments Modal</title>
+  <title>Paya Payments Overlays</title>
 
   <!-- Bootstrap core CSS & custom Paya CSS -->
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,800,400italic" rel="stylesheet">
@@ -23,25 +23,28 @@
 <form>
 <div class="container">
   <div class="row justify-content-left my-4 my-lg-5">
-    <h3>Modal Samples</h3>
+    <h2>Overlay Samples</h2>
   </div>
 
   <div class="row justify-content-left my-4 my-lg-5">
     <ul class="nav nav-pills nav-stacked flex-column mt-3">
-      <li class="nav-header mb-3">Payment Options</li>
+      <h4 class="mb-3">Payment Options</h4>
       <li class="nav-item">
-        <a class="nav-link" href="#payModalPayments" data-toggle="modal">
-          Payments Modal (Credit and ACH UI Lite)
+        <a class="nav-link pl-0" href="#payModalPayments" data-toggle="modal">
+          Credit and ACH with minimal interface
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#payModalApproved" data-toggle="modal">
-          Payment Success Modal
+        <a class="nav-link pl-0" href="#payModalApproved" data-toggle="modal">
+          Transaction approved
         </a>
       </li>
+      <li class="dropdown-divider"></li>
+      <h4 class="my-3">ACH Exploration (work in progress)</h4>
+
       <li class="nav-item">
-        <a class="nav-link" href="#achModal" data-toggle="modal">
-          ACH Modal (only ACH required UI)
+        <a class="nav-link pl-0" href="#achModal" data-toggle="modal">
+          Payment options in horizontal progression
         </a>
       </li>
       <hr class="my-3">
@@ -58,7 +61,7 @@
           <span class="receipt-circle-success mx-auto">
             <img src="../img/check.svg">
           </span>
-          <h3 class="my-2">Transaction Approved</h3>
+          <h2 class="mt-4 mb-2">Transaction Approved</h2>
           <h4 class="mb-4">You paid $40.00 to Merchant XYZ</h4>
           <p class="text-muted mb-1">Approval Code: <span>12345</span></p>
           <p class="text-muted mb-2">Transaction ID: <a href="../payments/index.html">938-0384-003</a></p>
